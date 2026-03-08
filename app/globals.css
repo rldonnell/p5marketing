@@ -94,11 +94,12 @@ a { color: inherit; }
 }
 .p5-kicker {
   font-family: var(--font-space-mono), 'Space Mono', monospace;
-  font-size: .75rem;
+  font-size: .7rem;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: .04em;
   color: var(--p5-accent);
   margin-bottom: 1rem;
+  white-space: nowrap;
 }
 .p5-hero h1 {
   font-size: clamp(2rem, 4vw, 3.2rem);
