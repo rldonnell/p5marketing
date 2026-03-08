@@ -1,4 +1,5 @@
 import './globals.css';
+import Footer from './Footer';
 
 export const metadata = {
   title: 'P5 Marketing - Intent Data Marketing for High-Trust Businesses',
@@ -97,7 +98,10 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
