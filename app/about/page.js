@@ -31,9 +31,9 @@ export default function About() {
       bio: "Dr. Stephie advises P5 and its clients on organizational clarity, strategic positioning, and scalable growth frameworks. She helps leadership teams align their messaging, structure, and go-to-market strategy so that every part of the business communicates with purpose and moves in the same direction.",
     },
     {
-      name: "Joely Rogers Gardner, PhD",
+      name: "Joely Gardner, PhD",
       role: "Strategic Advisor, Healthcare Marketing",
-      bio: "Dr. Joely brings deep expertise in healthcare marketing, web usability, and regulatory strategy — backed by prior experience at Microsoft, META, and Oracle. She advises on FDA-compliant messaging frameworks for medical device, pharmaceutical, and aesthetic practices, ensuring campaigns meet regulatory standards while delivering measurable results.",
+      bio: "Dr. Joely brings deep expertise in web usability, and regulatory strategy, backed by prior experience at Microsoft, META, and Oracle. She advises on messaging frameworks for medical device, pharmaceutical, and aesthetic practices.",
     },
   ];
 
