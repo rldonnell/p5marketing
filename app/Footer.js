@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="p5-footer-brand">
             <a href="/" aria-label="P5 Marketing – Home">
-              <img src="/p5-logo.png" alt="P5 Marketing" />
+              <img src="/p5-logo.webp" alt="P5 Marketing" width="500" height="336" />
             </a>
             <p className="p5-footer-tagline">Data-driven marketing for high-growth verticals. We turn intent signals into booked revenue.</p>
 

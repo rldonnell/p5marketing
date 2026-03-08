@@ -38,7 +38,7 @@ html, body {
   font-size: 20px;
   background: var(--p5-bg-deep);
   color: var(--p5-text);
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -93,7 +93,7 @@ a { color: inherit; }
   .p5-hero-grid { grid-template-columns: 1fr; }
 }
 .p5-kicker {
-  font-family: 'Space Mono', monospace;
+  font-family: var(--font-space-mono), 'Space Mono', monospace;
   font-size: .75rem;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -124,7 +124,7 @@ a { color: inherit; }
 .p5-stat { min-width: 140px; }
 .p5-stat-num {
   display: block;
-  font-family: 'Space Mono', monospace;
+  font-family: var(--font-space-mono), 'Space Mono', monospace;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--p5-accent);
@@ -138,7 +138,7 @@ a { color: inherit; }
 
 /* ===== SECTION LABELS ===== */
 .p5-section-label {
-  font-family: 'Space Mono', monospace;
+  font-family: var(--font-space-mono), 'Space Mono', monospace;
   font-size: .75rem;
   text-transform: uppercase;
   letter-spacing: .12em;
@@ -174,7 +174,7 @@ a { color: inherit; }
 }
 .p5-p-card:hover { border-color: var(--p5-accent); }
 .p5-num {
-  font-family: 'Space Mono', monospace;
+  font-family: var(--font-space-mono), 'Space Mono', monospace;
   font-size: .85rem;
   color: var(--p5-accent);
   display: block;
@@ -204,7 +204,7 @@ a { color: inherit; }
   margin-bottom: 2.5rem;
 }
 .p5-hiw-num {
-  font-family: 'Space Mono', monospace;
+  font-family: var(--font-space-mono), 'Space Mono', monospace;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--p5-accent);
@@ -390,7 +390,7 @@ a { color: inherit; }
   background: none;
   border: none;
   color: var(--p5-text);
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
   font-size: 1rem;
   font-weight: 600;
   text-align: left;
@@ -477,7 +477,7 @@ a { color: inherit; }
   border-top: 1px solid rgba(0, 229, 199, 0.08);
   background: var(--p5-bg-surface);
   padding: 64px 24px 0;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
 }
 
 .p5-footer-inner {
@@ -512,7 +512,7 @@ a { color: inherit; }
 
 /* nav columns */
 .p5-footer-col h4 {
-  font-family: 'Space Mono', monospace;
+  font-family: var(--font-space-mono), 'Space Mono', monospace;
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -743,7 +743,7 @@ a { color: inherit; }
   align-items: center;
   gap: 5px;
   padding: 8px 16px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
   font-size: 0.9375rem;
   font-weight: 500;
   color: var(--p5-text-dim);
@@ -828,7 +828,7 @@ li.p5-has-dropdown.p5-dropdown-open .p5-nav-chevron {
   padding: 10px 22px;
   font-size: 0.875rem;
   font-weight: 700;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
   border: none;
   border-radius: 10px;
   background: var(--p5-accent);
@@ -910,7 +910,7 @@ li.p5-has-dropdown.p5-dropdown-open .p5-nav-chevron {
 }
 
 .p5-mobile-nav a {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--p5-text-dim);
@@ -938,7 +938,7 @@ li.p5-has-dropdown.p5-dropdown-open .p5-nav-chevron {
   padding: 14px 36px;
   font-size: 1.1rem;
   font-weight: 700;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
   border: none;
   border-radius: 12px;
   background: var(--p5-accent);

@@ -1,6 +1,22 @@
 import './globals.css';
+import { DM_Sans, Space_Mono } from 'next/font/google';
 import Header from './Header';
 import Footer from './Footer';
+
+/* ── Self-hosted Google Fonts (eliminates render-blocking request) ── */
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
+  variable: '--font-dm-sans',
+});
+
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  display: 'swap',
+  variable: '--font-space-mono',
+});
 
 export const metadata = {
   title: 'P5 Marketing - Intent Data Marketing for High-Trust Businesses',
@@ -27,12 +43,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${dmSans.variable} ${spaceMono.variable}`}>
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

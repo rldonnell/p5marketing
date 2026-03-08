@@ -1,8 +1,6 @@
 'use client';
 
 import { useEffect } from 'react';
-import Head from 'next/head';
-
 export default function Home() {
   useEffect(() => {
     // FAQ Accordion
@@ -67,11 +65,11 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
+      {/* FAQ structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",
               "mainEntity": [
@@ -88,9 +86,8 @@ export default function Home() {
                 { "@type": "Question", "name": "What do we need to get started?", "acceptedAnswer": { "@type": "Answer", "text": "Website access for pixel installation, plus ad account access and your CRM details. Once tracking is installed, most clients can go live quickly." } }
               ]
             })
-          }}
-        />
-      </Head>
+        }}
+      />
 
       {/* ===== HERO ===== */}
       <section className="p5-hero">
