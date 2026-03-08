@@ -7,8 +7,8 @@ export default function About() {
     },
     {
       name: "Irene Donnell",
-      role: "Co-Founder, Finance & Operations",
-      bio: "Irene manages the business side of P5 — contracts, billing, vendor relationships, and financial planning. She keeps the operation running so the delivery team can focus on results.",
+      role: "Marketing — Social Media, SEO & AI Optimization",
+      bio: "Irene leads P5 Marketing\u2019s digital growth strategy across social media, SEO, and AI optimization. Her work increases visibility, attracts qualified leads, and converts attention into measurable growth.",
     },
     {
       name: "Camilo Castañeda",
@@ -26,14 +26,14 @@ export default function About() {
       bio: "Adrianne is the first person new clients work with. She handles onboarding, CRM setup, and ongoing communication to make sure every client knows exactly what's happening and what's next.",
     },
     {
-      name: "Dr. Stephie Althouse",
-      role: "Strategic Advisor, Positioning & Messaging",
-      bio: "Dr. Stephie advises on brand positioning, messaging strategy, and competitive differentiation. Her frameworks help P5 and its clients communicate with clarity and authority.",
+      name: "Stephie Althouse, PhD",
+      role: "Strategic Advisor, Organizational Clarity & Growth",
+      bio: "Dr. Stephie advises P5 and its clients on organizational clarity, strategic positioning, and scalable growth frameworks. She helps leadership teams align their messaging, structure, and go-to-market strategy so that every part of the business communicates with purpose and moves in the same direction.",
     },
     {
-      name: "Dr. Joely Rogers",
+      name: "Joely Rogers Gardner, PhD",
       role: "Strategic Advisor, Healthcare Marketing",
-      bio: "Dr. Joely brings deep expertise in healthcare and wellness marketing. She advises on compliance, patient acquisition strategy, and messaging for medical and aesthetic practices.",
+      bio: "Dr. Joely brings deep expertise in healthcare marketing, web usability, and regulatory strategy — backed by prior experience at Microsoft, META, and Oracle. She advises on FDA-compliant messaging frameworks for medical device, pharmaceutical, and aesthetic practices, ensuring campaigns meet regulatory standards while delivering measurable results.",
     },
   ];
 
