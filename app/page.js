@@ -129,8 +129,10 @@ export default function Home() {
                     <path d="M0 0 L8 4 L0 8" fill="none" stroke="#7b61ff" strokeWidth="1.5" />
                   </marker>
                 </defs>
-                <text x="200" y="195" textAnchor="middle" fill="#e2e8f0" fontSize="15" fontFamily="DM Sans, sans-serif" fontWeight="700">YOUR</text>
-                <text x="200" y="214" textAnchor="middle" fill="#e2e8f0" fontSize="15" fontFamily="DM Sans, sans-serif" fontWeight="700">PIPELINE</text>
+                <text x="200" y="181" textAnchor="middle" fill="#94a3b8" fontSize="11" fontFamily="DM Sans, sans-serif" fontWeight="400">Other agencies</text>
+                <text x="200" y="196" textAnchor="middle" fill="#94a3b8" fontSize="11" fontFamily="DM Sans, sans-serif" fontWeight="400">give you pieces.</text>
+                <text x="200" y="215" textAnchor="middle" fill="#00e5c7" fontSize="12" fontFamily="DM Sans, sans-serif" fontWeight="700">We give you</text>
+                <text x="200" y="230" textAnchor="middle" fill="#00e5c7" fontSize="12" fontFamily="DM Sans, sans-serif" fontWeight="700">the full cycle.</text>
               </svg>
             </div>
           </div>
