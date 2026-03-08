@@ -106,20 +106,20 @@ export default function Home() {
               </div>
             </div>
             <div className="p5-hero-illus p5-fade-up p5-delay-1">
-              <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: '420px', margin: '0 auto', display: 'block' }}>
+              <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: '580px', margin: '0 auto', display: 'block' }}>
                 <circle cx="200" cy="200" r="160" stroke="#00e5c7" strokeWidth="1.5" strokeDasharray="6 6" opacity="0.3" />
-                <circle cx="200" cy="48" r="36" fill="#0d1420" stroke="#00e5c7" strokeWidth="2" />
-                <text x="200" y="44" textAnchor="middle" fill="#00e5c7" fontSize="11" fontFamily="Space Mono, monospace" fontWeight="700">FIND</text>
-                <text x="200" y="58" textAnchor="middle" fill="#94a3b8" fontSize="8" fontFamily="DM Sans, sans-serif">IntentID</text>
-                <circle cx="352" cy="200" r="36" fill="#0d1420" stroke="#7b61ff" strokeWidth="2" />
-                <text x="352" y="196" textAnchor="middle" fill="#7b61ff" fontSize="11" fontFamily="Space Mono, monospace" fontWeight="700">DRIVE</text>
-                <text x="352" y="210" textAnchor="middle" fill="#94a3b8" fontSize="8" fontFamily="DM Sans, sans-serif">Ad Platforms</text>
-                <circle cx="200" cy="352" r="36" fill="#0d1420" stroke="#00e5c7" strokeWidth="2" />
-                <text x="200" y="348" textAnchor="middle" fill="#00e5c7" fontSize="11" fontFamily="Space Mono, monospace" fontWeight="700">IDENTIFY</text>
-                <text x="200" y="362" textAnchor="middle" fill="#94a3b8" fontSize="8" fontFamily="DM Sans, sans-serif">VisitorID</text>
-                <circle cx="48" cy="200" r="36" fill="#0d1420" stroke="#7b61ff" strokeWidth="2" />
-                <text x="48" y="196" textAnchor="middle" fill="#7b61ff" fontSize="11" fontFamily="Space Mono, monospace" fontWeight="700">CONVERT</text>
-                <text x="48" y="210" textAnchor="middle" fill="#94a3b8" fontSize="8" fontFamily="DM Sans, sans-serif">InboxID</text>
+                <circle cx="200" cy="48" r="40" fill="#0d1420" stroke="#00e5c7" strokeWidth="2" />
+                <text x="200" y="44" textAnchor="middle" fill="#00e5c7" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">FIND</text>
+                <text x="200" y="59" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">IntentID</text>
+                <circle cx="352" cy="200" r="40" fill="#0d1420" stroke="#7b61ff" strokeWidth="2" />
+                <text x="352" y="196" textAnchor="middle" fill="#7b61ff" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">DRIVE</text>
+                <text x="352" y="211" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">Ad Platforms</text>
+                <circle cx="200" cy="352" r="40" fill="#0d1420" stroke="#00e5c7" strokeWidth="2" />
+                <text x="200" y="348" textAnchor="middle" fill="#00e5c7" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">IDENTIFY</text>
+                <text x="200" y="363" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">VisitorID</text>
+                <circle cx="48" cy="200" r="40" fill="#0d1420" stroke="#7b61ff" strokeWidth="2" />
+                <text x="48" y="196" textAnchor="middle" fill="#7b61ff" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">CONVERT</text>
+                <text x="48" y="211" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">InboxID</text>
                 <path d="M230 55 L315 170" stroke="#00e5c7" strokeWidth="1.5" opacity="0.5" markerEnd="url(#arr)" />
                 <path d="M345 235 L230 340" stroke="#7b61ff" strokeWidth="1.5" opacity="0.5" markerEnd="url(#arr2)" />
                 <path d="M170 345 L85 230" stroke="#00e5c7" strokeWidth="1.5" opacity="0.5" markerEnd="url(#arr)" />
@@ -132,8 +132,8 @@ export default function Home() {
                     <path d="M0 0 L8 4 L0 8" fill="none" stroke="#7b61ff" strokeWidth="1.5" />
                   </marker>
                 </defs>
-                <text x="200" y="195" textAnchor="middle" fill="#e2e8f0" fontSize="13" fontFamily="DM Sans, sans-serif" fontWeight="700">YOUR</text>
-                <text x="200" y="212" textAnchor="middle" fill="#e2e8f0" fontSize="13" fontFamily="DM Sans, sans-serif" fontWeight="700">PIPELINE</text>
+                <text x="200" y="195" textAnchor="middle" fill="#e2e8f0" fontSize="15" fontFamily="DM Sans, sans-serif" fontWeight="700">YOUR</text>
+                <text x="200" y="214" textAnchor="middle" fill="#e2e8f0" fontSize="15" fontFamily="DM Sans, sans-serif" fontWeight="700">PIPELINE</text>
               </svg>
             </div>
           </div>
