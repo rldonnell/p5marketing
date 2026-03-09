@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "cache-blog": "node scripts/cache-blog.mjs",
     "download-images": "node scripts/download-wp-images.mjs",
     "start": "next start"
   },

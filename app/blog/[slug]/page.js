@@ -12,7 +12,10 @@ export async function generateStaticParams() {
     const slugs = await getAllSlugs();
     return slugs.map((slug) => ({ slug }));
   } catch {
-    return [];
+    // Last-resort fallback so the static export never gets an empty array
+    return [
+      { slug: 'your-website-should-be-built-by-something-that-already-knows-your-business' },
+    ];
   }
 }
 
