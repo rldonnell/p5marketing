@@ -14,7 +14,7 @@ export async function generateStaticParams() {
   } catch {
     // Last-resort fallback so the static export never gets an empty array
     return [
-      { slug: 'your-website-should-be-built-by-something-that-already-knows-your-business' },
+      { slug: 'ai-website-development-a-tool-that-knows-you' },
     ];
   }
 }
