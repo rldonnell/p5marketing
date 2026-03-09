@@ -33,6 +33,7 @@ export default function Footer() {
               <li><a href="/how-it-works/">How It Works</a></li>
               <li><a href="/markets/">Markets</a></li>
               <li><a href="/the-id-suite/">The ID Suite</a></li>
+              <li><a href="/blog/">Blog</a></li>
               <li><a href="/contact/">Contact</a></li>
             </ul>
           </div>

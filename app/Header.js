@@ -142,6 +142,7 @@ export default function Header() {
                   <li role="none"><a role="menuitem" href="/the-id-suite/inbox-id/">Inbox ID</a></li>
                 </ul>
               </li>
+              <li><a href="/blog/">Blog</a></li>
               <li><a href="/contact/">Contact</a></li>
             </ul>
           </nav>
@@ -173,6 +174,7 @@ export default function Header() {
         <a href="/the-id-suite/visitor-id/" className="p5-mobile-sub">Visitor ID</a>
         <a href="/the-id-suite/intent-id/" className="p5-mobile-sub">Intent ID</a>
         <a href="/the-id-suite/inbox-id/" className="p5-mobile-sub">Inbox ID</a>
+        <a href="/blog/">Blog</a>
         <a href="/contact/">Contact</a>
         <a href="/contact/" className="p5-btn">Book a Conversation</a>
       </div>
