@@ -1,3 +1,14 @@
+export const metadata = {
+  title: 'The ID Suite – IntentID, VisitorID & InboxID | P5 Marketing',
+  description:
+    'Three proprietary technologies that find ready-to-buy prospects, identify anonymous website visitors, and convert them with same-day follow-up. Explore IntentID, VisitorID, and InboxID.',
+  openGraph: {
+    title: 'The ID Suite – P5 Marketing',
+    description:
+      'IntentID + VisitorID + InboxID: the full-cycle intent data stack for high-trust businesses.',
+  },
+};
+
 export default function IDSuiteLanding() {
   const productCards = [
     {

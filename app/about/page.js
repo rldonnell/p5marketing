@@ -1,3 +1,14 @@
+export const metadata = {
+  title: 'About Us – P5 Marketing',
+  description:
+    'Meet the P5 Marketing team. We build full-cycle intent data campaigns for high-trust, high-value businesses — from audience building to visitor identification to conversion.',
+  openGraph: {
+    title: 'About P5 Marketing',
+    description:
+      'The team behind IntentID, VisitorID, and InboxID — intent data marketing built for businesses that close real deals.',
+  },
+};
+
 export default function About() {
   const teamMembers = [
     {

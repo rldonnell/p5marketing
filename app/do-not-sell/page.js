@@ -1,5 +1,7 @@
 export const metadata = {
-  title: "Do Not Sell or Share My Personal Information - P5 Marketing",
+  title: 'Do Not Sell or Share My Personal Information – P5 Marketing',
+  description:
+    'Exercise your right to opt out of the sale or sharing of your personal information under applicable privacy laws.',
 };
 
 const styles = {

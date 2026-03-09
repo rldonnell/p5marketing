@@ -1,3 +1,14 @@
+export const metadata = {
+  title: 'VisitorID™ – Website Visitor Identification | P5 Marketing',
+  description:
+    'Identify up to 60% of anonymous website visitors by name, email, phone, and address. VisitorID uses three layered signals — geofencing, IP intelligence, and pixel data — for deterministic identification.',
+  openGraph: {
+    title: 'VisitorID™ by P5 Marketing',
+    description:
+      'Know who visits your website. VisitorID identifies up to 60% of anonymous visitors with name, email, phone, and address.',
+  },
+};
+
 export default function VisitorIDPage() {
   const signals = [
     {

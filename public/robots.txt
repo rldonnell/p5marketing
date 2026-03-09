@@ -1,0 +1,6 @@
+# P5 Marketing – robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://p5marketing.com/sitemap.xml

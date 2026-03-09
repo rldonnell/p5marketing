@@ -1,3 +1,14 @@
+export const metadata = {
+  title: 'How It Works – P5 Marketing',
+  description:
+    'See how IntentID, VisitorID, and InboxID work together in a full-cycle campaign. Find prospects with search intent, identify website visitors, and convert them with same-day follow-up.',
+  openGraph: {
+    title: 'How P5 Marketing Works',
+    description:
+      'Four-stage intent data pipeline: Find → Drive → Identify → Convert. Every ad dollar targets someone with verified search intent.',
+  },
+};
+
 export default function HowItWorks() {
   const stages = [
     {

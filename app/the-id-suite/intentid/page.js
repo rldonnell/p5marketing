@@ -1,3 +1,14 @@
+export const metadata = {
+  title: 'IntentID™ – Intent-Based Audience Building | P5 Marketing',
+  description:
+    'Build custom audiences of people actively searching for your services. IntentID captures real search behavior from the past 48–72 hours and deploys across Meta, Google, X, TikTok, and LinkedIn.',
+  openGraph: {
+    title: 'IntentID™ by P5 Marketing',
+    description:
+      'Target prospects with verified search intent. Custom audiences built from real search behavior, deployed across every major ad platform.',
+  },
+};
+
 export default function IntentIDPage() {
   const steps = [
     {
