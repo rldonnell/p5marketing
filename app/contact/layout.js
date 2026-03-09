@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Contact Us – P5 Marketing',
   description:
-    'Get in touch with P5 Marketing. Tell us about your business and we'll show you how IntentID, VisitorID, and InboxID can build your pipeline.',
+    'Get in touch with P5 Marketing. Tell us about your business and we will show you how IntentID, VisitorID, and InboxID can build your pipeline.',
   openGraph: {
     title: 'Contact P5 Marketing',
     description:
