@@ -4,7 +4,6 @@ import {
   getFeaturedImage,
   getAuthorName,
   formatDate,
-  rewriteContentImages,
 } from '../../../lib/wordpress';
 
 /* ── Static params (required for output: 'export') ───────────── */
@@ -100,7 +99,7 @@ export default async function BlogPost({ params }) {
       <article className="p5-wrap" style={{ maxWidth: '800px' }}>
         <div
           className="p5-wp-content"
-          dangerouslySetInnerHTML={{ __html: rewriteContentImages(post.content.rendered) }}
+          dangerouslySetInnerHTML={{ __html: post.content.rendered }}
         />
       </article>
 

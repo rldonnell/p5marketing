@@ -1,4 +1,4 @@
-import { getPosts, getCategories, getFeaturedImage } from '../../lib/wordpress';
+import { getPosts, getCategories } from '../../lib/wordpress';
 import BlogList from './BlogList';
 
 export const metadata = {
@@ -15,8 +15,6 @@ export default async function BlogPage() {
     [posts, categories] = await Promise.all([getPosts(), getCategories()]);
     // Filter out the default "Uncategorized" category (id 1)
     categories = categories.filter((c) => c.slug !== 'uncategorized');
-    // Attach local image paths for the listing page
-    posts = posts.map((p) => ({ ...p, localImage: getFeaturedImage(p) }));
   } catch (err) {
     console.error('Failed to fetch blog data:', err.message);
   }
