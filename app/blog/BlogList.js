@@ -44,7 +44,8 @@ export default function BlogList({ posts, categories }) {
       ) : (
         <div className="p5-blog-grid">
           {filtered.map((post) => {
-            const image = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
+            const wpImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
+            const image = post.localImage || wpImage;
             const author = post._embedded?.author?.[0]?.name ?? 'P5 Marketing';
             const excerpt = post.excerpt.rendered.replace(/<[^>]*>/g, '').trim();
             const date = new Date(post.date).toLocaleDateString('en-US', {
