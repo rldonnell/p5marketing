@@ -1,0 +1,76 @@
+<!-- ===== P5 SITE HEADER ===== -->
+<header class="p5-header" id="p5Header">
+  <div class="p5-header-inner">
+
+    <!-- Logo -->
+    <div class="p5-header-logo">
+      <a href="/" aria-label="P5 Marketing – Home">
+        <img src="/wp-content/uploads/p5-logo.png" alt="P5 Marketing" />
+        <!-- Logo file: p5_logo_2026_transp_no-text.png → upload to WP Media Library as p5-logo.png -->
+      </a>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav aria-label="Main navigation">
+      <ul class="p5-header-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/how-it-works/">How It Works</a></li>
+        <li class="p5-has-dropdown">
+          <a href="/markets/" aria-haspopup="true" aria-expanded="false">
+            Markets
+            <svg class="p5-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <ul class="p5-nav-dropdown" role="menu">
+            <li role="none"><a role="menuitem" href="/markets/wedding-venues/">Wedding Venues</a></li>
+            <li role="none"><a role="menuitem" href="/markets/plastic-surgeons/">Plastic Surgeons</a></li>
+          </ul>
+        </li>
+        <li class="p5-has-dropdown">
+          <a href="/the-id-suite/" aria-haspopup="true" aria-expanded="false">
+            The ID Suite
+            <svg class="p5-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <ul class="p5-nav-dropdown" role="menu">
+            <li role="none"><a role="menuitem" href="/the-id-suite/visitor-id/">Visitor ID</a></li>
+            <li role="none"><a role="menuitem" href="/the-id-suite/intent-id/">Intent ID</a></li>
+            <li role="none"><a role="menuitem" href="/the-id-suite/inbox-id/">Inbox ID</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- CTA -->
+    <div class="p5-header-cta">
+      <a href="/contact/" class="p5-btn">Book a Conversation</a>
+    </div>
+
+    <!-- Hamburger (mobile) -->
+    <button class="p5-hamburger" id="p5Hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
+
+<!-- Mobile Nav Overlay -->
+<div class="p5-mobile-nav" id="p5MobileNav">
+  <a href="/">Home</a>
+  <a href="/about/">About</a>
+  <a href="/how-it-works/">How It Works</a>
+  <a href="/markets/">Markets</a>
+  <a href="/markets/wedding-venues/" class="p5-mobile-sub">Wedding Venues</a>
+  <a href="/markets/plastic-surgeons/" class="p5-mobile-sub">Plastic Surgeons</a>
+  <a href="/the-id-suite/">The ID Suite</a>
+  <a href="/the-id-suite/visitor-id/" class="p5-mobile-sub">Visitor ID</a>
+  <a href="/the-id-suite/intent-id/" class="p5-mobile-sub">Intent ID</a>
+  <a href="/the-id-suite/inbox-id/" class="p5-mobile-sub">Inbox ID</a>
+  <a href="/contact/">Contact</a>
+  <a href="/contact/" class="p5-btn">Book a Conversation</a>
+</div>
+
+<!-- Spacer to prevent content from hiding behind fixed header -->
+<div class="p5-header-spacer"></div>

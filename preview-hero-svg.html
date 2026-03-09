@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>P5 Marketing – Hero SVG Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --p5-max-w: 1280px;
+      --p5-accent: #00e5c7;
+      --p5-accent-alt: #7b61ff;
+      --p5-bg-deep: #080c14;
+      --p5-bg-surface: #0d1420;
+      --p5-text: #e2e8f0;
+      --p5-text-dim: #94a3b8;
+      --p5-radius: 16px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      font-size: 20px;
+      background: var(--p5-bg-deep);
+      color: var(--p5-text);
+      font-family: 'DM Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    .p5-wrap { max-width: var(--p5-max-w); margin: 0 auto; padding: 4rem 1.5rem; }
+    .p5-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: .75rem 1.75rem; border-radius: 8px; font-weight: 600;
+      font-size: .95rem; transition: all .2s; cursor: pointer; text-decoration: none;
+    }
+    .p5-btn-primary { background: var(--p5-accent); color: #080c14; }
+    .p5-btn-primary:hover { opacity: .85; }
+    .p5-btn-ghost { background: transparent; border: 1.5px solid var(--p5-text-dim); color: var(--p5-text); }
+    .p5-btn-ghost:hover { border-color: var(--p5-accent); color: var(--p5-accent); }
+    .p5-cta-row { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+    .p5-hero { background: var(--p5-bg-deep); overflow: hidden; }
+    .p5-hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+    @media (max-width: 800px) { .p5-hero-grid { grid-template-columns: 1fr; } }
+    .p5-kicker {
+      font-family: 'Space Mono', monospace; font-size: .7rem;
+      text-transform: uppercase; letter-spacing: .04em;
+      color: var(--p5-accent); margin-bottom: 1rem; white-space: nowrap;
+    }
+    .p5-hero h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 700;
+      line-height: 1.15; color: var(--p5-text); margin: 0 0 1.25rem;
+    }
+    .p5-sub { font-size: 1.1rem; color: var(--p5-text-dim); line-height: 1.7; max-width: 560px; margin: 0; }
+    .label { font-size: 11px; font-family: 'Space Mono', monospace; letter-spacing: .08em; text-transform: uppercase; fill: var(--p5-text-dim); text-anchor: middle; }
+    h2.compare { text-align: center; font-size: 1.1rem; color: var(--p5-text-dim); margin: 3rem 0 1.5rem; font-weight: 400; }
+    .side-by-side { display: flex; gap: 3rem; justify-content: center; align-items: flex-start; flex-wrap: wrap; padding: 0 1.5rem 3rem; }
+    .side-by-side > div { text-align: center; }
+    .side-by-side .label-text { font-family: 'Space Mono', monospace; font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; margin-top: .75rem; }
+    .old-label { color: var(--p5-text-dim); }
+    .new-label { color: var(--p5-accent); }
+  </style>
+</head>
+<body>
+  <!-- FULL HERO with updated SVG -->
+  <section class="p5-hero">
+    <div class="p5-wrap">
+      <div class="p5-hero-grid">
+        <div class="p5-hero-copy">
+          <p class="p5-kicker">Colleyville, TX &middot; U.S. Only &middot; High-Trust, High-Value Businesses</p>
+          <h1>Turn Marketing Into a Pipeline You Can See, Track, and Close</h1>
+          <p class="p5-sub">We find people actively searching for what you sell. We drive them to your site. We identify them by name. And we follow up until they convert. One system. Full visibility. Built for high-trust, high-value businesses.</p>
+          <div class="p5-cta-row">
+            <a href="#" class="p5-btn p5-btn-primary">Book a Demo</a>
+            <a href="#" class="p5-btn p5-btn-ghost">See the Full Cycle</a>
+          </div>
+        </div>
+        <div class="p5-hero-illus">
+          <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:580px;margin:0 auto;display:block">
+            <circle cx="200" cy="200" r="160" stroke="#00e5c7" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.3"/>
+            <circle cx="200" cy="48" r="40" fill="#0d1420" stroke="#00e5c7" stroke-width="2"/>
+            <text x="200" y="44" text-anchor="middle" fill="#00e5c7" font-size="13" font-family="Space Mono, monospace" font-weight="700">FIND</text>
+            <text x="200" y="59" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="DM Sans, sans-serif">IntentID</text>
+            <circle cx="352" cy="200" r="40" fill="#0d1420" stroke="#7b61ff" stroke-width="2"/>
+            <text x="352" y="196" text-anchor="middle" fill="#7b61ff" font-size="13" font-family="Space Mono, monospace" font-weight="700">DRIVE</text>
+            <text x="352" y="211" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="DM Sans, sans-serif">Ad Platforms</text>
+            <circle cx="200" cy="352" r="40" fill="#0d1420" stroke="#00e5c7" stroke-width="2"/>
+            <text x="200" y="348" text-anchor="middle" fill="#00e5c7" font-size="13" font-family="Space Mono, monospace" font-weight="700">IDENTIFY</text>
+            <text x="200" y="363" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="DM Sans, sans-serif">VisitorID</text>
+            <circle cx="48" cy="200" r="40" fill="#0d1420" stroke="#7b61ff" stroke-width="2"/>
+            <text x="48" y="196" text-anchor="middle" fill="#7b61ff" font-size="13" font-family="Space Mono, monospace" font-weight="700">CONVERT</text>
+            <text x="48" y="211" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="DM Sans, sans-serif">InboxID</text>
+            <path d="M230 55 L315 170" stroke="#00e5c7" stroke-width="1.5" opacity="0.5" marker-end="url(#arr)"/>
+            <path d="M345 235 L230 340" stroke="#7b61ff" stroke-width="1.5" opacity="0.5" marker-end="url(#arr2)"/>
+            <path d="M170 345 L85 230" stroke="#00e5c7" stroke-width="1.5" opacity="0.5" marker-end="url(#arr)"/>
+            <path d="M55 165 L170 60" stroke="#7b61ff" stroke-width="1.5" opacity="0.5" marker-end="url(#arr2)"/>
+            <defs>
+              <marker id="arr" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+                <path d="M0 0 L8 4 L0 8" fill="none" stroke="#00e5c7" stroke-width="1.5"/>
+              </marker>
+              <marker id="arr2" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+                <path d="M0 0 L8 4 L0 8" fill="none" stroke="#7b61ff" stroke-width="1.5"/>
+              </marker>
+            </defs>
+            <!-- UPDATED CENTER TEXT -->
+            <text x="200" y="181" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="DM Sans, sans-serif" font-weight="400">Other agencies</text>
+            <text x="200" y="196" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="DM Sans, sans-serif" font-weight="400">give you pieces.</text>
+            <text x="200" y="215" text-anchor="middle" fill="#00e5c7" font-size="12" font-family="DM Sans, sans-serif" font-weight="700">We give you</text>
+            <text x="200" y="230" text-anchor="middle" fill="#00e5c7" font-size="12" font-family="DM Sans, sans-serif" font-weight="700">the full cycle.</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE / AFTER comparison -->
+  <h2 class="compare">Before &amp; After comparison (SVG only)</h2>
+  <div class="side-by-side">
+    <div>
+      <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" width="320">
+        <circle cx="200" cy="200" r="160" stroke="#00e5c7" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.3"/>
+        <circle cx="200" cy="48" r="40" fill="#0d1420" stroke="#00e5c7" stroke-width="2"/>
+        <text x="200" y="44" text-anchor="middle" fill="#00e5c7" font-size="13" font-family="Space Mono, monospace" font-weight="700">FIND</text>
+        <text x="200" y="59" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="DM Sans, sans-serif">IntentID</text>
+        <circle cx="352" cy="200" r="40" fill="#0d1420" stroke="#7b61ff" stroke-width="2"/>
+        <text x="352" y="196" text-anchor="middle" fill="#7b61ff" font-size="13" font-family="Space Mono, monospace" font-weight="700">DRIVE</text>
+        <text x="352" y="211" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="DM Sans, sans-serif">Ad Platforms</text>
+        <circle cx="200" cy="352" r="40" fill="#0d1420" stroke="#00e5c7" stroke-width="2"/>
+        <text x="200" y="348" text-anchor="middle" fill="#00e5c7" font-size="13" font-family="Space Mono, monospace" font-weight="700">IDENTIFY</text>
+        <text x="200" y="363" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="DM Sans, sans-serif">VisitorID</text>
+        <circle cx="48" cy="200" r="40" fill="#0d1420" stroke="#7b61ff" stroke-width="2"/>
+        <text x="48" y="196" text-anchor="middle" fill="#7b61ff" font-size="13" font-family="Space Mono, monospace" font-weight="700">CONVERT</text>
+        <text x="48" y="211" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="DM Sans, sans-serif">InboxID</text>
+        <path d="M230 55 L315 170" stroke="#00e5c7" stroke-width="1.5" opacity="0.5" marker-end="url(#arrO)"/>
+        <path d="M345 235 L230 340" stroke="#7b61ff" stroke-width="1.5" opacity="0.5" marker-end="url(#arr2O)"/>
+        <path d="M170 345 L85 230" stroke="#00e5c7" stroke-width="1.5" opacity="0.5" marker-end="url(#arrO)"/>
+        <path d="M55 165 L170 60" stroke="#7b61ff" stroke-width="1.5" opacity="0.5" marker-end="url(#arr2O)"/>
+        <defs>
+          <marker id="arrO" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#00e5c7" stroke-width="1.5"/></marker>
+          <marker id="arr2O" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#7b61ff" stroke-width="1.5"/></marker>
+        </defs>
+        <!-- OLD center text -->
+        <text x="200" y="195" text-anchor="middle" fill="#e2e8f0" font-size="15" font-family="DM Sans, sans-serif" font-weight="700">YOUR</text>
+        <text x="200" y="214" text-anchor="middle" fill="#e2e8f0" font-size="15" font-family="DM Sans, sans-serif" font-weight="700">PIPELINE</text>
+      </svg>
+      <p class="label-text old-label">Before</p>
+    </div>
+    <div>
+      <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" width="320">
+        <circle cx="200" cy="200" r="160" stroke="#00e5c7" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.3"/>
+        <circle cx="200" cy="48" r="40" fill="#0d1420" stroke="#00e5c7" stroke-width="2"/>
+        <text x="200" y="44" text-anchor="middle" fill="#00e5c7" font-size="13" font-family="Space Mono, monospace" font-weight="700">FIND</text>
+        <text x="200" y="59" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="DM Sans, sans-serif">IntentID</text>
+        <circle cx="352" cy="200" r="40" fill="#0d1420" stroke="#7b61ff" stroke-width="2"/>
+        <text x="352" y="196" text-anchor="middle" fill="#7b61ff" font-size="13" font-family="Space Mono, monospace" font-weight="700">DRIVE</text>
+        <text x="352" y="211" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="DM Sans, sans-serif">Ad Platforms</text>
+        <circle cx="200" cy="352" r="40" fill="#0d1420" stroke="#00e5c7" stroke-width="2"/>
+        <text x="200" y="348" text-anchor="middle" fill="#00e5c7" font-size="13" font-family="Space Mono, monospace" font-weight="700">IDENTIFY</text>
+        <text x="200" y="363" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="DM Sans, sans-serif">VisitorID</text>
+        <circle cx="48" cy="200" r="40" fill="#0d1420" stroke="#7b61ff" stroke-width="2"/>
+        <text x="48" y="196" text-anchor="middle" fill="#7b61ff" font-size="13" font-family="Space Mono, monospace" font-weight="700">CONVERT</text>
+        <text x="48" y="211" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="DM Sans, sans-serif">InboxID</text>
+        <path d="M230 55 L315 170" stroke="#00e5c7" stroke-width="1.5" opacity="0.5" marker-end="url(#arrN)"/>
+        <path d="M345 235 L230 340" stroke="#7b61ff" stroke-width="1.5" opacity="0.5" marker-end="url(#arr2N)"/>
+        <path d="M170 345 L85 230" stroke="#00e5c7" stroke-width="1.5" opacity="0.5" marker-end="url(#arrN)"/>
+        <path d="M55 165 L170 60" stroke="#7b61ff" stroke-width="1.5" opacity="0.5" marker-end="url(#arr2N)"/>
+        <defs>
+          <marker id="arrN" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#00e5c7" stroke-width="1.5"/></marker>
+          <marker id="arr2N" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#7b61ff" stroke-width="1.5"/></marker>
+        </defs>
+        <!-- NEW center text -->
+        <text x="200" y="181" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="DM Sans, sans-serif" font-weight="400">Other agencies</text>
+        <text x="200" y="196" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="DM Sans, sans-serif" font-weight="400">give you pieces.</text>
+        <text x="200" y="215" text-anchor="middle" fill="#00e5c7" font-size="12" font-family="DM Sans, sans-serif" font-weight="700">We give you</text>
+        <text x="200" y="230" text-anchor="middle" fill="#00e5c7" font-size="12" font-family="DM Sans, sans-serif" font-weight="700">the full cycle.</text>
+      </svg>
+      <p class="label-text new-label">After (updated)</p>
+    </div>
+  </div>
+</body>
+</html>
