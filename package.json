@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/download-wp-images.mjs",
-    "build": "node scripts/download-wp-images.mjs && next build",
+    "build": "next build",
+    "download-images": "node scripts/download-wp-images.mjs",
     "start": "next start"
   },
   "dependencies": {
