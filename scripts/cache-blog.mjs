@@ -8,7 +8,7 @@
  */
 
 const WP_API =
-  'https://wordpress-1594089-6265351.cloudwaysapps.com/wp-json/wp/v2';
+  'https://blog.p5marketing.com/wp-json/wp/v2';
 
 import { writeFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
