@@ -13,12 +13,19 @@ const WP_API =
   'https://wordpress-1594089-6265351.cloudwaysapps.com/wp-json/wp/v2';
 const OUT_DIR = join(process.cwd(), 'public', 'blog-images');
 
+/* Headers to bypass Cloudways bot protection */
+const HEADERS = {
+  'User-Agent': 'P5Marketing-BuildScript/1.0 (Next.js Static Export)',
+  Accept: 'application/json, image/*, */*',
+};
+
 async function main() {
   mkdirSync(OUT_DIR, { recursive: true });
 
   /* Fetch all published posts with embedded media */
   const res = await fetch(
-    `${WP_API}/posts?per_page=100&_embed=true&orderby=date&order=desc`
+    `${WP_API}/posts?per_page=100&_embed=true&orderby=date&order=desc`,
+    { headers: HEADERS }
   );
   if (!res.ok) throw new Error(`WP fetch failed: ${res.status}`);
   const posts = await res.json();
@@ -43,7 +50,7 @@ async function main() {
 
     try {
       console.log(`  ↓ Downloading ${filename} …`);
-      const imgRes = await fetch(sourceUrl);
+      const imgRes = await fetch(sourceUrl, { headers: HEADERS });
       if (!imgRes.ok) {
         console.warn(`  ✗ Failed to download ${sourceUrl}: ${imgRes.status}`);
         continue;
@@ -75,7 +82,7 @@ async function main() {
 
       try {
         console.log(`  ↓ Inline image: ${inlineFilename} …`);
-        const imgRes = await fetch(imgUrl);
+        const imgRes = await fetch(imgUrl, { headers: HEADERS });
         if (!imgRes.ok) continue;
         const buffer = Buffer.from(await imgRes.arrayBuffer());
         writeFileSync(localInlinePath, buffer);
