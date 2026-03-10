@@ -74,9 +74,9 @@ export default async function BlogPost({ params }) {
 
   return (
     <main className="p5-main">
-      {/* ── Post header ── */}
-      <section className="p5-hero" style={{ paddingBottom: '1rem' }}>
-        <div className="p5-wrap" style={{ maxWidth: '800px', textAlign: 'center' }}>
+      <div className="p5-blog-article-light">
+        {/* ── Post header ── */}
+        <section style={{ paddingBottom: '1rem', textAlign: 'center' }}>
           <a href="/blog/" className="p5-blog-back">← Back to Blog</a>
           <h1
             className="p5-hero-h1"
@@ -84,27 +84,27 @@ export default async function BlogPost({ params }) {
             dangerouslySetInnerHTML={{ __html: post.title.rendered }}
           />
           <p className="p5-blog-post-meta">{date} · {author}</p>
-        </div>
-      </section>
+        </section>
 
-      {/* ── Featured image ── */}
-      {image && (
-        <div className="p5-wrap" style={{ maxWidth: '900px', padding: '0 1.5rem 2rem' }}>
-          <img
-            src={image}
-            alt={post.title.rendered}
-            className="p5-blog-featured-img"
+        {/* ── Featured image ── */}
+        {image && (
+          <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 1.5rem 2rem' }}>
+            <img
+              src={image}
+              alt={post.title.rendered}
+              className="p5-blog-featured-img"
+            />
+          </div>
+        )}
+
+        {/* ── Post body (styled WordPress HTML) ── */}
+        <article style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <div
+            className="p5-wp-content"
+            dangerouslySetInnerHTML={{ __html: post.content.rendered }}
           />
-        </div>
-      )}
-
-      {/* ── Post body (styled WordPress HTML) ── */}
-      <article className="p5-wrap" style={{ maxWidth: '800px' }}>
-        <div
-          className="p5-wp-content"
-          dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-        />
-      </article>
+        </article>
+      </div>
 
       {/* ── CTA ── */}
       <section className="p5-section" style={{ textAlign: 'center' }}>
