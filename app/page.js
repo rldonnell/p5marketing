@@ -4,7 +4,7 @@ import {
   getFeaturedImage,
   getAuthorName,
   formatDate,
-} from '../../../lib/wordpress';
+} from '../lib/wordpress';
 
 /* ── Static params (required for output: 'export') ───────────── */
 export async function generateStaticParams() {
