@@ -69,9 +69,9 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="p5-footer-bottom">
           <div className="p5-footer-legal">
-            <a href="/privacy/">Privacy Policy</a>
+            <a href="/privacy-policy/">Privacy Policy</a>
             <span className="p5-footer-legal-sep">&middot;</span>
-            <a href="/terms/">Terms of Service</a>
+            <a href="/terms-and-conditions/">Terms of Service</a>
             <span className="p5-footer-legal-sep">&middot;</span>
             <a href="/do-not-sell/">Do Not Sell My Info</a>
           </div>

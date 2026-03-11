@@ -29,6 +29,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://p5marketing.com/the-id-suite/searchid/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://p5marketing.com/the-id-suite/intentid/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

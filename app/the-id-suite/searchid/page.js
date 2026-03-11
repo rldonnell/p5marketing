@@ -513,7 +513,7 @@ export default function SearchIDPage() {
                         color: 'var(--p5-text-dim)',
                       }}
                     >
-                      <span style={{ color: '#ef4444', marginRight: '8px' }}>&times;</span>
+                      <span style={{ color: '#ef4444', marginRight: '8px' }}>✕</span>
                       {typical}
                     </td>
                     <td
@@ -523,7 +523,7 @@ export default function SearchIDPage() {
                         color: 'var(--p5-text)',
                       }}
                     >
-                      <span style={{ color: 'var(--p5-accent)', marginRight: '8px' }}>&check;</span>
+                      <span style={{ color: 'var(--p5-accent)', marginRight: '8px' }}>✓</span>
                       {p5}
                     </td>
                   </tr>
