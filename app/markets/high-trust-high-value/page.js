@@ -170,7 +170,7 @@ export default function HighTrustHighValuePage() {
             <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', marginBottom: '20px' }}>
               Find your customers actively searching for what you offer in your market.
             </p>
-            <a href="/intent-id/" style={{ color: 'var(--p5-accent)', fontWeight: '600', textDecoration: 'none', fontSize: '14px' }}>
+            <a href="/the-id-suite/intentid/" style={{ color: 'var(--p5-accent)', fontWeight: '600', textDecoration: 'none', fontSize: '14px' }}>
               Learn more →
             </a>
           </div>
@@ -181,7 +181,7 @@ export default function HighTrustHighValuePage() {
             <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', marginBottom: '20px' }}>
               Know who visited your site and exactly which pages they saw.
             </p>
-            <a href="/visitor-id/" style={{ color: 'var(--p5-accent)', fontWeight: '600', textDecoration: 'none', fontSize: '14px' }}>
+            <a href="/the-id-suite/visitorid/" style={{ color: 'var(--p5-accent)', fontWeight: '600', textDecoration: 'none', fontSize: '14px' }}>
               Learn more →
             </a>
           </div>
@@ -192,7 +192,7 @@ export default function HighTrustHighValuePage() {
             <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', marginBottom: '20px' }}>
               Follow up with segmented, behavior-driven messaging that moves them to a booked call.
             </p>
-            <a href="/inbox-id/" style={{ color: 'var(--p5-accent)', fontWeight: '600', textDecoration: 'none', fontSize: '14px' }}>
+            <a href="/the-id-suite/inboxid/" style={{ color: 'var(--p5-accent)', fontWeight: '600', textDecoration: 'none', fontSize: '14px' }}>
               Learn more →
             </a>
           </div>
