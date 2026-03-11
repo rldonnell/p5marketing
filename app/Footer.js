@@ -44,6 +44,7 @@ export default function Footer() {
             <ul>
               <li><a href="/markets/wedding-venues/">Wedding Venues</a></li>
               <li><a href="/markets/plastic-surgeons/">Plastic Surgeons</a></li>
+              <li><a href="/the-id-suite/searchid/">Search ID</a></li>
               <li><a href="/the-id-suite/visitor-id/">Visitor ID</a></li>
               <li><a href="/the-id-suite/intent-id/">Intent ID</a></li>
               <li><a href="/the-id-suite/inbox-id/">Inbox ID</a></li>

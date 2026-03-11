@@ -77,13 +77,15 @@ export default function Home() {
                 { "@type": "Question", "name": "What is VisitorID and what information do I get?", "acceptedAnswer": { "@type": "Answer", "text": "VisitorID is a pixel that sits on your website and identifies up to 60% of your visitors. For each identified visitor, you can receive their name, email address, phone number, home address, and household income, along with details about what pages they visited and how they behaved on your site." } },
                 { "@type": "Question", "name": "What is InboxID and what happens after a visitor is identified?", "acceptedAnswer": { "@type": "Answer", "text": "InboxID is our conversion engine. Within minutes of identification, visitors enter our follow-up system. Depending on your setup, that can include retargeting ads to keep your brand visible, and automated email sequences tailored to the pages they viewed. Their contact information also feeds directly into your CRM so your team can follow up personally." } },
                 { "@type": "Question", "name": "Does VisitorID only work on traffic you generate?", "acceptedAnswer": { "@type": "Answer", "text": "No. VisitorID identifies visitors regardless of how they got to your site. Your SEO traffic, your Google Ads, your Meta campaigns, referral traffic, direct visits, all of it. If someone lands on your website, we can identify them." } },
-                { "@type": "Question", "name": "Do I need all three services?", "acceptedAnswer": { "@type": "Answer", "text": "No. Some clients already have strong traffic from SEO or their own ad campaigns and just need VisitorID to start identifying those visitors. Others want IntentID audiences for their ad platforms but handle follow-up themselves. And some want us to run the full cycle. We customize based on what you need and what you already have working." } },
+                { "@type": "Question", "name": "Do I need all four services?", "acceptedAnswer": { "@type": "Answer", "text": "The ID Suite is built as a system. IntentID finds your audience. SearchID attracts them through organic content. Paid ads accelerate that reach. VisitorID tracks who is interested. InboxID converts them. You could start with one tool, but you will see the real ROI when they work together. Most of our clients use all four within 90 days." } },
                 { "@type": "Question", "name": "What does up to 60% mean exactly?", "acceptedAnswer": { "@type": "Answer", "text": "It refers to unique website visitors we can resolve into identifiable profiles. We cap expectations so we can over-deliver. Performance varies based on traffic mix, geography, and volume." } },
                 { "@type": "Question", "name": "How fast does visitor identification happen?", "acceptedAnswer": { "@type": "Answer", "text": "Typically in minutes, which means your team can follow up the same day a prospect visits your site." } },
                 { "@type": "Question", "name": "Is this U.S. only?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our identification and audience data are designed for U.S. visitors and consumers." } },
                 { "@type": "Question", "name": "What kinds of businesses does this work best for?", "acceptedAnswer": { "@type": "Answer", "text": "High-trust, high-ticket businesses where a booked call, tour, or consult is valuable. Wedding venues and plastic surgeons are our primary verticals, but the system works for legal, luxury services, and specialty medical practices." } },
                 { "@type": "Question", "name": "Is this compliant?", "acceptedAnswer": { "@type": "Answer", "text": "We support opt-out and suppression handling and implement responsible segmentation so outreach is targeted and measurable. We will align implementation to your needs and applicable U.S. requirements during setup." } },
-                { "@type": "Question", "name": "What do we need to get started?", "acceptedAnswer": { "@type": "Answer", "text": "Website access for pixel installation, plus ad account access and your CRM details. Once tracking is installed, most clients can go live quickly." } }
+                { "@type": "Question", "name": "What do we need to get started?", "acceptedAnswer": { "@type": "Answer", "text": "Website access for pixel installation, plus ad account access and your CRM details. Once tracking is installed, most clients can go live quickly." } },
+                { "@type": "Question", "name": "What is SearchID?", "acceptedAnswer": { "@type": "Answer", "text": "SearchID is your organic traffic engine covering SEO, GEO, and content repurposing powered by 25 years of P5 SEO expertise." } },
+                { "@type": "Question", "name": "What is GEO?", "acceptedAnswer": { "@type": "Answer", "text": "Generative Engine Optimization (GEO) optimizes your content for AI search platforms like ChatGPT, Claude, and Perplexity." } }
               ]
             })
         }}
@@ -110,7 +112,7 @@ export default function Home() {
                 <text x="200" y="59" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">IntentID</text>
                 <circle cx="352" cy="200" r="40" fill="#0d1420" stroke="#7b61ff" strokeWidth="2" />
                 <text x="352" y="196" textAnchor="middle" fill="#7b61ff" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">DRIVE</text>
-                <text x="352" y="211" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">Ad Platforms</text>
+                <text x="352" y="211" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">SearchID + Ads</text>
                 <circle cx="200" cy="352" r="40" fill="#0d1420" stroke="#00e5c7" strokeWidth="2" />
                 <text x="200" y="348" textAnchor="middle" fill="#00e5c7" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">IDENTIFY</text>
                 <text x="200" y="363" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">VisitorID</text>
@@ -156,7 +158,7 @@ export default function Home() {
           </div>
           <div className="p5-stat">
             <span className="p5-stat-num">25 Yrs</span>
-            <span className="p5-stat-lbl">Building Lead Systems</span>
+            <span className="p5-stat-lbl">SEO Legacy</span>
           </div>
         </div>
       </section>
@@ -164,7 +166,8 @@ export default function Home() {
       {/* ===== THREE PILLARS ===== */}
       <section className="p5-wrap" id="pillars">
         <p className="p5-section-label p5-fade-up">The System</p>
-        <h2 className="p5-section-title p5-fade-up">Three engines that find, identify, and convert your next customers.</h2>
+        <h2 className="p5-section-title p5-fade-up">The complete system that attracts, finds, identifies, and converts your next customers.</h2>
+        <p className="p5-fade-up" style={{ textAlign: 'center', color: 'var(--p5-text-dim)', maxWidth: '640px', margin: '0 auto 2.5rem' }}>SearchID&trade; pulls qualified traffic from organic sources. The ID&nbsp;Suite converts that traffic into customers.</p>
         <div className="p5-paradigm-grid">
           <div className="p5-p-card p5-fade-up">
             <span className="p5-num">01</span>
@@ -200,7 +203,15 @@ export default function Home() {
             <span className="p5-hiw-num">2</span>
             <div>
               <h3>Drive Qualified Traffic</h3>
-              <p>Your ads reach people who are already looking, not anonymous visitors. Meta, Google, LinkedIn, X, TikTok, wherever your buyers spend time. Every visitor who lands on your site enters the identification layer.</p>
+              <p>Your IntentID audience is monetized through two parallel channels: organic content and paid advertising.</p>
+              <div style={{ marginTop: '1.25rem', paddingLeft: '1.25rem', borderLeft: '3px solid var(--p5-accent)' }}>
+                <p style={{ fontFamily: 'Space Mono, monospace', fontSize: '.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: 'var(--p5-text)', marginBottom: '.5rem' }}>SearchID: Organic Traffic Foundation</p>
+                <p style={{ color: 'var(--p5-text-dim)', lineHeight: 1.7, marginBottom: '1rem' }}>Attract the right buyers through search engines and AI&#8209;powered tools. SearchID&trade; develops SEO&#8209;focused content pages, optimizes for Generative Engine Optimization&nbsp;(GEO), and builds social, promotional, and podcast content from your core messaging. This organic foundation reduces your paid acquisition cost and compounds over time.</p>
+                <p style={{ fontFamily: 'Space Mono, monospace', fontSize: '.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: 'var(--p5-text)', marginBottom: '.5rem' }}>Paid Advertising: Immediate Reach</p>
+                <p style={{ color: 'var(--p5-text-dim)', lineHeight: 1.7, marginBottom: '1rem' }}>Run your IntentID audience directly into high&#8209;converting paid campaigns on Google, Meta, LinkedIn, and TikTok. Same&#8209;day placement, proven&nbsp;ROI, no organic wait time.</p>
+                <p style={{ fontFamily: 'Space Mono, monospace', fontSize: '.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: 'var(--p5-text)', marginBottom: '.5rem' }}>Together: The Complete Traffic Strategy</p>
+                <p style={{ color: 'var(--p5-text-dim)', lineHeight: 1.7 }}>SearchID handles the long&#8209;term organic acquisition game. Paid&nbsp;ads handle the short&#8209;term wins. Your IntentID audience powers both&mdash;one unified data feed, two traffic channels, exponential reach.</p>
+              </div>
             </div>
           </div>
           <div className="p5-hiw-block p5-fade-up p5-delay-2">
@@ -232,6 +243,11 @@ export default function Home() {
             <p>Custom audiences of people actively searching for what you sell, built from real-time data and deployed into Meta, Google, X, TikTok, LinkedIn, and more. Better leads at lower cost.</p>
           </div>
           <div className="p5-del-card p5-fade-up p5-delay-1">
+            <div className="p5-del-icon">&#128269;</div>
+            <h3>SearchID&trade; Content &amp; SEO</h3>
+            <p>SEO&#8209;focused landing pages and pillar content. GEO optimization for AI search platforms. Social media calendars, promotional content, and podcast scripts. 25&nbsp;years of SEO expertise, reimagined for today&rsquo;s search landscape.</p>
+          </div>
+          <div className="p5-del-card p5-fade-up p5-delay-2">
             <div className="p5-del-icon">&#128100;</div>
             <h3>VisitorID&trade; Visitor Identification</h3>
             <p>Know who visits your website. Name, email, phone, home address, household income, and more. Works on all your traffic regardless of the source. Delivered in minutes, not days.</p>
@@ -292,11 +308,11 @@ export default function Home() {
             <div className="p5-diff-card" style={{ borderColor: 'var(--p5-accent)' }}>
               <div className="p5-diff-icon">&#9989;</div>
               <h4>P5 Marketing</h4>
+              <p>Attract organic traffic through SEO, GEO, and content with SearchID&trade;</p>
               <p>Build audiences of ready-to-buy prospects with IntentID&trade;</p>
               <p>Identify 60% of website visitors by name with VisitorID&trade;</p>
               <p>Follow up same day via email and retargeting with InboxID&trade;</p>
-              <p>Deliver identified prospects to your CRM with full contact info</p>
-              <p>Full-cycle system: find, drive, identify, convert</p>
+              <p>All channels powered by unified IntentID audience data</p>
             </div>
           </div>
         </div>
@@ -354,8 +370,8 @@ export default function Home() {
             <div className="p5-faq-a"><p>No. VisitorID&trade; identifies visitors regardless of how they got to your site. Your SEO traffic, your Google Ads, your Meta campaigns, referral traffic, direct visits, all of it. If someone lands on your website, we can identify them.</p></div>
           </div>
           <div className="p5-faq-item p5-fade-up">
-            <button className="p5-faq-q">Do I need all three services?</button>
-            <div className="p5-faq-a"><p>No. Some clients already have strong traffic from SEO or their own ad campaigns and just need VisitorID&trade; to start identifying those visitors. Others want IntentID&trade; audiences for their ad platforms but handle follow-up themselves. And some want us to run the full cycle. We customize based on what you need and what you already have working.</p></div>
+            <button className="p5-faq-q">Do I need all four services?</button>
+            <div className="p5-faq-a"><p>The ID&nbsp;Suite is built as a system. IntentID finds your audience. SearchID attracts them through organic content. Paid ads accelerate that reach. VisitorID tracks who&rsquo;s interested. InboxID converts them. You could start with one tool, but you&rsquo;ll see the real ROI when they work together. Most of our clients use all four within 90&nbsp;days.</p></div>
           </div>
           <div className="p5-faq-item p5-fade-up">
             <button className="p5-faq-q">What does &ldquo;up to 60%&rdquo; mean exactly?</button>
@@ -381,6 +397,14 @@ export default function Home() {
             <button className="p5-faq-q">What do we need to get started?</button>
             <div className="p5-faq-a"><p>Website access for pixel installation, plus ad account access and your CRM details. Once tracking is installed, most clients can go live quickly.</p></div>
           </div>
+          <div className="p5-faq-item p5-fade-up">
+            <button className="p5-faq-q">What is SearchID&trade;?</button>
+            <div className="p5-faq-a"><p>SearchID is your organic traffic engine. It covers three areas: (1)&nbsp;SEO&mdash;building content that ranks in Google, (2)&nbsp;GEO&mdash;optimizing for AI search platforms like ChatGPT and Perplexity, and (3)&nbsp;Content repurposing&mdash;turning your core messaging into social posts, promotional content, and podcast episodes. It&rsquo;s powered by 25&nbsp;years of P5 SEO expertise.</p></div>
+          </div>
+          <div className="p5-faq-item p5-fade-up">
+            <button className="p5-faq-q">What is GEO?</button>
+            <div className="p5-faq-a"><p>Generative Engine Optimization&nbsp;(GEO) is the practice of optimizing your content for AI search results. As more people search using ChatGPT, Claude, Perplexity, and other generative&nbsp;AI, your visibility in those platforms matters. GEO uses the same foundation as SEO but optimizes for how generative AI indexes and recommends content. SearchID handles both SEO and GEO so you rank everywhere your buyers are searching.</p></div>
+          </div>
         </div>
       </section>
 
@@ -389,7 +413,7 @@ export default function Home() {
         <div className="p5-wrap">
           <div className="p5-cta-card">
             <h2>See how the full cycle works for your business.</h2>
-            <p>Book a 30-minute demo and we will show you what IntentID&trade;, VisitorID&trade;, and InboxID&trade; look like for your specific market.</p>
+            <p>Book a 30-minute demo and we&rsquo;ll show you how SearchID&trade;, IntentID&trade;, VisitorID&trade;, and InboxID&trade; work together for your specific market.</p>
             <a href="/contact-us/" className="p5-btn p5-btn-primary">Book a Demo</a>
           </div>
         </div>

@@ -1,16 +1,25 @@
 export const metadata = {
-  title: 'The ID Suite – IntentID, VisitorID & InboxID | P5 Marketing',
+  title: 'The ID Suite – SearchID, IntentID, VisitorID & InboxID | P5 Marketing',
   description:
-    'Three proprietary technologies that find ready-to-buy prospects, identify anonymous website visitors, and convert them with same-day follow-up. Explore IntentID, VisitorID, and InboxID.',
+    'Four proprietary technologies that attract organic traffic, find ready-to-buy prospects, identify anonymous website visitors, and convert them with same-day follow-up. Explore SearchID, IntentID, VisitorID, and InboxID.',
   openGraph: {
     title: 'The ID Suite – P5 Marketing',
     description:
-      'IntentID + VisitorID + InboxID: the full-cycle intent data stack for high-trust businesses.',
+      'SearchID + IntentID + VisitorID + InboxID: the full-cycle intent data stack for high-trust businesses.',
   },
 };
 
 export default function IDSuiteLanding() {
   const productCards = [
+    {
+      title: 'SearchID™',
+      category: 'Organic Content Engine',
+      description:
+        'SEO, GEO, and content repurposing that attracts qualified customers through organic search. Powered by 25 years of P5 SEO expertise.',
+      statValue: '25 Yrs',
+      statLabel: 'SEO legacy behind every strategy',
+      link: '/the-id-suite/searchid/',
+    },
     {
       title: 'IntentID™',
       category: 'Audience Building',
@@ -42,9 +51,10 @@ export default function IDSuiteLanding() {
 
   const flowSteps = [
     { text: 'IntentID™ finds them', order: '01' },
-    { text: 'Ad platforms drive them', order: '02' },
-    { text: 'VisitorID™ identifies them', order: '03' },
-    { text: 'InboxID™ converts them', order: '04' },
+    { text: 'SearchID™ attracts them', order: '02' },
+    { text: 'Ads drive them', order: '03' },
+    { text: 'VisitorID™ identifies them', order: '04' },
+    { text: 'InboxID™ converts them', order: '05' },
   ];
 
   const heroStyles = {
@@ -255,9 +265,9 @@ export default function IDSuiteLanding() {
     <div>
       <section style={heroStyles}>
         <div style={kickerStyles}>The ID Suite</div>
-        <h1 style={h1Styles}>Three Tools. One System. Zero Guesswork.</h1>
+        <h1 style={h1Styles}>Four Tools. One System. Zero Guesswork.</h1>
         <p style={subStyles}>
-          IntentID™ finds your audience. VisitorID™ identifies your visitors. InboxID™ converts them. Together, they form
+          SearchID™ attracts organic traffic. IntentID™ finds your audience. VisitorID™ identifies your visitors. InboxID™ converts them. Together, they form
           a closed-loop pipeline that turns anonymous traffic into booked appointments.
         </p>
       </section>
