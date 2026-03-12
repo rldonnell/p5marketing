@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'How It Works – P5 Marketing',
+  title: 'How It Works â P5 Marketing',
   description:
-    'See how SearchID, IntentID, VisitorID, and InboxID work together in a full-cycle campaign. Attract organic traffic, find prospects with search intent, identify website visitors, and convert them with same-day follow-up.',
+    'See how the SEO Accelerator, IntentID, VisitorID, and InboxID work together in a full-cycle campaign. Attract organic traffic, find prospects with search intent, identify website visitors, and convert them with same-day follow-up.',
   openGraph: {
     title: 'How P5 Marketing Works',
     description:
-      'Four-stage intent data pipeline: Find → Drive → Identify → Convert. SearchID powers organic growth while IntentID targets verified search intent.',
+      'Four-stage intent data pipeline: Find â Drive â Identify â Convert. The SEO Accelerator powers organic growth while IntentID targets verified search intent.',
   },
 };
 
@@ -20,8 +20,8 @@ export default function HowItWorks() {
     {
       number: 2,
       label: "DRIVE",
-      tool: "SearchID + Ads",
-      description: "Your IntentID audience is deployed across two channels for maximum reach. SearchID builds organic traffic through SEO-optimized content, GEO for AI search platforms, and content repurposing into social and podcast assets. Paid ads on Google, Meta, LinkedIn, and TikTok deliver immediate reach. Together, they reduce your cost-per-customer and compound over time."
+      tool: "SEO Accelerator + Ads",
+      description: "Your IntentID audience is deployed across two channels for maximum reach. The SEO Accelerator builds organic traffic through SEO-optimized content, GEO for AI search platforms, and content repurposing into social and podcast assets. Paid ads on Google, Meta, LinkedIn, and TikTok deliver immediate reach. Together, they reduce your cost-per-customer and compound over time."
     },
     {
       number: 3,
@@ -43,12 +43,12 @@ export default function HowItWorks() {
       description: "Custom audiences of people actively researching your services, refreshed weekly and deployed across your ad platforms."
     },
     {
-      title: "SearchID Content Strategy & SEO Roadmap",
+      title: "SEO Accelerator Content Strategy & Roadmap",
       description: "Keyword targets, content calendar, and monthly publishing cadence. SEO and GEO priorities mapped to your buyer\u2019s search behavior."
     },
     {
-      title: "SearchID Social & Podcast Calendar",
-      description: "12-month calendar of social posts, promotional content, and podcast episodes\u2014all derived from your core SearchID content."
+      title: "SEO Accelerator Social & Podcast Calendar",
+      description: "12-month calendar of social posts, promotional content, and podcast episodes\u2014all derived from your core SEO Accelerator content."
     },
     {
       title: "VisitorID Reports",
@@ -339,7 +339,7 @@ export default function HowItWorks() {
               margin: "0 0 32px 0"
             }}
           >
-            Book a 30-minute demo and we'll walk you through how SearchID, IntentID, VisitorID, and InboxID work together with your own data.
+            Book a 30-minute demo and we'll walk you through how the SEO Accelerator, IntentID, VisitorID, and InboxID work together with your own data.
           </p>
           <a
             href="/contact/"
