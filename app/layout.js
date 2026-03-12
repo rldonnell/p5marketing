@@ -3,7 +3,7 @@ import { DM_Sans, Space_Mono } from 'next/font/google';
 import Header from './Header';
 import Footer from './Footer';
 
-/* ── Self-hosted Google Fonts (eliminates render-blocking request) ── */
+/* ââ Self-hosted Google Fonts (eliminates render-blocking request) ââ */
 const dmSans = DM_Sans({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
@@ -19,12 +19,12 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata = {
-  title: 'P5 Marketing - Intent Data Marketing for High-Trust Businesses',
-  description: 'We find ready-to-buy customers with IntentID, identify website visitors with VisitorID, and convert them with InboxID. Full-cycle marketing for high-trust, high-value businesses.',
+  title: 'P5 Marketing - Plastic Surgery Marketing Agency | Full-Cycle Digital Marketing',
+  description: 'Plastic surgery marketing agency specializing in SEO, intent data, and visitor identification. We helped one practice grow from $1M to $3.5M. Full-cycle marketing for plastic surgeons, wedding venues, and high-trust businesses.',
   metadataBase: new URL('https://p5marketing.com'),
   openGraph: {
-    title: 'P5 Marketing - Turn Marketing Into a Pipeline You Can See, Track, and Close',
-    description: 'Intent data marketing agency for high-trust, high-value businesses. IntentID + VisitorID + InboxID.',
+    title: 'P5 Marketing - Plastic Surgery Marketing That Builds a Pipeline You Can Track',
+    description: 'Plastic surgery marketing agency with full-cycle digital marketing: SEO Accelerator + IntentID + VisitorID + InboxID.',
     url: 'https://p5marketing.com',
     siteName: 'P5 Marketing',
     locale: 'en_US',
@@ -32,8 +32,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'P5 Marketing',
-    description: 'Intent data marketing for high-trust, high-value businesses.',
+    title: 'P5 Marketing - Plastic Surgery Marketing Agency',
+    description: 'Full-cycle digital marketing for plastic surgeons and high-trust businesses.',
   },
   robots: {
     index: true,
@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
               "alternateName": "P5 Marketing Agency",
               "url": "https://p5marketing.com",
               "logo": "https://p5marketing.com/wp-content/uploads/2026/02/cropped-P5-Logo-site-icon-2026-1-100x73.webp",
-              "description": "Intent data marketing agency for high-trust, high-value businesses. We find ready-to-buy customers with IntentID, identify website visitors with VisitorID, and convert them with InboxID.",
+              "description": "Plastic surgery marketing agency specializing in SEO, intent data, and visitor identification. Full-cycle digital marketing for plastic surgeons, wedding venues, and high-trust businesses.",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Colleyville",
@@ -74,10 +74,14 @@ export default function RootLayout({ children }) {
                 "name": "United States"
               },
               "knowsAbout": [
+                "Plastic Surgery Marketing",
+                "SEO for Plastic Surgeons",
                 "Intent Data Marketing",
                 "Visitor Identification",
-                "Lead Generation",
+                "Search Engine Optimization",
+                "Generative Engine Optimization",
                 "Digital Marketing",
+                "Lead Generation",
                 "CRM Integration",
                 "Retargeting",
                 "Email Marketing",
@@ -87,6 +91,14 @@ export default function RootLayout({ children }) {
                 "@type": "OfferCatalog",
                 "name": "P5 Marketing Services",
                 "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "SEO Accelerator",
+                      "description": "Organic growth engine combining SEO, GEO, and content repurposing to build compounding organic traffic for high-trust businesses."
+                    }
+                  },
                   {
                     "@type": "Offer",
                     "itemOffered": {

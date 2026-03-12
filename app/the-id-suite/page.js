@@ -1,27 +1,27 @@
 export const metadata = {
-  title: 'The ID Suite – SearchID, IntentID, VisitorID & InboxID | P5 Marketing',
+  title: 'The ID Suite â SEO Accelerator, IntentID, VisitorID & InboxID | P5 Marketing',
   description:
-    'Four proprietary technologies that attract organic traffic, find ready-to-buy prospects, identify anonymous website visitors, and convert them with same-day follow-up. Explore SearchID, IntentID, VisitorID, and InboxID.',
+    'Four proprietary technologies that attract organic traffic, find ready-to-buy prospects, identify anonymous website visitors, and convert them with same-day follow-up. Explore the SEO Accelerator, IntentID, VisitorID, and InboxID.',
   openGraph: {
-    title: 'The ID Suite – P5 Marketing',
+    title: 'The ID Suite â P5 Marketing',
     description:
-      'SearchID + IntentID + VisitorID + InboxID: the full-cycle intent data stack for high-trust businesses.',
+      'SEO Accelerator + IntentID + VisitorID + InboxID: the full-cycle intent data stack for high-trust businesses.',
   },
 };
 
 export default function IDSuiteLanding() {
   const productCards = [
     {
-      title: 'SearchID™',
-      category: 'Organic Content Engine',
+      title: 'SEO Accelerator',
+      category: 'Organic Growth Engine',
       description:
         'SEO, GEO, and content repurposing that attracts qualified customers through organic search. Powered by 25 years of P5 SEO expertise.',
       statValue: '25 Yrs',
       statLabel: 'SEO legacy behind every strategy',
-      link: '/the-id-suite/searchid/',
+      link: '/the-id-suite/seo-accelerator/',
     },
     {
-      title: 'IntentID™',
+      title: 'IntentIDâ¢',
       category: 'Audience Building',
       description:
         'Custom audiences of people actively searching for your services, deployed across Meta, Google, X, TikTok, and LinkedIn.',
@@ -30,7 +30,7 @@ export default function IDSuiteLanding() {
       link: '/the-id-suite/intentid/',
     },
     {
-      title: 'VisitorID™',
+      title: 'VisitorIDâ¢',
       category: 'Visitor Identification',
       description:
         'Website pixel that identifies up to 60% of visitors by name, email, phone, address, and household income.',
@@ -39,7 +39,7 @@ export default function IDSuiteLanding() {
       link: '/the-id-suite/visitorid/',
     },
     {
-      title: 'InboxID™',
+      title: 'InboxIDâ¢',
       category: 'Conversion Engine',
       description:
         'Same-day follow-up combining retargeting ads and targeted email. Behavior-based sequences re-engage identified visitors while your brand is top of mind.',
@@ -50,11 +50,11 @@ export default function IDSuiteLanding() {
   ];
 
   const flowSteps = [
-    { text: 'IntentID™ finds them', order: '01' },
-    { text: 'SearchID™ attracts them', order: '02' },
+    { text: 'IntentIDâ¢ finds them', order: '01' },
+    { text: 'SEO Accelerator attracts them', order: '02' },
     { text: 'Ads drive them', order: '03' },
-    { text: 'VisitorID™ identifies them', order: '04' },
-    { text: 'InboxID™ converts them', order: '05' },
+    { text: 'VisitorIDâ¢ identifies them', order: '04' },
+    { text: 'InboxIDâ¢ converts them', order: '05' },
   ];
 
   const heroStyles = {
@@ -267,7 +267,7 @@ export default function IDSuiteLanding() {
         <div style={kickerStyles}>The ID Suite</div>
         <h1 style={h1Styles}>Four Tools. One System. Zero Guesswork.</h1>
         <p style={subStyles}>
-          SearchID™ attracts organic traffic. IntentID™ finds your audience. VisitorID™ identifies your visitors. InboxID™ converts them. Together, they form
+          The SEO Accelerator attracts organic traffic. IntentIDâ¢ finds your audience. VisitorIDâ¢ identifies your visitors. InboxIDâ¢ converts them. Together, they form
           a closed-loop pipeline that turns anonymous traffic into booked appointments.
         </p>
       </section>
@@ -284,7 +284,7 @@ export default function IDSuiteLanding() {
             </div>
             <a href={card.link} style={cardLinkStyles}>
               Learn More
-              <span>→</span>
+              <span>â</span>
             </a>
           </div>
         ))}
@@ -302,7 +302,7 @@ export default function IDSuiteLanding() {
                 <div style={flowOrderStyles}>{step.order}</div>
                 <div style={flowTextStyles}>{step.text}</div>
               </div>
-              {idx < flowSteps.length - 1 && <div style={flowArrowStyles}>→</div>}
+              {idx < flowSteps.length - 1 && <div style={flowArrowStyles}>â</div>}
             </div>
           ))}
         </div>
@@ -311,7 +311,7 @@ export default function IDSuiteLanding() {
       <section style={ctaContainerStyles}>
         <a href="/contact/" style={ctaButtonStyles}>
           See How the ID Suite Works for Your Business
-          <span>→</span>
+          <span>â</span>
         </a>
       </section>
     </div>

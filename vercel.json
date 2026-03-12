@@ -1,0 +1,74 @@
+{
+  "redirects": [
+    {
+      "source": "/the-id-suite/searchid/",
+      "destination": "/the-id-suite/seo-accelerator/",
+      "permanent": true
+    },
+    {
+      "source": "/the-id-suite/searchid",
+      "destination": "/the-id-suite/seo-accelerator/",
+      "permanent": true
+    },
+    {
+      "source": "/es/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/es/contacto/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/es/portafolio/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/es/servicios/",
+      "destination": "/how-it-works/",
+      "permanent": true
+    },
+    {
+      "source": "/products/",
+      "destination": "/the-id-suite/",
+      "permanent": true
+    },
+    {
+      "source": "/products/searchid/",
+      "destination": "/the-id-suite/seo-accelerator/",
+      "permanent": true
+    },
+    {
+      "source": "/products/visitorid/",
+      "destination": "/the-id-suite/visitorid/",
+      "permanent": true
+    },
+    {
+      "source": "/products/intentid/",
+      "destination": "/the-id-suite/intentid/",
+      "permanent": true
+    },
+    {
+      "source": "/products/inboxid/",
+      "destination": "/the-id-suite/inboxid/",
+      "permanent": true
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/wedding-venues/",
+      "destination": "/markets/wedding-venues/",
+      "permanent": true
+    },
+    {
+      "source": "/plastic-surgeons/",
+      "destination": "/markets/plastic-surgeons/",
+      "permanent": true
+    }
+  ]
+}
