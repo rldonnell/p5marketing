@@ -26,7 +26,7 @@ export default function Footer() {
 
           {/* Pages column */}
           <div className="p5-footer-col">
-            <h4>Pages</h4>
+            <p style={{ fontWeight: 700, marginBottom: '.75rem', color: 'var(--p5-text)' }}>Pages</p>
             <ul>
               <li><a href="/">Home</a></li>
               <li><a href="/about/">About</a></li>
