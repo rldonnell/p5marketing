@@ -1,6 +1,10 @@
 export const metadata = {
-  title: 'Markets Served | P5 Marketing',
-  description: 'Proven conversion systems for high-trust, high-ticket businesses. Wedding venues, plastic surgeons, and more.',
+  title: 'Markets We Serve | High-Trust Business Marketing',
+  description: 'Proven intent data marketing for high-trust businesses. Plastic surgeons, wedding venues & luxury services. See your market.',
+  openGraph: {
+    title: 'Markets We Serve | High-Trust Business Marketing',
+    description: 'Proven intent data marketing for high-trust businesses. Plastic surgeons, wedding venues & luxury services. See your market.',
+  },
 };
 
 export default function MarketsPage() {

@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'SEO Accelerator â Organic Growth Engine for High-Trust Businesses | P5 Marketing',
+  title: 'SEO Accelerator for Plastic Surgeons | P5 Marketing',
   description:
-    'P5\'s SEO Accelerator combines 25 years of SEO expertise with GEO optimization and content repurposing to build compounding organic traffic. Designed for high-trust businesses ready to own their market.',
+    'SEO Accelerator by P5 Marketing: 25 years of SEO expertise plus GEO optimization and content repurposing for plastic surgeons.',
   openGraph: {
-    title: 'SEO Accelerator â Organic Growth Engine for High-Trust Businesses',
+    title: 'SEO Accelerator for Plastic Surgeons | P5 Marketing',
     description:
-      'SEO. GEO. Content Repurposing. One integrated system that turns expertise into organic traffic your competitors can\'t buy.',
+      'SEO Accelerator by P5 Marketing: 25 years of SEO expertise plus GEO optimization and content repurposing for plastic surgeons.',
   },
 };
 

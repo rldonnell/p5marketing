@@ -1,6 +1,10 @@
 export const metadata = {
-  title: 'Wedding Venues | P5 Marketing',
-  description: 'Find couples shopping for venues. IntentID, VisitorID, and InboxID work together to book more tours.',
+  title: 'Wedding Venue Marketing | P5 Marketing',
+  description: 'Wedding venue marketing that finds couples shopping for venues. IntentID + VisitorID + InboxID book more tours for your venue.',
+  openGraph: {
+    title: 'Wedding Venue Marketing | P5 Marketing',
+    description: 'Wedding venue marketing that finds couples shopping for venues. IntentID + VisitorID + InboxID book more tours for your venue.',
+  },
 };
 
 export default function WeddingVenuesPage() {
@@ -38,7 +42,7 @@ export default function WeddingVenuesPage() {
           </span>
         </div>
         <h1 style={{ fontSize: '56px', fontWeight: '700', lineHeight: '1.1', marginBottom: '20px', letterSpacing: '-1px' }}>
-          Find Couples Already Shopping for Venues. Know Exactly Who Visits Your Site.
+          Wedding Venue Marketing: Find Couples Already Shopping for Venues
         </h1>
         <p style={{ fontSize: '18px', color: 'var(--p5-text-dim)', maxWidth: '700px', lineHeight: '1.6', margin: '0' }}>
           IntentID™ builds a custom audience of couples actively searching for wedding venues in your area. VisitorID™ identifies up to 60% of visitors on your gallery, packages, and tour pages. InboxID™ follows up the same day. Their information goes straight to your CRM so your team can book the tour. U.S. only.

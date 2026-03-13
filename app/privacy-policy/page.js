@@ -1,7 +1,12 @@
 export const metadata = {
-  title: 'Privacy Policy – P5 Marketing',
+  title: 'Privacy Policy | P5 Marketing',
   description:
     'How P5 Marketing collects, uses, and protects your personal information. Read our full privacy policy.',
+  openGraph: {
+    title: 'Privacy Policy | P5 Marketing',
+    description:
+      'How P5 Marketing collects, uses, and protects your personal information. Read our full privacy policy.',
+  },
 };
 
 const styles = {

@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'InboxID™ – Same-Day Conversion Engine | P5 Marketing',
+  title: 'InboxID\u2122 | Same-Day Lead Conversion | P5 Marketing',
   description:
-    'Convert identified website visitors with same-day retargeting ads and behavior-based email sequences. InboxID closes the loop between identification and conversion.',
+    'InboxID converts identified website visitors with same-day retargeting ads and behavior-based email sequences. Close the loop fast.',
   openGraph: {
-    title: 'InboxID™ by P5 Marketing',
+    title: 'InboxID\u2122 | Same-Day Lead Conversion | P5 Marketing',
     description:
-      'Same-day follow-up that converts. Retargeting ads and personalized email sequences triggered by real visitor behavior.',
+      'InboxID converts identified website visitors with same-day retargeting ads and behavior-based email sequences. Close the loop fast.',
   },
 };
 
@@ -198,7 +198,7 @@ export default function InboxIDPage() {
         <div style={styles.heroContent}>
           <div style={styles.kicker}>InboxID™ · Powered by P5 Marketing</div>
           <h1 style={styles.headline}>
-            Convert Identified Site Visitors Into Customers
+            InboxID™: Convert Identified Visitors With Same-Day Follow-Up
           </h1>
           <p style={styles.subtext}>
             Behavior-based follow-up that keeps your brand visible through retargeting ads and targeted email. Same-day outreach to visitors who already showed interest in your business.

@@ -10,7 +10,7 @@ export default function Header() {
 
     if (!header) return;
 
-    /* â Scroll â add "scrolled" class â */
+    /* — Scroll → add "scrolled" class — */
     let ticking = false;
     function onScroll() {
       if (!ticking) {
@@ -24,7 +24,7 @@ export default function Header() {
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
-    /* â Hamburger toggle â */
+    /* — Hamburger toggle — */
     function handleHamburger() {
       const isOpen = mobileNav.classList.toggle('p5-mobile-nav--open');
       hamburger.classList.toggle('p5-hamburger--active', isOpen);
@@ -46,7 +46,7 @@ export default function Header() {
       });
     }
 
-    /* â Dropdown: keyboard & touch support â */
+    /* — Dropdown: keyboard & touch support — */
     function closeAllDropdowns() {
       document.querySelectorAll('.p5-has-dropdown').forEach(function (li) {
         li.classList.remove('p5-dropdown-open');
@@ -83,7 +83,7 @@ export default function Header() {
       }
     });
 
-    /* â Highlight active page link â */
+    /* — Highlight active page link — */
     var currentPath = window.location.pathname.replace(/\/+$/, '') || '/';
     document.querySelectorAll('.p5-header-nav a').forEach(function (a) {
       var linkPath = new URL(a.href, window.location.origin).pathname.replace(/\/+$/, '') || '/';
@@ -110,7 +110,7 @@ export default function Header() {
 
           {/* Logo */}
           <div className="p5-header-logo">
-            <a href="/" aria-label="P5 Marketing â Home">
+            <a href="/" aria-label="P5 Marketing – Home">
               <img src="/p5-logo.webp" alt="P5 Marketing" width="500" height="336" />
             </a>
           </div>

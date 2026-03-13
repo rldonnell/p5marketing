@@ -1,6 +1,10 @@
 export const metadata = {
-  title: 'High-Trust, High-Value Markets | P5 Marketing',
-  description: 'Built for high-trust, high-ticket businesses. Legal, plastic surgery, wedding venues, luxury services, and more.',
+  title: 'Marketing for High-Trust Businesses | P5 Marketing',
+  description: 'Intent data marketing built for high-trust, high-ticket businesses. Legal, plastic surgery, wedding venues & luxury services.',
+  openGraph: {
+    title: 'Marketing for High-Trust Businesses | P5 Marketing',
+    description: 'Intent data marketing built for high-trust, high-ticket businesses. Legal, plastic surgery, wedding venues & luxury services.',
+  },
 };
 
 export default function HighTrustHighValuePage() {

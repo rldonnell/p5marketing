@@ -2,9 +2,14 @@ import { getPosts, getCategories } from '../../lib/wordpress';
 import BlogList from './BlogList';
 
 export const metadata = {
-  title: 'Blog – P5 Marketing',
+  title: 'Plastic Surgery Marketing Blog | P5 Marketing',
   description:
     'Insights on intent data marketing, visitor identification, lead generation strategy, and full-cycle campaign execution for high-trust businesses.',
+  openGraph: {
+    title: 'Plastic Surgery Marketing Blog | P5 Marketing',
+    description:
+      'Insights on intent data marketing, visitor identification, lead generation strategy, and full-cycle campaign execution for high-trust businesses.',
+  },
 };
 
 export default async function BlogPage() {
@@ -26,8 +31,8 @@ export default async function BlogPage() {
         <div className="p5-wrap" style={{ textAlign: 'center', maxWidth: '800px' }}>
           <span className="p5-kicker">The P5 Blog</span>
           <h1 className="p5-hero-h1">
-            Marketing insights for businesses that{' '}
-            <span className="p5-accent-text">close real deals</span>
+            Plastic Surgery Marketing{' '}
+            <span className="p5-accent-text">Blog & Insights</span>
           </h1>
           <p className="p5-sub">
             Strategy, tactics, and lessons learned from running full-cycle intent

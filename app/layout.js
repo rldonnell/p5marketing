@@ -19,21 +19,30 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata = {
-  title: 'P5 Marketing - Plastic Surgery Marketing Agency | Full-Cycle Digital Marketing',
-  description: 'Plastic surgery marketing agency specializing in SEO, intent data, and visitor identification. We helped one practice grow from $1M to $3.5M. Full-cycle marketing for plastic surgeons, wedding venues, and high-trust businesses.',
+  title: 'Plastic Surgery Marketing Agency | P5 Marketing',
+  description: 'Plastic surgery marketing agency specializing in SEO, intent data, and visitor identification. We helped one practice grow from $1M to $3.5M in 18 months.',
   metadataBase: new URL('https://p5marketing.com'),
   openGraph: {
-    title: 'P5 Marketing - Plastic Surgery Marketing That Builds a Pipeline You Can Track',
-    description: 'Plastic surgery marketing agency with full-cycle digital marketing: SEO Accelerator + IntentID + VisitorID + InboxID.',
+    title: 'Plastic Surgery Marketing Agency | P5 Marketing',
+    description: 'Plastic surgery marketing agency specializing in SEO, intent data, and visitor identification. We helped one practice grow from $1M to $3.5M in 18 months.',
     url: 'https://p5marketing.com',
     siteName: 'P5 Marketing',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'P5 Marketing | Plastic Surgery Marketing Agency',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'P5 Marketing - Plastic Surgery Marketing Agency',
-    description: 'Full-cycle digital marketing for plastic surgeons and high-trust businesses.',
+    title: 'Plastic Surgery Marketing Agency | P5 Marketing',
+    description: 'Plastic surgery marketing agency specializing in SEO, intent data, and visitor identification. We helped one practice grow from $1M to $3.5M in 18 months.',
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,

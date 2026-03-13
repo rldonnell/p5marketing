@@ -1,6 +1,10 @@
 export const metadata = {
-  title: 'Plastic Surgeons | P5 Marketing',
-  description: 'Find patients researching cosmetic procedures. IntentID, VisitorID, and InboxID work together to book more consults.',
+  title: 'Marketing for Plastic Surgeons | P5 Marketing',
+  description: 'Marketing for plastic surgeons that finds patients researching procedures. IntentID + VisitorID + InboxID book more consults.',
+  openGraph: {
+    title: 'Marketing for Plastic Surgeons | P5 Marketing',
+    description: 'Marketing for plastic surgeons that finds patients researching procedures. IntentID + VisitorID + InboxID book more consults.',
+  },
 };
 
 export default function PlasticSurgeonsPage() {
@@ -38,7 +42,7 @@ export default function PlasticSurgeonsPage() {
           </span>
         </div>
         <h1 style={{ fontSize: '56px', fontWeight: '700', lineHeight: '1.1', marginBottom: '20px', letterSpacing: '-1px' }}>
-          Find Patients Already Researching Procedures. Know Exactly Who Visits Your Site.
+          Marketing for Plastic Surgeons: Find Patients Already Researching Procedures
         </h1>
         <p style={{ fontSize: '18px', color: 'var(--p5-text-dim)', maxWidth: '700px', lineHeight: '1.6', margin: '0' }}>
           IntentID™ builds a custom audience of people actively researching cosmetic procedures in your area. VisitorID™ identifies up to 60% of visitors on your procedure pages. InboxID™ follows up the same day. Their information goes straight to your CRM so your team can book the consult. U.S. only.

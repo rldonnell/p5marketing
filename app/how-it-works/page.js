@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'How It Works â P5 Marketing',
+  title: 'How Intent Data Marketing Works | P5 Marketing',
   description:
-    'See how the SEO Accelerator, IntentID, VisitorID, and InboxID work together in a full-cycle campaign. Attract organic traffic, find prospects with search intent, identify website visitors, and convert them with same-day follow-up.',
+    'See how IntentID, VisitorID, InboxID, and SEO Accelerator work together in a four-stage intent data marketing pipeline for plastic surgeons.',
   openGraph: {
-    title: 'How P5 Marketing Works',
+    title: 'How Intent Data Marketing Works | P5 Marketing',
     description:
-      'Four-stage intent data pipeline: Find â Drive â Identify â Convert. The SEO Accelerator powers organic growth while IntentID targets verified search intent.',
+      'See how IntentID, VisitorID, InboxID, and SEO Accelerator work together in a four-stage intent data marketing pipeline for plastic surgeons.',
   },
 };
 
@@ -107,7 +107,7 @@ export default function HowItWorks() {
               fontFamily: "DM Sans"
             }}
           >
-            Four Stages. Four Tools. One Pipeline You Can See.
+            How Our Intent Data Marketing System Works
           </h1>
           <p
             style={{

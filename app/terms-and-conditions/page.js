@@ -1,7 +1,12 @@
 export const metadata = {
-  title: 'Terms and Conditions – P5 Marketing',
+  title: 'Terms and Conditions | P5 Marketing',
   description:
     'Terms and conditions governing the use of P5 Marketing services and website.',
+  openGraph: {
+    title: 'Terms and Conditions | P5 Marketing',
+    description:
+      'Terms and conditions governing the use of P5 Marketing services and website.',
+  },
 };
 
 const styles = {

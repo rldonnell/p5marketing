@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'About Us – P5 Marketing',
+  title: 'About P5 Marketing | Plastic Surgery Marketing Team',
   description:
-    'Meet the P5 Marketing team. We build full-cycle intent data campaigns for high-trust, high-value businesses — from audience building to visitor identification to conversion.',
+    'Meet the team behind P5 Marketing. We build full-cycle intent data campaigns for plastic surgeons and high-trust businesses.',
   openGraph: {
-    title: 'About P5 Marketing',
+    title: 'About P5 Marketing | Plastic Surgery Marketing Team',
     description:
-      'The team behind IntentID, VisitorID, and InboxID — intent data marketing built for businesses that close real deals.',
+      'Meet the team behind P5 Marketing. We build full-cycle intent data campaigns for plastic surgeons and high-trust businesses.',
   },
 };
 
@@ -84,7 +84,7 @@ export default function About() {
                 marginBottom: "24px",
               }}
             >
-              We Find Your Next Customer Before They Find You
+              The Plastic Surgery Marketing Team Behind P5
             </h1>
             <p
               style={{

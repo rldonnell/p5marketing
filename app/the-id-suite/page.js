@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'The ID Suite â SEO Accelerator, IntentID, VisitorID & InboxID | P5 Marketing',
+  title: 'The ID Suite | Full-Cycle Marketing Stack | P5 Marketing',
   description:
-    'Four proprietary technologies that attract organic traffic, find ready-to-buy prospects, identify anonymous website visitors, and convert them with same-day follow-up. Explore the SEO Accelerator, IntentID, VisitorID, and InboxID.',
+    'The ID Suite combines SEO Accelerator, IntentID, VisitorID, and InboxID into one full-cycle intent data marketing stack for plastic surgeons.',
   openGraph: {
-    title: 'The ID Suite â P5 Marketing',
+    title: 'The ID Suite | Full-Cycle Marketing Stack | P5 Marketing',
     description:
-      'SEO Accelerator + IntentID + VisitorID + InboxID: the full-cycle intent data stack for high-trust businesses.',
+      'The ID Suite combines SEO Accelerator, IntentID, VisitorID, and InboxID into one full-cycle intent data marketing stack for plastic surgeons.',
   },
 };
 
@@ -21,7 +21,7 @@ export default function IDSuiteLanding() {
       link: '/the-id-suite/seo-accelerator/',
     },
     {
-      title: 'IntentIDâ¢',
+      title: 'IntentID™',
       category: 'Audience Building',
       description:
         'Custom audiences of people actively searching for your services, deployed across Meta, Google, X, TikTok, and LinkedIn.',
@@ -30,7 +30,7 @@ export default function IDSuiteLanding() {
       link: '/the-id-suite/intentid/',
     },
     {
-      title: 'VisitorIDâ¢',
+      title: 'VisitorID™',
       category: 'Visitor Identification',
       description:
         'Website pixel that identifies up to 60% of visitors by name, email, phone, address, and household income.',
@@ -39,7 +39,7 @@ export default function IDSuiteLanding() {
       link: '/the-id-suite/visitorid/',
     },
     {
-      title: 'InboxIDâ¢',
+      title: 'InboxID™',
       category: 'Conversion Engine',
       description:
         'Same-day follow-up combining retargeting ads and targeted email. Behavior-based sequences re-engage identified visitors while your brand is top of mind.',
@@ -50,11 +50,11 @@ export default function IDSuiteLanding() {
   ];
 
   const flowSteps = [
-    { text: 'IntentIDâ¢ finds them', order: '01' },
+    { text: 'IntentID™ finds them', order: '01' },
     { text: 'SEO Accelerator attracts them', order: '02' },
     { text: 'Ads drive them', order: '03' },
-    { text: 'VisitorIDâ¢ identifies them', order: '04' },
-    { text: 'InboxIDâ¢ converts them', order: '05' },
+    { text: 'VisitorID™ identifies them', order: '04' },
+    { text: 'InboxID™ converts them', order: '05' },
   ];
 
   const heroStyles = {
@@ -265,9 +265,9 @@ export default function IDSuiteLanding() {
     <div>
       <section style={heroStyles}>
         <div style={kickerStyles}>The ID Suite</div>
-        <h1 style={h1Styles}>Four Tools. One System. Zero Guesswork.</h1>
+        <h1 style={h1Styles}>The ID Suite: Full-Cycle Intent Data Marketing Stack</h1>
         <p style={subStyles}>
-          The SEO Accelerator attracts organic traffic. IntentIDâ¢ finds your audience. VisitorIDâ¢ identifies your visitors. InboxIDâ¢ converts them. Together, they form
+          The SEO Accelerator attracts organic traffic. IntentID™ finds your audience. VisitorID™ identifies your visitors. InboxID™ converts them. Together, they form
           a closed-loop pipeline that turns anonymous traffic into booked appointments.
         </p>
       </section>
@@ -284,7 +284,7 @@ export default function IDSuiteLanding() {
             </div>
             <a href={card.link} style={cardLinkStyles}>
               Learn More
-              <span>â</span>
+              <span>→</span>
             </a>
           </div>
         ))}
@@ -302,7 +302,7 @@ export default function IDSuiteLanding() {
                 <div style={flowOrderStyles}>{step.order}</div>
                 <div style={flowTextStyles}>{step.text}</div>
               </div>
-              {idx < flowSteps.length - 1 && <div style={flowArrowStyles}>â</div>}
+              {idx < flowSteps.length - 1 && <div style={flowArrowStyles}>→</div>}
             </div>
           ))}
         </div>
@@ -311,7 +311,7 @@ export default function IDSuiteLanding() {
       <section style={ctaContainerStyles}>
         <a href="/contact/" style={ctaButtonStyles}>
           See How the ID Suite Works for Your Business
-          <span>â</span>
+          <span>→</span>
         </a>
       </section>
     </div>

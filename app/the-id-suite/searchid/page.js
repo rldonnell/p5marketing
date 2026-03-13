@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'SearchID™ – SEO, GEO & Content Repurposing | P5 Marketing',
+  title: 'SearchID\u2122 | SEO & GEO Content Engine | P5 Marketing',
   description:
-    'SearchID attracts qualified customers through SEO, GEO, and content repurposing. Powered by 25 years of P5 SEO expertise. Integrate with IntentID, VisitorID, and InboxID.',
+    'SearchID attracts qualified customers through SEO, GEO, and content repurposing. Powered by 25 years of P5 SEO expertise.',
   openGraph: {
-    title: 'SearchID™ – Attract Your Next Customers Through Organic Search',
+    title: 'SearchID\u2122 | SEO & GEO Content Engine | P5 Marketing',
     description:
-      'SEO. GEO. Content Repurposing. All integrated with paid media and audience targeting.',
+      'SearchID attracts qualified customers through SEO, GEO, and content repurposing. Powered by 25 years of P5 SEO expertise.',
   },
 };
 
@@ -94,10 +94,8 @@ export default function SearchIDPage() {
               fontFamily: 'DM Sans',
             }}
           >
-            Your Organic Engine.{' '}
-            <span style={{ color: 'var(--p5-accent)' }}>
-              SEO. GEO. Content That Compounds.
-            </span>
+            SearchID™: SEO, GEO & Content Repurposing{' '}
+            <span style={{ color: 'var(--p5-accent)' }}>That Compounds</span>
           </h1>
           <p
             style={{
