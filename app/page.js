@@ -73,11 +73,11 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "FAQPage",
               "mainEntity": [
-                { "@type": "Question", "name": "What is IntentID and how does it work?", "acceptedAnswer": { "@type": "Answer", "text": "We track what millions of Americans are searching for across the web and social media every day. When someone starts researching the kind of services you offer, we see that activity. We use it to build a custom audience of prospects who are actively looking for what you sell right now. That audience gets loaded into your ad platforms, like Meta, Google, X, TikTok, or LinkedIn, so your ads only show to people who are already looking." } },
+                { "@type": "Question", "name": "What is IntentID and how does it work?", "acceptedAnswer": { "@type": "Answer", "text": "We track what Americans are searching for online. When someone researches your services, we build a custom audience and load it into your ad platforms so your ads reach people who are already looking." } },
                 { "@type": "Question", "name": "What is VisitorID and what information do I get?", "acceptedAnswer": { "@type": "Answer", "text": "VisitorID is a pixel that sits on your website and identifies up to 60% of your visitors. For each identified visitor, you can receive their name, email address, phone number, home address, and household income, along with details about what pages they visited and how they behaved on your site." } },
-                { "@type": "Question", "name": "What is InboxID and what happens after a visitor is identified?", "acceptedAnswer": { "@type": "Answer", "text": "InboxID is our conversion engine. Within minutes of identification, visitors enter our follow-up system. Depending on your setup, that can include retargeting ads to keep your brand visible, and automated email sequences tailored to the pages they viewed. Their contact information also feeds directly into your CRM so your team can follow up personally." } },
-                { "@type": "Question", "name": "Does VisitorID only work on traffic you generate?", "acceptedAnswer": { "@type": "Answer", "text": "No. VisitorID identifies visitors regardless of how they got to your site. Your SEO traffic, your Google Ads, your Meta campaigns, referral traffic, direct visits, all of it. If someone lands on your website, we can identify them." } },
-                { "@type": "Question", "name": "Do I need all four services?", "acceptedAnswer": { "@type": "Answer", "text": "The ID Suite is built as a system. IntentID finds your audience. The SEO Accelerator attracts them through organic content. Paid ads accelerate that reach. VisitorID tracks who is interested. InboxID converts them. You could start with one tool, but you will see the real ROI when they work together. Most of our clients use all four within 90 days." } },
+                { "@type": "Question", "name": "What is InboxID and what happens after a visitor is identified?", "acceptedAnswer": { "@type": "Answer", "text": "InboxID is our conversion engine. Identified visitors enter a follow-up sequence that can include retargeting ads and automated outreach tailored to the pages they viewed." } },
+                { "@type": "Question", "name": "Does VisitorID only work on traffic you generate?", "acceptedAnswer": { "@type": "Answer", "text": "No. VisitorID works on all traffic regardless of source. If someone visits your website, we can identify them." } },
+                { "@type": "Question", "name": "Do I need all four services?", "acceptedAnswer": { "@type": "Answer", "text": "The ID Suite is built as a system. Each tool handles one stage of the funnel. You could start with one, but most clients use all four within 90 days." } },
                 { "@type": "Question", "name": "What does up to 60% mean exactly?", "acceptedAnswer": { "@type": "Answer", "text": "It refers to unique website visitors we can resolve into identifiable profiles. We cap expectations so we can over-deliver. Performance varies based on traffic mix, geography, and volume." } },
                 { "@type": "Question", "name": "How fast does visitor identification happen?", "acceptedAnswer": { "@type": "Answer", "text": "Typically in minutes, which means your team can follow up the same day a prospect visits your site." } },
                 { "@type": "Question", "name": "Is this U.S. only?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our identification and audience data are designed for U.S. visitors and consumers." } },
@@ -171,7 +171,7 @@ export default function Home() {
         <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '.5rem' }}>
           <li><a href="#pillars" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>→ The Patient Acquisition System</a></li>
           <li><a href="#cycle" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>→ How the Acquisition Cycle Works</a></li>
-          <li><a href="#strategies" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>→ Plastic Surgery Marketing Strategies</a></li>
+          <li><a href="#strategies" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>→ Marketing Strategies for Plastic Surgeons</a></li>
           <li><a href="#how-patients-search" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>→ How People Search for a Plastic Surgeon</a></li>
           <li><a href="#why-p5" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>→ Why Practices Choose P5</a></li>
           <li><a href="#faq" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>→ Frequently Asked Questions</a></li>
@@ -183,12 +183,12 @@ export default function Home() {
       <section className="p5-wrap" id="pillars">
         <p className="p5-section-label p5-fade-up">The System</p>
         <h2 className="p5-section-title p5-fade-up">The Marketing System That Finds, Identifies, and Converts Your Next Patients</h2>
-        <p className="p5-fade-up" style={{ textAlign: 'center', color: 'var(--p5-text-dim)', maxWidth: '640px', margin: '0 auto 2.5rem' }}>The SEO Accelerator pulls qualified traffic from organic search to your plastic surgery website. <em>The ID&nbsp;Suite</em> converts that traffic into real patients for your practice.</p>
+        <p className="p5-fade-up" style={{ textAlign: 'center', color: 'var(--p5-text-dim)', maxWidth: '640px', margin: '0 auto 2.5rem' }}>The SEO Accelerator pulls qualified traffic from organic search to your plastic surgery website. The ID&nbsp;Suite converts that traffic into real patients for your practice.</p>
         <div className="p5-paradigm-grid">
           <div className="p5-p-card p5-fade-up">
             <span className="p5-num">01</span>
             <h3>IntentID&trade;: Find Them</h3>
-            <p>We track what millions of Americans are searching for across the web and social media every day. We use that data to build a <strong>custom audience of patients</strong> actively looking for plastic surgery procedures right now. Then we deploy that audience into your ad platforms: Meta, Google, X, TikTok, LinkedIn. Your ads reach <em>ready-to-buy patients</em> instead of anonymous visitors. Better leads. Lower costs. Less waste for your practice.</p>
+            <p>We track what millions of Americans are searching for across the web and social media every day. We use that data to build a <strong>custom audience of patients</strong> actively looking for plastic surgery procedures right now. Then we deploy that audience into your ad platforms: Meta, Google, X, TikTok, LinkedIn. Your ads reach ready-to-buy patients instead of anonymous visitors. Better leads. Lower costs. Less waste for your <a href="/markets/plastic-surgeons/" style={{ color: 'var(--p5-accent)' }}>plastic surgery practice</a>.</p>
           </div>
           <div className="p5-p-card p5-fade-up p5-delay-1">
             <span className="p5-num">02</span>
@@ -243,18 +243,18 @@ export default function Home() {
             <span className="p5-hiw-num">3</span>
             <div>
               <p style={{ fontWeight: 700, color: 'var(--p5-text)', fontSize: '1.1rem', marginBottom: '.5rem' }}>Identify Your Visitors</p>
-              <p>Our pixel resolves up to 60% of your website visitors into full contact profiles—name, email, phone, address, household income. Delivered in minutes, not days. Works on all your traffic regardless of the source, giving your <em>plastic surgery</em> practice complete visibility into who is considering your services.</p>
+              <p>Our pixel resolves up to 60% of your website visitors into full contact profiles—name, email, phone, address, household income. Delivered in minutes, not days. Works on all your traffic regardless of the source, giving your plastic surgery practice complete visibility into who is considering your services.</p>
             </div>
           </div>
           <div className="p5-hiw-block p5-fade-up p5-delay-3">
             <span className="p5-hiw-num">4</span>
             <div>
               <p style={{ fontWeight: 700, color: 'var(--p5-text)', fontSize: '1.1rem', marginBottom: '.5rem' }}>Convert with Follow-Up</p>
-              <p>Same-day retargeting and <em>email marketing</em> sequences keep your plastic surgery practice in front of identified patients. Their information feeds your CRM. Your team closes warm leads instead of chasing cold leads who are disengaged—turning website visitors into booked consultations.</p>
+              <p>Same-day retargeting and <a href="/the-id-suite/inboxid/" style={{ color: 'var(--p5-accent)' }}>email marketing sequences</a> keep your plastic surgery practice in front of identified patients. Their information feeds your CRM. Your team closes warm leads instead of chasing cold leads who are disengaged—turning website visitors into booked consultations.</p>
             </div>
           </div>
         </div>
-        <p className="p5-fade-up" style={{ textAlign: 'center', color: 'var(--p5-accent)', marginTop: '2rem', fontWeight: 500 }}>Stage 4 feeds Stage 1. Every conversion makes your plastic surgery marketing audiences smarter. The system gets better the longer it runs.</p>
+        <p className="p5-fade-up" style={{ textAlign: 'center', color: 'var(--p5-accent)', marginTop: '2rem', fontWeight: 500 }}>Stage 4 feeds Stage 1. Every conversion makes your marketing audiences smarter. The system gets better the longer it runs.</p>
       </section>
 
       {/* ===== DELIVERABLES ===== */}
@@ -263,7 +263,7 @@ export default function Home() {
         <h2 className="p5-section-title p5-fade-up">What We Deliver for Your Practice</h2>
         <div className="p5-del-grid">
           <div className="p5-del-card p5-fade-up">
-            <div className="p5-del-icon"><img src="/icons/intentid-audience.svg" alt="IntentID audience building for surgical practices" width="40" height="40" loading="lazy" /></div>
+            <div className="p5-del-icon"><img src="/icons/intentid-audience.svg" alt="IntentID audience builder" width="40" height="40" loading="lazy" /></div>
             <p style={{ fontWeight: 700, color: 'var(--p5-text)', fontSize: '1.05rem', marginBottom: '.5rem' }}>IntentID&trade; Audience Building</p>
             <p>Custom audiences of patients actively searching for plastic surgery procedures, built from real-time intent data and deployed into Meta, Google, X, TikTok, LinkedIn, and more. Better leads at lower cost.</p>
           </div>
@@ -273,14 +273,14 @@ export default function Home() {
             <p>SEO-focused landing pages and pillar content for plastic surgery practices. GEO optimization for AI search platforms. Social media calendars, promotional content, and podcast scripts. 25&nbsp;years of search optimization and content marketing expertise, reimagined for today&rsquo;s search landscape.</p>
           </div>
           <div className="p5-del-card p5-fade-up p5-delay-2">
-            <div className="p5-del-icon"><img src="/icons/visitorid-identification.svg" alt="VisitorID website visitor identification tool" width="40" height="40" loading="lazy" /></div>
+            <div className="p5-del-icon"><img src="/icons/visitorid-identification.svg" alt="VisitorID identification pixel" width="40" height="40" loading="lazy" /></div>
             <p style={{ fontWeight: 700, color: 'var(--p5-text)', fontSize: '1.05rem', marginBottom: '.5rem' }}>VisitorID&trade; Visitor Identification</p>
             <p>Know which patients visit your <em>plastic surgery</em> website. Name, email, phone, home address, household income, and more. Works on all your traffic regardless of the source—SEO, PPC, social media, or direct. Delivered in minutes, not days.</p>
           </div>
           <div className="p5-del-card p5-fade-up p5-delay-2">
-            <div className="p5-del-icon"><img src="/icons/inboxid-conversion.svg" alt="InboxID same-day patient conversion engine" width="40" height="40" loading="lazy" /></div>
+            <div className="p5-del-icon"><img src="/icons/inboxid-conversion.svg" alt="InboxID conversion engine" width="40" height="40" loading="lazy" /></div>
             <p style={{ fontWeight: 700, color: 'var(--p5-text)', fontSize: '1.05rem', marginBottom: '.5rem' }}>InboxID&trade; Conversion Engine</p>
-            <p>Identified patients receive <em>same-day follow-up</em> tailored to the specific procedures they viewed on your site. Retargeting ads keep your practice visible. Email sequences build trust. Every touchpoint in the patient journey is tracked.</p>
+            <p>Identified patients receive same-day follow-up tailored to the specific procedures they viewed on your site. Retargeting ads keep your practice visible. Email sequences build trust. Every touchpoint in the patient journey is tracked.</p>
           </div>
           <div className="p5-del-card p5-fade-up p5-delay-3">
             <div className="p5-del-icon"><img src="/icons/crm-reporting.svg" alt="CRM integration and reporting dashboard" width="40" height="40" loading="lazy" /></div>
@@ -294,21 +294,21 @@ export default function Home() {
       {/* ===== PLASTIC SURGERY MARKETING STRATEGIES ===== */}
       <section className="p5-wrap" id="strategies">
         <p className="p5-section-label p5-fade-up">Strategy</p>
-        <h2 className="p5-section-title p5-fade-up">Plastic Surgery Marketing Strategies That Actually Fill Your Schedule</h2>
-        <p className="p5-fade-up" style={{ maxWidth: '740px', margin: '0 auto 2rem', color: 'var(--p5-text-dim)', textAlign: 'center' }}>Every <em>plastic surgery</em> practice needs a <em>marketing</em> strategy built around how patients actually search for cosmetic procedures. Here is what works in today&rsquo;s digital landscape—and how P5 handles each one.</p>
+        <h2 className="p5-section-title p5-fade-up">Marketing Strategies for Plastic Surgeons That Actually Fill Your Schedule</h2>
+        <p className="p5-fade-up" style={{ maxWidth: '740px', margin: '0 auto 2rem', color: 'var(--p5-text-dim)', textAlign: 'center' }}>Every plastic surgery practice needs a marketing strategy built around how patients actually search for cosmetic procedures. Here is what works in today&rsquo;s digital landscape—and how P5 handles each one.</p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', maxWidth: '960px', margin: '0 auto' }}>
 
           <div className="p5-fade-up" style={{ background: 'var(--p5-surface)', borderRadius: '12px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.06)' }}>
             <img src="/icons/seo-icon.svg" alt="SEO strategy icon" width="48" height="48" style={{ marginBottom: '.5rem', opacity: 0.85 }} loading="lazy" />
             <h3 style={{ color: 'var(--p5-accent)', marginBottom: '.75rem' }}>SEO for Plastic Surgeons</h3>
-            <p>Search engine optimization is the foundation of every successful marketing plan. Patients search Google for procedures like <em>rhinoplasty</em>, <em>breast augmentation</em>, and <em>mommy makeover</em> every day. Our <a href="/the-id-suite/seo-accelerator/" style={{ color: 'var(--p5-accent)' }}>SEO Accelerator</a> builds procedure-specific content, optimizes your page structure, and targets the high-intent keywords that drive consultations. We also optimize for <em>Generative Engine Optimization (GEO)</em> so your practice appears in AI search results from ChatGPT, Perplexity, and Claude.</p>
+            <p>Search engine optimization is the foundation of every successful marketing plan. Patients search Google for procedures like <em>rhinoplasty</em>, breast augmentation, and mommy makeover every day. Our <a href="/the-id-suite/seo-accelerator/" style={{ color: 'var(--p5-accent)' }}>SEO Accelerator</a> builds procedure-specific content, optimizes your page structure, and targets the high-intent keywords that drive consultations. We also optimize for <em>Generative Engine Optimization (GEO)</em> so your practice appears in AI search results from ChatGPT, Perplexity, and Claude.</p>
           </div>
 
           <div className="p5-fade-up p5-delay-1" style={{ background: 'var(--p5-surface)', borderRadius: '12px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.06)' }}>
             <img src="/icons/ppc-icon.svg" alt="PPC advertising icon" width="48" height="48" style={{ marginBottom: '.5rem', opacity: 0.85 }} loading="lazy" />
             <h3 style={{ color: 'var(--p5-accent)', marginBottom: '.75rem' }}>PPC and Paid Advertising</h3>
-            <p><strong>Pay-per-click advertising</strong> on Google and social media platforms puts your plastic surgery practice in front of patients the same day you launch. But most PPC campaigns waste budget on broad audiences. P5 uses <a href="/the-id-suite/intentid/" style={{ color: 'var(--p5-accent)' }}>IntentID™ audience data</a> to target only people who are <em>already researching procedures</em>. The result: lower cost per lead, higher consultation rates, and better return on your advertising spend.</p>
+            <p><strong>Pay-per-click advertising</strong> on Google and social media platforms puts your plastic surgery practice in front of patients the same day you launch. But most PPC campaigns waste budget on broad audiences. P5 uses <a href="/the-id-suite/intentid/" style={{ color: 'var(--p5-accent)' }}>IntentID™ audience data</a> to target only people who are already researching procedures. The result: lower cost per lead, higher consultation rates, and better return on your advertising spend.</p>
           </div>
 
           <div className="p5-fade-up p5-delay-2" style={{ background: 'var(--p5-surface)', borderRadius: '12px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.06)' }}>
@@ -320,19 +320,19 @@ export default function Home() {
           <div className="p5-fade-up p5-delay-3" style={{ background: 'var(--p5-surface)', borderRadius: '12px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.06)' }}>
             <img src="/icons/design-icon.svg" alt="Website design icon" width="48" height="48" style={{ marginBottom: '.5rem', opacity: 0.85 }} loading="lazy" />
             <h3 style={{ color: 'var(--p5-accent)', marginBottom: '.75rem' }}>Website Design and Patient Experience</h3>
-            <p>Your website is the front door of your plastic surgery practice online. Good website design for a practice means fast load times, mobile-first layouts, prominent calls to action, and content organized around the procedures patients care about. Every page should make it easy to book a consultation. P5 audits and optimizes your site so it converts the traffic we send—not just the design, but the <em>full patient experience</em> from first click to booked appointment.</p>
+            <p>Your website is the front door of your plastic surgery practice online. Good website design for a practice means fast load times, mobile-first layouts, prominent calls to action, and content organized around the procedures patients care about. Every page should make it easy to book a consultation. P5 audits and optimizes your site so it converts the traffic we send—not just the <a href="/the-id-suite/seo-accelerator/" style={{ color: 'var(--p5-accent)' }}>website design</a>, but the full patient experience from first click to booked appointment.</p>
           </div>
 
           <div className="p5-fade-up" style={{ background: 'var(--p5-surface)', borderRadius: '12px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.06)' }}>
             <img src="/icons/content-icon.svg" alt="Content and video production icon" width="48" height="48" style={{ marginBottom: '.5rem', opacity: 0.85 }} loading="lazy" />
             <h3 style={{ color: 'var(--p5-accent)', marginBottom: '.75rem' }}>Content Marketing and Video</h3>
-            <p>Patients researching plastic surgery want <em>educational content</em> that answers their questions and builds trust. Content marketing for surgical practices includes blog posts about procedures, video walkthroughs, FAQ pages, and downloadable guides. Video content is especially powerful—plastic surgery patients want to see the surgeon, the clinic, and real results before they call. P5 creates and repurposes this content across channels so your practice stays visible online.</p>
+            <p>Patients researching plastic surgery want educational content that answers their questions and builds trust. Content marketing for surgical practices includes blog posts about procedures, video walkthroughs, FAQ pages, and downloadable guides. <a href="/blog/" style={{ color: 'var(--p5-accent)' }}>Video content</a> is especially powerful—plastic surgery patients want to see the surgeon, the clinic, and real results before they call. P5 creates and repurposes this content across channels so your practice stays visible online.</p>
           </div>
 
           <div className="p5-fade-up p5-delay-1" style={{ background: 'var(--p5-surface)', borderRadius: '12px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.06)' }}>
             <img src="/icons/reputation-icon.svg" alt="Reputation management icon" width="48" height="48" style={{ marginBottom: '.5rem', opacity: 0.85 }} loading="lazy" />
             <h3 style={{ color: 'var(--p5-accent)', marginBottom: '.75rem' }}>Reputation and Review Management</h3>
-            <p>Online reviews directly influence which plastic surgeon a patient chooses. Reputation management means monitoring Google reviews, responding to patient feedback, and building a steady flow of positive testimonials. For surgical practices, strong reviews are the difference between a consultation request and a bounce. P5 helps your practice build and maintain the kind of <em>online reputation</em> that patients trust when making high-stakes healthcare decisions.</p>
+            <p>Online reviews directly influence which plastic surgeon a patient chooses. <a href="/how-it-works/" style={{ color: 'var(--p5-accent)' }}>Reputation management</a> means monitoring Google reviews, responding to patient feedback, and building a steady flow of positive testimonials. For surgical practices, strong reviews are the difference between a consultation request and a bounce. P5 helps your practice build and maintain the kind of <em>online reputation</em> that patients trust when making high-stakes healthcare decisions.</p>
           </div>
 
         </div>
@@ -340,7 +340,7 @@ export default function Home() {
         <p className="p5-fade-up" style={{ textAlign: 'center', maxWidth: '680px', margin: '2rem auto 0', color: 'var(--p5-text-dim)' }}>Most marketing agencies offer these strategies as standalone services. <strong>P5 connects them through one unified data layer</strong>—so every marketing channel works harder because it is powered by real intent data and visitor identification. <a href="/how-it-works/" style={{ color: 'var(--p5-accent)' }}>Learn how the full system works →</a></p>
         
         <div className="p5-fade-up" style={{ maxWidth: '740px', margin: '2rem auto 0', padding: '1.5rem', background: 'var(--p5-surface)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.06)' }}>
-          <p style={{ fontFamily: 'Space Mono, monospace', fontSize: '.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: 'var(--p5-text)', marginBottom: '.75rem' }}>Explore Our Marketing Tools</p>
+          <h2 style={{ fontFamily: 'Space Mono, monospace', fontSize: '.85rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: 'var(--p5-text)', marginBottom: '.75rem' }}>Explore Our Marketing Tools</h2>
           <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '.5rem' }}>
             <li><a href="/the-id-suite/" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>The ID Suite Overview</a></li>
             <li><a href="/the-id-suite/intentid/" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>IntentID™ Audience Building</a></li>
@@ -362,7 +362,7 @@ export default function Home() {
       <section className="p5-wrap">
         <p className="p5-section-label p5-fade-up">Markets Served</p>
         <h2 className="p5-section-title p5-fade-up">Who We Serve</h2>
-        <p className="p5-fade-up" style={{ textAlign: 'center', color: 'var(--p5-text-dim)', maxWidth: '640px', margin: '0 auto 2.5rem' }}>The same engine powers every vertical—from plastic surgery clinics to wedding venues. We tailor the segments, follow-up sequences, and landing pages to <em>your specific patient or client journey</em>—whether you run a surgical practice, a wedding venue, or a specialty medical clinic.</p>
+        <p className="p5-fade-up" style={{ textAlign: 'center', color: 'var(--p5-text-dim)', maxWidth: '640px', margin: '0 auto 2.5rem' }}>The same engine powers every vertical—from plastic surgery clinics to wedding venues. We tailor the segments, <a href="/the-id-suite/inboxid/" style={{ color: 'var(--p5-accent)' }}>follow-up sequences</a>, and <a href="/the-id-suite/seo-accelerator/" style={{ color: 'var(--p5-accent)' }}>landing pages</a> to your specific patient or client journey—whether you run a surgical practice, a wedding venue, or a specialty medical clinic.</p>
         <div className="p5-market-grid">
           <a href="/plastic-surgeons/" className="p5-market-card p5-fade-up">
             <img src="/images/plastic-surgeon-marketing.svg" alt="Marketing services for surgeons" width="48" height="48" style={{ marginBottom: '.5rem' }} loading="lazy" />
@@ -453,17 +453,17 @@ export default function Home() {
         <p className="p5-section-label p5-fade-up">The Patient Journey</p>
         <h2 className="p5-section-title p5-fade-up">How People Search for a Plastic Surgeon Online</h2>
         <div style={{ maxWidth: '780px', margin: '0 auto' }}>
-          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>The way people find and choose a plastic surgeon has changed. More patients begin their cosmetic surgery research online than any other way, and the journey from first search to booked consultation can take weeks or even months. Understanding how people move through this process is the foundation of effective plastic surgery marketing. It is also the reason an integrated marketing strategy outperforms any single-channel approach.</p>
+          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>The way people find and choose a plastic surgeon has changed. More patients begin their cosmetic surgery research online than any other way, and the journey from first search to booked consultation can take weeks or even months. Understanding how people move through this process is the foundation of effective plastic surgery marketing. It is also the reason an <strong>integrated marketing strategy</strong> outperforms any single-channel approach.</p>
 
-          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>Most patients start by searching Google for a specific procedure—<em>rhinoplasty near me</em>, <em>tummy tuck cost</em>, or <em>best plastic surgeon in Dallas</em>. Search engine results determine which practices they discover first. In addition, a growing number of people now use AI-powered search tools like ChatGPT and Perplexity to compare plastic surgeons and read about cosmetic surgery options. That shift makes <em>content marketing</em> and <em>generative engine optimization</em> more important than ever for medical practices that want to stay visible online.</p>
+          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>Most patients start by searching Google for a specific procedure—<em>rhinoplasty near me</em>, tummy tuck cost, or best plastic surgeon in Dallas. Search engine results determine which practices they discover first. In addition, a growing number of people now use AI-powered search tools like ChatGPT and Perplexity to compare plastic surgeons and read about cosmetic surgery options. That shift makes <em>content marketing</em> and generative engine optimization more important than ever for medical practices that want to stay visible online.</p>
 
-          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>After the initial search, patients spend time reading results and reviews, watching video content on YouTube and Instagram, and comparing before-and-after photos on social media. People want to feel confident before they make a decision about surgery, so they consume a significant amount of content along the way. A plastic surgeon with a strong social media presence, educational video library, and positive online reputation has a clear advantage over one who relies on advertising alone.</p>
+          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>After the initial search, patients spend time reading results and reviews, watching video content on YouTube and Instagram, and comparing before-and-after photos on social media. People want to feel confident before they make a decision about surgery, so they consume a significant amount of content along the way. A plastic surgeon with a strong <a href="/the-id-suite/searchid/" style={{ color: 'var(--p5-accent)' }}>social media presence</a>, educational video library, and positive online reputation has a clear advantage over one who relies on advertising alone.</p>
 
-          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>From there, patients narrow their options. They visit practice websites to learn more about the surgeon, read patient testimonials, view the services offered, and look for design cues that signal trust and professionalism. <em>Website design</em> matters more than most plastic surgeons realize—people judge healthcare providers by the quality of their online presence, and a poorly designed site will cost you leads. The time between a patient&rsquo;s first visit and their consultation request is the most critical window in your marketing funnel.</p>
+          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>From there, patients narrow their options. They visit practice websites to learn more about the surgeon, read patient testimonials, view the services offered, and look for design cues that signal trust and professionalism. Website design matters more than most plastic surgeons realize—people judge healthcare providers by the quality of their online presence, and a poorly designed site will cost you <a href="/the-id-suite/visitorid/" style={{ color: 'var(--p5-accent)' }}>leads</a>. The time between a patient&rsquo;s first visit and their consultation request is the most critical window in your marketing funnel.</p>
 
-          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>This is where most plastic surgery marketing strategies fall short. The majority of practices have no way to identify which patients visited their website, no system to follow up in a timely manner, and no way to connect their advertising spend to actual patient engagement. People visit, browse, and leave—and the practice never knows they were there. That is exactly the problem the <a href="/the-id-suite/" style={{ color: 'var(--p5-accent)' }}>P5 system</a> solves. We give plastic surgeons complete visibility into their plastic surgery marketing results, from search to consultation.</p>
+          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>This is where most plastic surgery marketing strategies fall short. The majority of practices have no way to identify which patients visited their website, no system to follow up in a timely manner, and no way to connect their advertising spend to actual patient engagement. People visit, browse, and leave—and the practice never knows they were there. That is exactly the problem the <a href="/the-id-suite/" style={{ color: 'var(--p5-accent)' }}>P5 system</a> solves. We give plastic surgeons complete visibility into their marketing results, from search to consultation.</p>
 
-          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>The most successful cosmetic surgery practices today use a combination of <em>search engine optimization</em>, <em>paid advertising</em>, social media management, content marketing, and reputation management—all working together under one data layer. In addition to driving more leads through organic and paid channels, this approach lets you identify, track, and follow up with the people who show real interest. It is the way modern healthcare marketing works, and it is exactly what P5 was designed to deliver for <a href="/markets/plastic-surgeons/" style={{ color: 'var(--p5-accent)' }}>plastic surgeons</a> and high-trust medical practices. <a href="/contact/" style={{ color: 'var(--p5-accent)' }}>Talk to our team</a> about building a plastic surgery marketing system that works.</p>
+          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>The most successful cosmetic surgery practices today use a combination of search engine optimization, paid advertising, social media management, content marketing, and reputation management—all working together under one data layer. In addition to driving more leads through organic and paid channels, this approach lets you identify, track, and follow up with the people who show real interest. It is the way modern healthcare marketing works, and it is exactly what P5 was designed to deliver for <a href="/markets/plastic-surgeons/" style={{ color: 'var(--p5-accent)' }}>plastic surgeons</a> and high-trust medical practices. <a href="/contact/" style={{ color: 'var(--p5-accent)' }}>Talk to our team</a> about building a plastic surgery marketing system that works.</p>
         </div>
       </section>
 

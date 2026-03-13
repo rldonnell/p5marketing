@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
               "alternateName": "P5 Marketing Agency",
               "url": "https://p5marketing.com",
               "logo": "https://p5marketing.com/wp-content/uploads/2026/02/cropped-P5-Logo-site-icon-2026-1-100x73.webp",
-              "description": "Plastic surgery marketing agency specializing in SEO, intent data, and visitor identification. Full-cycle digital marketing for plastic surgeons, wedding venues, and high-trust businesses.",
+              "description": "Full-cycle digital agency specializing in SEO, intent data, and visitor identification for high-trust businesses.",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Colleyville",
@@ -86,18 +86,12 @@ export default function RootLayout({ children }) {
                 "name": "United States"
               },
               "knowsAbout": [
-                "Plastic Surgery Marketing",
-                "SEO for Plastic Surgeons",
                 "Intent Data Marketing",
                 "Visitor Identification",
-                "Search Engine Optimization",
                 "Generative Engine Optimization",
-                "Digital Marketing",
                 "Lead Generation",
                 "CRM Integration",
-                "Retargeting",
-                "Email Marketing",
-                "Marketing Automation"
+                "Retargeting"
               ],
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
