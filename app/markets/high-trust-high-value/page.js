@@ -230,5 +230,6 @@ export default function HighTrustHighValuePage() {
         </a>
       </section>
     </div>
+    </>
   );
 }

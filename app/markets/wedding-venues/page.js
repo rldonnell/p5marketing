@@ -219,5 +219,6 @@ export default function WeddingVenuesPage() {
         </a>
       </section>
     </div>
+    </>
   );
 }
