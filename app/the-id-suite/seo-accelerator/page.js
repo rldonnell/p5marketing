@@ -1,4 +1,7 @@
 export const metadata = {
+  alternates: {
+    canonical: '/the-id-suite/seo-accelerator/',
+  },
   title: 'SEO Accelerator for Plastic Surgeons | P5 Marketing',
   description:
     'SEO Accelerator by P5 Marketing: 25 years of SEO expertise plus GEO optimization and content repurposing for plastic surgeons.',
@@ -73,6 +76,21 @@ export default function SEOAcceleratorPage() {
 
   return (
     <main style={{ color: 'var(--p5-text)' }}>
+      {/* BreadcrumbList structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "The ID Suite", "item": "https://p5marketing.com/the-id-suite/"}, {"@type": "ListItem", "position": 3, "name": "SEO Accelerator", "item": "https://p5marketing.com/the-id-suite/seo-accelerator/"}]}'
+        }}
+      />
+      {/* FAQ structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long does it take for the SEO Accelerator to show results?", "acceptedAnswer": {"@type": "Answer", "text": "Most clients see measurable ranking improvements within 60\u201390 days, with significant traffic growth by month four to six. SEO compounds over time, so months six through twelve typically show the steepest growth curve. We set clear 90-day milestones so you always know whether we\u2019re on track."}}, {"@type": "Question", "name": "Do I need to create the content myself?", "acceptedAnswer": {"@type": "Answer", "text": "No. We handle all content production. We\u2019ll interview you or your team to capture your expertise, then our writers produce SEO-optimized content that sounds like it came from a practitioner\u2014because it\u2019s built on real practitioner knowledge. You review and approve everything before it publishes."}}, {"@type": "Question", "name": "What\u2019s the difference between SEO and GEO?", "acceptedAnswer": {"@type": "Answer", "text": "SEO optimizes your content for traditional search engine rankings\u2014appearing in Google\u2019s organic results. GEO optimizes your content to be cited by AI-powered tools like Google AI Overviews, ChatGPT, and Perplexity. Both drive qualified traffic, but through different mechanisms. The SEO Accelerator handles both simultaneously because they share the same content foundation."}}, {"@type": "Question", "name": "How is P5 different from the SEO agency I used before?", "acceptedAnswer": {"@type": "Answer", "text": "Most SEO agencies stop at strategy. They hand you a keyword report and a list of recommendations, then charge you monthly while you figure out how to implement them. P5 executes. We do the technical fixes, write the content, build the links, and optimize for AI engines\u2014all managed, all reported, all accountable to business outcomes rather than vanity metrics."}}, {"@type": "Question", "name": "Can I use the SEO Accelerator without the other ID Suite products?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. The SEO Accelerator works as a standalone service. Many clients start here and add IntentID, VisitorID, or InboxID later as their organic traffic grows and they want deeper visibility into who\u2019s visiting and how to convert them."}}, {"@type": "Question", "name": "What industries do you specialize in?", "acceptedAnswer": {"@type": "Answer", "text": "P5 Marketing focuses on high-trust, high-value businesses\u2014primarily in healthcare (plastic surgery, specialty medical, dental), professional services (law, financial advisory), luxury hospitality (wedding venues, boutique hotels), and B2B companies with considered purchase cycles."}}, {"@type": "Question", "name": "Does the SEO Accelerator replace paid ads?", "acceptedAnswer": {"@type": "Answer", "text": "No. SEO and paid ads serve different purposes. SEO is the long game; paid ads are the short game. Most of our clients see the best ROI when they run both. The SEO Accelerator brings organic momentum; paid ads accelerate results. Together, they lower your customer acquisition cost."}}, {"@type": "Question", "name": "What is GEO and why do I need it?", "acceptedAnswer": {"@type": "Answer", "text": "Generative Engine Optimization is optimizing your content for AI search platforms (ChatGPT, Perplexity, Claude, Google AI Overviews). As more people use AI to research products and services, visibility in those platforms matters. GEO is still new\u2014most competitors aren\u2019t doing it yet. That\u2019s your advantage."}}]})
+        }}
+      />
+
       {/* HERO */}
       <section
         style={{

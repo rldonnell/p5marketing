@@ -19,6 +19,9 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata = {
+  alternates: {
+    canonical: '/',
+  },
   title: 'Plastic Surgery Marketing Agency | P5 Marketing',
   description: 'Plastic surgery marketing agency specializing in SEO, intent data, and visitor identification. We helped one practice grow from $1M to $3.5M in 18 months.',
   metadataBase: new URL('https://p5marketing.com'),

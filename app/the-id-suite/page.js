@@ -1,4 +1,7 @@
 export const metadata = {
+  alternates: {
+    canonical: '/the-id-suite/',
+  },
   title: 'The ID Suite | Full-Cycle Marketing Stack | P5 Marketing',
   description:
     'The ID Suite combines SEO Accelerator, IntentID, VisitorID, and InboxID into one full-cycle intent data marketing stack for plastic surgeons.',
@@ -263,6 +266,13 @@ export default function IDSuiteLanding() {
 
   return (
     <div>
+      {/* BreadcrumbList structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "The ID Suite", "item": "https://p5marketing.com/the-id-suite/"}]}'
+        }}
+      />
       <section style={heroStyles}>
         <div style={kickerStyles}>The ID Suite</div>
         <h1 style={h1Styles}>The ID Suite: Full-Cycle Intent Data Marketing Stack</h1>

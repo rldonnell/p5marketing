@@ -1,4 +1,7 @@
 export const metadata = {
+  alternates: {
+    canonical: '/about/',
+  },
   title: 'About P5 Marketing | Plastic Surgery Marketing Team',
   description:
     'Meet the team behind P5 Marketing. We build full-cycle intent data campaigns for plastic surgeons and high-trust businesses.',
@@ -50,6 +53,13 @@ export default function About() {
 
   return (
     <main className="p5-main">
+      {/* BreadcrumbList structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://p5marketing.com/about/"}]}'
+        }}
+      />
       {/* HERO SECTION */}
       <section
         className="p5-hero"

@@ -1,4 +1,7 @@
 export const metadata = {
+  alternates: {
+    canonical: '/the-id-suite/inboxid/',
+  },
   title: 'InboxID\u2122 | Same-Day Lead Conversion | P5 Marketing',
   description:
     'InboxID converts identified website visitors with same-day retargeting ads and behavior-based email sequences. Close the loop fast.',
@@ -192,6 +195,13 @@ const styles = {
 export default function InboxIDPage() {
   return (
     <div style={styles.container}>
+      {/* BreadcrumbList structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "The ID Suite", "item": "https://p5marketing.com/the-id-suite/"}, {"@type": "ListItem", "position": 3, "name": "InboxID", "item": "https://p5marketing.com/the-id-suite/inboxid/"}]}'
+        }}
+      />
       {/* Hero Section */}
       <section style={styles.hero}>
         <div style={styles.heroGrid}></div>

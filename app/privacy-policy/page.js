@@ -1,4 +1,7 @@
 export const metadata = {
+  alternates: {
+    canonical: '/privacy-policy/',
+  },
   title: 'Privacy Policy | P5 Marketing',
   description:
     'How P5 Marketing collects, uses, and protects your personal information. Read our full privacy policy.',

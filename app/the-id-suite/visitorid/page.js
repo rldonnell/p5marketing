@@ -1,4 +1,7 @@
 export const metadata = {
+  alternates: {
+    canonical: '/the-id-suite/visitorid/',
+  },
   title: 'VisitorID\u2122 | Website Visitor Identification | P5 Marketing',
   description:
     'VisitorID identifies up to 60% of anonymous website visitors by name, email, phone, and address using geofencing, IP, and pixel data.',
@@ -249,6 +252,13 @@ export default function VisitorIDPage() {
 
   return (
     <div>
+      {/* BreadcrumbList structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "The ID Suite", "item": "https://p5marketing.com/the-id-suite/"}, {"@type": "ListItem", "position": 3, "name": "VisitorID", "item": "https://p5marketing.com/the-id-suite/visitorid/"}]}'
+        }}
+      />
       <section style={heroStyles}>
         <div style={kickerStyles}>VisitorID™ . Powered by P5 Marketing</div>
         <h1 style={h1Styles}>VisitorID™: Identify Up to 60% of Anonymous Website Visitors</h1>

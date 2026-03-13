@@ -1,4 +1,7 @@
 export const metadata = {
+  alternates: {
+    canonical: '/the-id-suite/intentid/',
+  },
   title: 'IntentID\u2122 | Intent Data Audience Building | P5 Marketing',
   description:
     'IntentID builds custom audiences from real search behavior in the past 48-72 hours. Deploy across Meta, Google, X, TikTok, and LinkedIn.',
@@ -268,6 +271,13 @@ export default function IntentIDPage() {
 
   return (
     <div>
+      {/* BreadcrumbList structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "The ID Suite", "item": "https://p5marketing.com/the-id-suite/"}, {"@type": "ListItem", "position": 3, "name": "IntentID", "item": "https://p5marketing.com/the-id-suite/intentid/"}]}'
+        }}
+      />
       <section style={heroStyles}>
         <div style={kickerStyles}>IntentID™ . Powered by P5 Marketing</div>
         <h1 style={h1Styles}>IntentID\u2122: Find Ready-to-Buy Customers Through Intent Data</h1>

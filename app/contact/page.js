@@ -40,6 +40,13 @@ export default function ContactPage() {
 
   return (
     <main style={{ backgroundColor: 'var(--p5-bg-deep)', color: 'var(--p5-text)' }}>
+      {/* BreadcrumbList structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://p5marketing.com/contact/"}]}'
+        }}
+      />
       {/* Hero Section */}
       <section
         style={{

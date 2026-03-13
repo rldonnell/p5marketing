@@ -1,4 +1,7 @@
 export const metadata = {
+  alternates: {
+    canonical: '/how-it-works/',
+  },
   title: 'How Intent Data Marketing Works | P5 Marketing',
   description:
     'See how IntentID, VisitorID, InboxID, and SEO Accelerator work together in a four-stage intent data marketing pipeline for plastic surgeons.',
@@ -74,6 +77,13 @@ export default function HowItWorks() {
 
   return (
     <main style={{ color: "var(--p5-text)" }}>
+      {/* BreadcrumbList structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "How It Works", "item": "https://p5marketing.com/how-it-works/"}]}'
+        }}
+      />
       {/* HERO SECTION */}
       <section
         style={{

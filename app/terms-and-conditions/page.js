@@ -1,4 +1,7 @@
 export const metadata = {
+  alternates: {
+    canonical: '/terms-and-conditions/',
+  },
   title: 'Terms and Conditions | P5 Marketing',
   description:
     'Terms and conditions governing the use of P5 Marketing services and website.',

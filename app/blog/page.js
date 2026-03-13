@@ -2,6 +2,9 @@ import { getPosts, getCategories } from '../../lib/wordpress';
 import BlogList from './BlogList';
 
 export const metadata = {
+  alternates: {
+    canonical: '/blog/',
+  },
   title: 'Plastic Surgery Marketing Blog | P5 Marketing',
   description:
     'Insights on intent data marketing, visitor identification, lead generation strategy, and full-cycle campaign execution for high-trust businesses.',
@@ -26,6 +29,13 @@ export default async function BlogPage() {
 
   return (
     <main className="p5-main">
+      {/* BreadcrumbList structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://p5marketing.com/blog/"}]}'
+        }}
+      />
       {/* ── Hero ── */}
       <section className="p5-hero" style={{ paddingBottom: '2rem' }}>
         <div className="p5-wrap" style={{ textAlign: 'center', maxWidth: '800px' }}>

@@ -1,4 +1,7 @@
 export const metadata = {
+  alternates: {
+    canonical: '/the-id-suite/searchid/',
+  },
   title: 'SearchID\u2122 | SEO & GEO Content Engine | P5 Marketing',
   description:
     'SearchID attracts qualified customers through SEO, GEO, and content repurposing. Powered by 25 years of P5 SEO expertise.',
@@ -73,6 +76,21 @@ export default function SearchIDPage() {
 
   return (
     <main style={{ color: 'var(--p5-text)' }}>
+      {/* BreadcrumbList structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "The ID Suite", "item": "https://p5marketing.com/the-id-suite/"}, {"@type": "ListItem", "position": 3, "name": "SearchID", "item": "https://p5marketing.com/the-id-suite/searchid/"}]}'
+        }}
+      />
+      {/* FAQ structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is SearchID different from hiring a freelance SEO writer?", "acceptedAnswer": {"@type": "Answer", "text": "Speed, integration, and GEO. Most freelancers take 4\u20138 weeks per article and have no visibility into rankings or ROI. SearchID delivers pillar content in 2\u20133 weeks, tracks rankings weekly, and integrates with IntentID and paid campaigns so your organic traffic feeds directly into your customer acquisition funnel. Plus, most freelancers have never heard of GEO."}}, {"@type": "Question", "name": "How long before I see results?", "acceptedAnswer": {"@type": "Answer", "text": "First organic traffic in 4\u20136 weeks (if you\u2019re in a non-competitive market). Meaningful traffic (10\u201330 qualified visitors/month) in 8\u201312 weeks. The real wins compound after 6 months when your content library is substantial. GEO optimization can see results even faster (2\u20134 weeks in many cases) because the space is less competitive."}}, {"@type": "Question", "name": "Can SearchID content work with my existing IntentID audience?", "acceptedAnswer": {"@type": "Answer", "text": "That\u2019s the point. Your IntentID data tells us exactly which buyers are in market and what they\u2019re searching for. SearchID creates content to reach those buyers before your competitors do. Then that organic traffic feeds into your paid campaigns for maximum reach."}}, {"@type": "Question", "name": "What if I\u2019m already doing SEO?", "acceptedAnswer": {"@type": "Answer", "text": "We audit your existing content, identify gaps, and integrate it into the SearchID roadmap. We typically find that competitor content is 30\u201340% better optimized. We close those gaps, add GEO, and layer in repurposing\u2014taking your existing IP and turning it into 5\u20137 additional assets."}}, {"@type": "Question", "name": "Does SearchID replace my paid ads?", "acceptedAnswer": {"@type": "Answer", "text": "No. SearchID and paid ads serve different purposes. SEO is the long game; paid ads are the short game. Most of our clients see the best ROI when they run both. SearchID brings organic momentum; paid ads accelerate results. Together, they lower your customer acquisition cost."}}, {"@type": "Question", "name": "What is GEO and why do I need it?", "acceptedAnswer": {"@type": "Answer", "text": "Generative Engine Optimization is optimizing your content for AI search platforms (ChatGPT, Perplexity, Claude). As more people use AI to research products and services, visibility in those platforms matters. GEO is still new\u2014most competitors aren\u2019t doing it yet. That\u2019s your advantage."}}, {"@type": "Question", "name": "Do I need SearchID if I already have IntentID?", "acceptedAnswer": {"@type": "Answer", "text": "IntentID is who to target. SearchID is how to attract them before they\u2019re even in-market. IntentID finds your audience; SearchID attracts them and builds authority. Both together create the most efficient customer acquisition loop. Most clients add SearchID within 90 days."}}, {"@type": "Question", "name": "How do you measure SearchID success?", "acceptedAnswer": {"@type": "Answer", "text": "Keyword rankings (tracked weekly), organic traffic growth (tracked monthly), conversion rates (through VisitorID), and cost-per-customer (integrated with paid spend). You\u2019ll see a dashboard showing all of it."}}]})
+        }}
+      />
+
       {/* HERO */}
       <section
         style={{

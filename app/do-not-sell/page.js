@@ -1,4 +1,7 @@
 export const metadata = {
+  alternates: {
+    canonical: '/do-not-sell/',
+  },
   title: 'Do Not Sell My Information | P5 Marketing',
   description:
     'Exercise your right to opt out of the sale or sharing of your personal information under applicable privacy laws.',
