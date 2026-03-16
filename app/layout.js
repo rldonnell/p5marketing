@@ -57,11 +57,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${dmSans.variable} ${spaceMono.variable}`}>
       <head>
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6122QJKV15" />
+        {/* Google Analytics — deferred until idle to avoid blocking LCP */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6122QJKV15');`,
+            __html: `(function(){function load(){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-6122QJKV15';s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-6122QJKV15');}if('requestIdleCallback' in window){requestIdleCallback(load);}else{setTimeout(load,3500);}})();`,
           }}
         />
         <script

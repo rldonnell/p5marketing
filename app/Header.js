@@ -111,7 +111,15 @@ export default function Header() {
           {/* Logo */}
           <div className="p5-header-logo">
             <a href="/" aria-label="P5 Marketing – Home">
-              <img src="/p5-logo.webp" alt="P5 Marketing" width="500" height="336" />
+              <img
+                src="/p5-logo-sm.webp"
+                srcSet="/p5-logo-sm.webp 120w, /p5-logo-3x.webp 180w"
+                sizes="60px"
+                alt="P5 Marketing"
+                width="60"
+                height="40"
+                fetchpriority="high"
+              />
             </a>
           </div>
 

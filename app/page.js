@@ -112,8 +112,9 @@ export default function Home() {
                 <text x="200" y="44" textAnchor="middle" fill="#00e5c7" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">FIND</text>
                 <text x="200" y="59" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">IntentID</text>
                 <circle cx="352" cy="200" r="40" fill="#0d1420" stroke="#7b61ff" strokeWidth="2" />
-                <text x="352" y="196" textAnchor="middle" fill="#7b61ff" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">DRIVE</text>
-                <text x="352" y="211" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">SEO Accelerator + Ads</text>
+                <text x="352" y="191" textAnchor="middle" fill="#7b61ff" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">DRIVE</text>
+                <text x="352" y="205" textAnchor="middle" fill="#94a3b8" fontSize="9" fontFamily="DM Sans, sans-serif">SEO Accelerator</text>
+                <text x="352" y="217" textAnchor="middle" fill="#94a3b8" fontSize="9" fontFamily="DM Sans, sans-serif">+ Ads</text>
                 <circle cx="200" cy="352" r="40" fill="#0d1420" stroke="#00e5c7" strokeWidth="2" />
                 <text x="200" y="348" textAnchor="middle" fill="#00e5c7" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">IDENTIFY</text>
                 <text x="200" y="363" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">VisitorID</text>
