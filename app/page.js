@@ -96,7 +96,6 @@ export default function Home() {
         <div className="p5-wrap">
           <div className="p5-hero-grid">
             <div className="p5-hero-copy p5-fade-up">
-              <img src="/images/p5-marketing-logo-mark.svg" alt="P5 Marketing agency logo mark" width="60" height="60" style={{ marginBottom: '1rem' }} />
               <p className="p5-kicker">Colleyville, TX &middot; U.S. Only &middot; High-Trust, High-Value Businesses</p>
               <h1>Plastic Surgery Marketing That Builds a Pipeline You Can See, Track, and Close</h1>
               <p className="p5-sub">We find people actively searching for your services. We drive them to your site. We identify them by name. And we follow up until they convert. <strong>One system. Full visibility.</strong> Built for <em>plastic surgeons</em> and high-trust businesses.</p>
