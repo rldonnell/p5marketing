@@ -364,19 +364,19 @@ export default function Home() {
         <h2 className="p5-section-title p5-fade-up">Who We Serve</h2>
         <p className="p5-fade-up" style={{ textAlign: 'center', color: 'var(--p5-text-dim)', maxWidth: '640px', margin: '0 auto 2.5rem' }}>The same engine powers every vertical—from plastic surgery clinics to wedding venues. We tailor the segments, <a href="/the-id-suite/inboxid/" style={{ color: 'var(--p5-accent)' }}>follow-up sequences</a>, and <a href="/the-id-suite/seo-accelerator/" style={{ color: 'var(--p5-accent)' }}>landing pages</a> to your specific patient or client journey—whether you run a surgical practice, a wedding venue, or a specialty medical clinic.</p>
         <div className="p5-market-grid">
-          <a href="/plastic-surgeons/" className="p5-market-card p5-fade-up">
+          <a href="/markets/plastic-surgeons/" className="p5-market-card p5-fade-up">
             <img src="/images/plastic-surgeon-marketing.svg" alt="Marketing services for surgeons" width="48" height="48" style={{ marginBottom: '.5rem' }} loading="lazy" />
             <h3>Plastic Surgeons</h3>
             <p>Find patients researching cosmetic procedures near you. Identify the ones who visit your site. Follow up the same day so your team can <a href="/markets/plastic-surgeons/" style={{ color: 'var(--p5-accent)' }}>book the consult</a>.</p>
             <span className="p5-arrow">&rarr;</span>
           </a>
-          <a href="/wedding-venues/" className="p5-market-card p5-fade-up p5-delay-1">
+          <a href="/markets/wedding-venues/" className="p5-market-card p5-fade-up p5-delay-1">
             <img src="/images/wedding-venue-marketing.svg" alt="Marketing for wedding venues and event spaces" width="48" height="48" style={{ marginBottom: '.5rem' }} loading="lazy" />
             <h3>Wedding Venues</h3>
             <p>Find couples actively searching for venues in your area. Identify the ones who visit your site. Follow up the same day so your team can book the tour.</p>
             <span className="p5-arrow">&rarr;</span>
           </a>
-          <a href="/high-trust-high-value/" className="p5-market-card p5-fade-up p5-delay-2">
+          <a href="/markets/high-trust-high-value/" className="p5-market-card p5-fade-up p5-delay-2">
             <img src="/images/high-trust-business-marketing.svg" alt="Marketing for high-trust high-value businesses" width="48" height="48" style={{ marginBottom: '.5rem' }} loading="lazy" />
             <h3>Other High-Trust Businesses</h3>
             <p>If a booked call is worth thousands, this system fits. Legal, luxury services, specialty medical. The cycle is the same. The messaging is yours.</p>
