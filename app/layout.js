@@ -144,8 +144,8 @@ export default function RootLayout({ children }) {
         />
         {/* Identity Pixel — visitor identification */}
         <script
-          src="https://cdn.v3.identitypxl.app/pixels/90e36a7f-dd7a-4388-9d87-dd088ab86bcc/p.js"
-          async
+          src="https://cdn.idpixel.app/v1/idp-analytics-69bd7936699f22b3db5a92f5.min.js"
+          defer
         />
       </head>
       <body>
