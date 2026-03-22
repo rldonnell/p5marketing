@@ -511,6 +511,46 @@ a { color: inherit; }
   line-height: 1.6;
 }
 
+/* ===== PRODUCT SCREENSHOTS ===== */
+.p5-product-showcase { padding-top: 4rem; padding-bottom: 2rem; }
+.p5-screenshot-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2.5rem;
+}
+.p5-screenshot-card {
+  background: var(--p5-bg-card, #fff);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  border: 1px solid var(--p5-border, #e2e8f0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.p5-screenshot-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+}
+.p5-screenshot-frame {
+  background: #0f172a;
+  padding: 8px;
+  border-radius: 12px 12px 0 0;
+}
+.p5-screenshot-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+.p5-screenshot-caption {
+  padding: 1rem 1.5rem;
+  font-size: 0.95rem;
+  color: var(--p5-text-soft, #64748b);
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* ===== BENEFITS GRID ===== */
 .p5-benefit-grid {
   display: grid;

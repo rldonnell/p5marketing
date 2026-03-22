@@ -27,6 +27,26 @@ function StatBar({ stats }) {
   );
 }
 
+function ProductScreenshots({ data }) {
+  return (
+    <section className="p5-wrap p5-product-showcase">
+      <p className="p5-section-label">The Product</p>
+      <h2 className="p5-section-title">{data.headline}</h2>
+      <p className="p5-comparison-intro">{data.intro}</p>
+      <div className="p5-screenshot-grid">
+        {data.screens.map((screen, i) => (
+          <div key={i} className="p5-screenshot-card p5-fade-up" style={{ transitionDelay: `${i * 0.15}s` }}>
+            <div className="p5-screenshot-frame">
+              <img src={screen.src} alt={screen.alt} loading="lazy" />
+            </div>
+            <p className="p5-screenshot-caption">{screen.caption}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function ProblemSection({ data }) {
   return (
     <section id={data.id} className="p5-wrap">
@@ -202,6 +222,7 @@ export default function VisitorIDPage() {
       </section>
 
       <StatBar stats={content.stats} />
+      <ProductScreenshots data={content.productScreenshots} />
       <ProblemSection data={content.problem} />
       <HowItWorks data={content.howItWorks} />
       <BenefitsGrid data={content.benefits} />
