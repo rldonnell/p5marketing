@@ -4,7 +4,7 @@ const schema = {
   name: 'VisitorID™',
   brand: { '@type': 'Organization', name: 'P5 Marketing' },
   description:
-    'Website visitor identification technology that identifies up to 60% of anonymous visitors by name, email, phone, and address using three layered signals: geofencing, IP intelligence, and pixel data.',
+    'VisitorID identifies anonymous website visitors by name, email, and phone, scores their purchase intent, and delivers qualified leads to your CRM every morning. No forms required.',
   url: 'https://p5marketing.com/the-id-suite/visitorid/',
   category: 'Marketing Technology',
   offers: {
