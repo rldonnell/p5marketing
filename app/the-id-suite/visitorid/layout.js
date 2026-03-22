@@ -1,10 +1,10 @@
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
-  name: 'VisitorID™',
+  name: 'VisitorID\u2122',
   brand: { '@type': 'Organization', name: 'P5 Marketing' },
   description:
-    'VisitorID identifies anonymous website visitors by name, email, and phone, scores their purchase intent, and delivers qualified leads to your CRM every morning. No forms required.',
+    'VisitorID\u2122 helps you recover high-value website visitors before they disappear. See who visited, what they researched, and which people are serious enough to send into your CRM automatically.',
   url: 'https://p5marketing.com/the-id-suite/visitorid/',
   category: 'Marketing Technology',
   offers: {
