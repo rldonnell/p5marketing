@@ -170,6 +170,17 @@ function FaqSection({ data }) {
   );
 }
 
+function NotFor({ data }) {
+  return (
+    <section className="p5-wrap">
+      <div className="p5-notfor">
+        <h2 className="p5-notfor-headline">{data.headline}</h2>
+        <p className="p5-notfor-body">{data.body}</p>
+      </div>
+    </section>
+  );
+}
+
 function FinalCta({ data }) {
   return (
     <section id={data.id} className="p5-final-cta">
@@ -250,6 +261,7 @@ export default function VisitorIDPage() {
       <ComparisonTable data={content.comparison} />
       <BestFit data={content.bestFit} />
       <FaqSection data={content.faq} />
+      <NotFor data={content.notFor} />
       <FinalCta data={content.finalCta} />
     </div>
   );
