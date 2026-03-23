@@ -1,4 +1,5 @@
 import content from '../../../lib/content/visitorid';
+import PageEffects from './PageEffects';
 
 export const metadata = {
   alternates: { canonical: '/the-id-suite/visitorid/' },
@@ -190,6 +191,7 @@ function FinalCta({ data }) {
 export default function VisitorIDPage() {
   return (
     <div>
+      <PageEffects />
       {/* BreadcrumbList structured data */}
       <script
         type="application/ld+json"
