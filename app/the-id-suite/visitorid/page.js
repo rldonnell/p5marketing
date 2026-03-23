@@ -208,6 +208,25 @@ export default function VisitorIDPage() {
         }}
       />
 
+      {/* FAQPage structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: content.faq.items.map((item) => ({
+              '@type': 'Question',
+              name: item.question,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: item.answer,
+              },
+            })),
+          }),
+        }}
+      />
+
       {/* Hero */}
       <section className="p5-hero-centered">
         <p className="p5-kicker">{content.hero.eyebrow}</p>
