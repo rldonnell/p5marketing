@@ -468,7 +468,7 @@ a { color: inherit; }
   font-weight: 700;
   line-height: 1.15;
   color: var(--p5-text);
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto 1.25rem;
 }
 .p5-hero-centered .p5-sub {
