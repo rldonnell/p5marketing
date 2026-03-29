@@ -147,6 +147,12 @@ export default function RootLayout({ children }) {
           src="https://cdn.idpixel.app/v1/idp-analytics-69bd7936699f22b3db5a92f5.min.js"
           defer
         />
+        {/* Ahrefs Analytics */}
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="xXtCQMvwmmbQOYJ1MvaBTw"
+          async
+        />
       </head>
       <body>
         <Header />
