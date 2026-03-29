@@ -9,6 +9,9 @@ export const metadata = {
     title: 'The ID Suite | Full-Cycle Marketing Stack | P5 Marketing',
     description:
       'The ID Suite combines SEO Accelerator, IntentID, VisitorID, and InboxID into one full-cycle intent data marketing stack for plastic surgeons.',
+    url: 'https://p5marketing.com/the-id-suite/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 

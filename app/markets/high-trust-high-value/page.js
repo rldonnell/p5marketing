@@ -7,6 +7,9 @@ export const metadata = {
   openGraph: {
     title: 'Marketing for High-Trust Businesses | P5 Marketing',
     description: 'Intent data marketing built for high-trust, high-ticket businesses. Legal, plastic surgery, wedding venues & luxury services.',
+    url: 'https://p5marketing.com/markets/high-trust-high-value/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 

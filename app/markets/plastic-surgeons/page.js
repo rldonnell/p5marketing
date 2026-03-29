@@ -2,11 +2,14 @@ export const metadata = {
   alternates: {
     canonical: '/markets/plastic-surgeons/',
   },
-  title: 'Marketing for Plastic Surgeons | SEO, PPC & Patient Acquisition | P5 Marketing',
-  description: 'Marketing for plastic surgeons that finds patients researching procedures. SEO, PPC, social media, content marketing, and reputation management strategies that fill your consult calendar.',
+  title: 'Plastic Surgery Marketing | SEO & PPC | P5 Marketing',
+  description: 'Marketing for plastic surgeons that finds patients researching procedures. SEO, PPC, social media, and content strategies that fill your consult calendar.',
   openGraph: {
-    title: 'Marketing for Plastic Surgeons | SEO, PPC & Patient Acquisition | P5 Marketing',
-    description: 'Marketing for plastic surgeons that finds patients researching procedures. SEO, PPC, social media, content marketing, and reputation management strategies that fill your consult calendar.',
+    title: 'Plastic Surgery Marketing | SEO & PPC | P5 Marketing',
+    description: 'Marketing for plastic surgeons that finds patients researching procedures. SEO, PPC, social media, and content strategies that fill your consult calendar.',
+    url: 'https://p5marketing.com/markets/plastic-surgeons/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 
@@ -310,7 +313,7 @@ export default function PlasticSurgeonsPage() {
 
         <h3 style={h3Style}>Video Content for Procedures</h3>
         <p style={pStyle}>
-          Video is increasingly important in <strong>digital marketing</strong> for plastic surgeons. Procedure explanation videos, surgeon Q&amp;A sessions, patient testimonial videos, and virtual office tours all perform well on YouTube, Instagram, and your website. Video content builds a personal connection that text alone cannot achieve — patients feel like they already know and trust the surgeon before they walk through the door. Services like P5&apos;s <a href="/the-id-suite/searchid/" style={{ color: 'var(--p5-accent)' }}>SearchID</a> can help distribute this content to the right digital channels for maximum visibility.
+          Video is increasingly important in <strong>digital marketing</strong> for plastic surgeons. Procedure explanation videos, surgeon Q&amp;A sessions, patient testimonial videos, and virtual office tours all perform well on YouTube, Instagram, and your website. Video content builds a personal connection that text alone cannot achieve — patients feel like they already know and trust the surgeon before they walk through the door. Services like P5&apos;s <a href="/the-id-suite/seo-accelerator/" style={{ color: 'var(--p5-accent)' }}>SearchID</a> can help distribute this content to the right digital channels for maximum visibility.
         </p>
       </section>
 

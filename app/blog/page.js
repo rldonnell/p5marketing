@@ -12,6 +12,9 @@ export const metadata = {
     title: 'Plastic Surgery Marketing Blog | P5 Marketing',
     description:
       'Insights on intent data marketing, visitor identification, lead generation strategy, and full-cycle campaign execution for high-trust businesses.',
+    url: 'https://p5marketing.com/blog/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 

@@ -8,6 +8,9 @@ export const metadata = {
   openGraph: {
     title: content.seo.title,
     description: content.seo.description,
+    url: 'https://p5marketing.com/the-id-suite/visitorid/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 

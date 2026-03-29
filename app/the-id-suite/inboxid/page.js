@@ -9,6 +9,9 @@ export const metadata = {
     title: 'InboxID\u2122 | Same-Day Lead Conversion | P5 Marketing',
     description:
       'InboxID converts identified website visitors with same-day retargeting ads and behavior-based email sequences. Close the loop fast.',
+    url: 'https://p5marketing.com/the-id-suite/inboxid/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 

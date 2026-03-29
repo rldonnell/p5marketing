@@ -9,6 +9,9 @@ export const metadata = {
     title: 'About P5 Marketing | Plastic Surgery Marketing Team',
     description:
       'Meet the team behind P5 Marketing. We build full-cycle intent data campaigns for plastic surgeons and high-trust businesses.',
+    url: 'https://p5marketing.com/about/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 

@@ -27,6 +27,9 @@ export async function generateMetadata({ params }) {
 
     const excerpt = post.excerpt.rendered.replace(/<[^>]*>/g, '').trim();
     return {
+      alternates: {
+        canonical: `/blog/${params.slug}/`,
+      },
       title: `${post.title.rendered} – P5 Marketing`,
       description: excerpt.slice(0, 160),
       openGraph: {

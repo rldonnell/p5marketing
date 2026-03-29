@@ -4,11 +4,14 @@ export const metadata = {
   },
   title: 'Terms and Conditions | P5 Marketing',
   description:
-    'Terms and conditions governing the use of P5 Marketing services and website.',
+    'Terms and conditions governing the use of P5 Marketing services, website, and intent data marketing products including IntentID, VisitorID, and InboxID.',
   openGraph: {
     title: 'Terms and Conditions | P5 Marketing',
     description:
-      'Terms and conditions governing the use of P5 Marketing services and website.',
+      'Terms and conditions governing the use of P5 Marketing services, website, and intent data marketing products including IntentID, VisitorID, and InboxID.',
+    url: 'https://p5marketing.com/terms-and-conditions/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 

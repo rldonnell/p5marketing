@@ -9,6 +9,9 @@ export const metadata = {
     title: 'Privacy Policy | P5 Marketing',
     description:
       'How P5 Marketing collects, uses, and protects your personal information. Read our full privacy policy.',
+    url: 'https://p5marketing.com/privacy-policy/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 

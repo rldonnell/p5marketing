@@ -9,6 +9,9 @@ export const metadata = {
     title: 'How Intent Data Marketing Works | P5 Marketing',
     description:
       'See how IntentID, VisitorID, InboxID, and SEO Accelerator work together in a four-stage intent data marketing pipeline for plastic surgeons.',
+    url: 'https://p5marketing.com/how-it-works/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 

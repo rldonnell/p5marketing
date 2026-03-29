@@ -9,6 +9,9 @@ export const metadata = {
     title: 'SEO Accelerator for Plastic Surgeons | P5 Marketing',
     description:
       'SEO Accelerator by P5 Marketing: 25 years of SEO expertise plus GEO optimization and content repurposing for plastic surgeons.',
+    url: 'https://p5marketing.com/the-id-suite/seo-accelerator/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 

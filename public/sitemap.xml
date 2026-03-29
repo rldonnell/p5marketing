@@ -39,13 +39,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
-    <loc>https://p5marketing.com/the-id-suite/searchid/</loc>
-    <lastmod>2026-03-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
+<url>
     <loc>https://p5marketing.com/the-id-suite/intentid/</loc>
     <lastmod>2026-03-13</lastmod>
     <changefreq>monthly</changefreq>

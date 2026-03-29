@@ -9,6 +9,9 @@ export const metadata = {
     title: 'Do Not Sell My Information | P5 Marketing',
     description:
       'Exercise your right to opt out of the sale or sharing of your personal information under applicable privacy laws.',
+    url: 'https://p5marketing.com/do-not-sell/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 

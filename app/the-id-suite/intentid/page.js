@@ -9,6 +9,9 @@ export const metadata = {
     title: 'IntentID\u2122 | Intent Data Audience Building | P5 Marketing',
     description:
       'IntentID builds custom audiences from real search behavior in the past 48-72 hours. Deploy across Meta, Google, X, TikTok, and LinkedIn.',
+    url: 'https://p5marketing.com/the-id-suite/intentid/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 

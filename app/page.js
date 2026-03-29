@@ -100,7 +100,7 @@ export default function Home() {
               <h1>Plastic Surgery Marketing That Builds a Pipeline You Can See, Track, and Close</h1>
               <p className="p5-sub">We find people actively searching for your services. We drive them to your site. We identify them by name. And we follow up until they convert. <strong>One system. Full visibility.</strong> Built for <em>plastic surgeons</em> and high-trust businesses.</p>
               <div className="p5-cta-row">
-                <a href="/contact-us/" className="p5-btn p5-btn-primary">Book a Demo</a>
+                <a href="/contact/" className="p5-btn p5-btn-primary">Book a Demo</a>
                 <a href="#cycle" className="p5-btn p5-btn-ghost">See the Full Cycle</a>
               </div>
             </div>
@@ -314,7 +314,7 @@ export default function Home() {
           <div className="p5-fade-up p5-delay-2" style={{ background: 'var(--p5-surface)', borderRadius: '12px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.06)' }}>
             <img src="/icons/social-media-icon.svg" alt="Social media icon" width="48" height="48" style={{ marginBottom: '.5rem', opacity: 0.85 }} loading="lazy" />
             <h3 style={{ color: 'var(--p5-accent)', marginBottom: '.75rem' }}>Social Media Marketing</h3>
-            <p>Plastic surgery patients spend time on Instagram, Facebook, TikTok, and YouTube researching procedures and comparing results. Effective social media management for a cosmetic surgery clinic means posting before-and-after content, educational video, patient stories, and practice updates consistently. P5 builds your social media strategy and content calendar as part of the <a href="/the-id-suite/searchid/" style={{ color: 'var(--p5-accent)' }}>SearchID™</a> content engine, then uses intent data to make sure your paid social ads reach the right audience.</p>
+            <p>Plastic surgery patients spend time on Instagram, Facebook, TikTok, and YouTube researching procedures and comparing results. Effective social media management for a cosmetic surgery clinic means posting before-and-after content, educational video, patient stories, and practice updates consistently. P5 builds your social media strategy and content calendar as part of the <a href="/the-id-suite/seo-accelerator/" style={{ color: 'var(--p5-accent)' }}>SearchID™</a> content engine, then uses intent data to make sure your paid social ads reach the right audience.</p>
           </div>
 
           <div className="p5-fade-up p5-delay-3" style={{ background: 'var(--p5-surface)', borderRadius: '12px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.06)' }}>
@@ -346,7 +346,7 @@ export default function Home() {
             <li><a href="/the-id-suite/intentid/" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>IntentID™ Audience Building</a></li>
             <li><a href="/the-id-suite/visitorid/" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>VisitorID™ Visitor Identification</a></li>
             <li><a href="/the-id-suite/inboxid/" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>InboxID™ Conversion Engine</a></li>
-            <li><a href="/the-id-suite/searchid/" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>SearchID™ Content Engine</a></li>
+            <li><a href="/the-id-suite/seo-accelerator/" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>SearchID™ Content Engine</a></li>
             <li><a href="/the-id-suite/seo-accelerator/" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>SEO Accelerator for Surgeons</a></li>
             <li><a href="/markets/plastic-surgeons/" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>Marketing for Plastic Surgeons</a></li>
             <li><a href="/markets/wedding-venues/" style={{ color: 'var(--p5-accent)', textDecoration: 'none' }}>Marketing for Wedding Venues</a></li>
@@ -457,7 +457,7 @@ export default function Home() {
 
           <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>Most patients start by searching Google for a specific procedure—<em>rhinoplasty near me</em>, tummy tuck cost, or best plastic surgeon in Dallas. Search engine results determine which practices they discover first. In addition, a growing number of people now use AI-powered search tools like ChatGPT and Perplexity to compare plastic surgeons and read about cosmetic surgery options. That shift makes <em>content marketing</em> and generative engine optimization more important than ever for medical practices that want to stay visible online.</p>
 
-          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>After the initial search, patients spend time reading results and reviews, watching video content on YouTube and Instagram, and comparing before-and-after photos on social media. People want to feel confident before they make a decision about surgery, so they consume a significant amount of content along the way. A plastic surgeon with a strong <a href="/the-id-suite/searchid/" style={{ color: 'var(--p5-accent)' }}>social media presence</a>, educational video library, and positive online reputation has a clear advantage over one who relies on advertising alone.</p>
+          <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>After the initial search, patients spend time reading results and reviews, watching video content on YouTube and Instagram, and comparing before-and-after photos on social media. People want to feel confident before they make a decision about surgery, so they consume a significant amount of content along the way. A plastic surgeon with a strong <a href="/the-id-suite/seo-accelerator/" style={{ color: 'var(--p5-accent)' }}>social media presence</a>, educational video library, and positive online reputation has a clear advantage over one who relies on advertising alone.</p>
 
           <p className="p5-fade-up" style={{ color: 'var(--p5-text-dim)', lineHeight: 1.8, marginBottom: '1.25rem' }}>From there, patients narrow their options. They visit practice websites to learn more about the surgeon, read patient testimonials, view the services offered, and look for design cues that signal trust and professionalism. Website design matters more than most plastic surgeons realize—people judge healthcare providers by the quality of their online presence, and a poorly designed site will cost you <a href="/the-id-suite/visitorid/" style={{ color: 'var(--p5-accent)' }}>leads</a>. The time between a patient&rsquo;s first visit and their consultation request is the most critical window in your marketing funnel.</p>
 

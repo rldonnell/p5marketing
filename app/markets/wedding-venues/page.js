@@ -7,6 +7,9 @@ export const metadata = {
   openGraph: {
     title: 'Wedding Venue Marketing | P5 Marketing',
     description: 'Wedding venue marketing that finds couples shopping for venues. IntentID + VisitorID + InboxID book more tours for your venue.',
+    url: 'https://p5marketing.com/markets/wedding-venues/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },
 };
 
