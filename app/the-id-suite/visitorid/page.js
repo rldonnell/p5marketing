@@ -192,57 +192,85 @@ function ResourcesSection() {
       <p className="p5-comparison-intro">
         No registration required. Download the research, watch the walkthrough, or review the full presentation.
       </p>
-      <div className="p5-resources-grid">
-        <div className="p5-resource-card p5-fade-up" style={{ transitionDelay: '0s' }}>
-          <div className="p5-resource-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="36" height="36">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-              <line x1="16" y1="13" x2="8" y2="13" />
-              <line x1="16" y1="17" x2="8" y2="17" />
-              <polyline points="10 9 9 9 8 9" />
-            </svg>
-          </div>
+
+      {/* Featured: 97% Problem PDF */}
+      <div className="p5-resource-featured p5-fade-up">
+        <div className="p5-resource-featured-image">
+          <img
+            src="/images/resources/97-percent-problem-cover.jpg"
+            alt="The 97% Problem report cover — Why Most Businesses Under-Monetize Their Traffic"
+            loading="lazy"
+          />
+        </div>
+        <div className="p5-resource-featured-content">
+          <span className="p5-resource-badge">Free Report</span>
           <h3>The 97% Problem</h3>
           <p>
-            A data-backed report on why most businesses under-monetize their traffic
-            and how retargeting and identity-resolved follow-up recover the value.
+            Why most businesses under-monetize their traffic — and how retargeting
+            and identity-resolved follow-up recover the value they already paid to create.
           </p>
-          <a href="/downloads/The-97-Percent-Problem-P5-Marketing.pdf" download className="p5-btn p5-btn-primary">
+          <ul className="p5-resource-highlights">
+            <li>Industry benchmarks: CTR, conversion rates, CPA, and ROAS</li>
+            <li>The $20,000 scenario: same budget, nearly double the leads</li>
+            <li>Segmented retargeting vs. generic — where the real ROI lives</li>
+            <li>Every statistic sourced and cited. No inflated vendor claims.</li>
+          </ul>
+          <a
+            href="/downloads/The-97-Percent-Problem-P5-Marketing.pdf"
+            download
+            className="p5-btn p5-btn-primary p5-btn-lg"
+          >
             Download Free Report (PDF)
           </a>
         </div>
+      </div>
+
+      {/* Secondary: Video + Pitch Deck */}
+      <div className="p5-resources-grid-2col">
         <div className="p5-resource-card p5-fade-up" style={{ transitionDelay: '0.12s' }}>
-          <div className="p5-resource-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="36" height="36">
-              <polygon points="5 3 19 12 5 21 5 3" />
-            </svg>
+          <div className="p5-resource-card-visual">
+            <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+              <iframe
+                src="https://player.vimeo.com/video/1181721550?badge=0&autopause=0&player_id=0&app_id=58479"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                title="Identity-Resolved Retargeting — How VisitorID™ Works"
+              />
+            </div>
           </div>
-          <h3>Identity Retargeting Walkthrough</h3>
-          <p>
-            A short video showing how the VisitorID{'\u2122'} pipeline works end-to-end:
-            from anonymous visitor to scored lead in your CRM.
-          </p>
-          <a href="/downloads/P5-Identity-Retargeting-Overview.mp4" download className="p5-btn p5-btn-primary">
-            Download Video Walkthrough
-          </a>
+          <div className="p5-resource-card-body">
+            <h3>Identity Retargeting Walkthrough</h3>
+            <p>
+              A short video showing how the VisitorID{'\u2122'} pipeline works —
+              from anonymous visitor to scored lead in your CRM.
+            </p>
+          </div>
         </div>
+
         <div className="p5-resource-card p5-fade-up" style={{ transitionDelay: '0.24s' }}>
-          <div className="p5-resource-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="36" height="36">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-              <line x1="8" y1="21" x2="16" y2="21" />
-              <line x1="12" y1="17" x2="12" y2="21" />
-            </svg>
+          <div className="p5-resource-card-visual">
+            <img
+              src="/images/resources/pitch-deck-cover.jpg"
+              alt="Identity-Resolved Retargeting pitch deck cover slide"
+              loading="lazy"
+            />
           </div>
-          <h3>Identity Retargeting Pitch Deck</h3>
-          <p>
-            A 10-slide presentation covering the full VisitorID{'\u2122'} pipeline,
-            real-world examples, the three-layer delivery model, and ROI data.
-          </p>
-          <a href="/downloads/P5-Identity-Retargeting-Pitch-Deck.pptx" download className="p5-btn p5-btn-primary">
-            Download Presentation (PPTX)
-          </a>
+          <div className="p5-resource-card-body">
+            <h3>Identity Retargeting Pitch Deck</h3>
+            <p>
+              10 slides covering the full VisitorID{'\u2122'} pipeline,
+              real-world follow-up examples, and ROI comparison data.
+            </p>
+            <a
+              href="/downloads/P5-Identity-Retargeting-Pitch-Deck.pptx"
+              download
+              className="p5-btn p5-btn-primary"
+            >
+              Download Presentation
+            </a>
+          </div>
         </div>
       </div>
     </section>
