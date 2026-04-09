@@ -478,6 +478,13 @@ a { color: inherit; }
 .p5-hero-centered .p5-cta-row {
   justify-content: center;
 }
+.p5-hero-video-wrap {
+  max-width: 800px;
+  margin: 2rem auto 2.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0,0,0,.5);
+}
 
 /* ===== PROBLEM CALLOUT ===== */
 .p5-problem-box {

@@ -340,24 +340,19 @@ export default function VisitorIDPage() {
         <h1>{content.hero.headline}</h1>
         <p className="p5-sub">{content.hero.subheadline}</p>
 
-        {/* Video Embed – GIF poster with click-to-play Synthesia iframe */}
+        {/* Hero Video – Vimeo embed */}
         <div className="p5-video-section">
-          <div className="p5-video-container" id="p5-vid">
-            <div className="p5-video-poster">
-              <img
-                src="/images/visitorid/rendered_video.gif"
-                alt="VisitorID™ demo – click to play"
-                loading="eager"
+          <div className="p5-hero-video-wrap">
+            <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+              <iframe
+                src="https://player.vimeo.com/video/1181721550?badge=0&autopause=0&player_id=0&app_id=58479"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                title="Identity-Resolved Retargeting — How VisitorID™ Works"
               />
             </div>
-            <div className="p5-video-play-btn" />
-            <iframe
-              data-src="https://share.synthesia.io/embeds/videos/8dcdce1d-0ec6-46dc-9b06-9c0ba56ff8f9"
-              loading="lazy"
-              title="Synthesia video player - Website Visitor Identification Software"
-              allowFullScreen
-              allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"
-            />
           </div>
         </div>
 
