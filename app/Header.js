@@ -129,6 +129,7 @@ export default function Header() {
               <li><a href="/">Home</a></li>
               <li><a href="/about/">About</a></li>
               <li><a href="/how-it-works/">How It Works</a></li>
+              <li><a href="/visitorid/">VisitorID</a></li>
               <li className="p5-has-dropdown">
                 <a href="/markets/" aria-haspopup="true" aria-expanded="false">
                   Markets
@@ -177,6 +178,7 @@ export default function Header() {
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/how-it-works/">How It Works</a>
+        <a href="/visitorid/">VisitorID</a>
         <a href="/markets/">Markets</a>
         <a href="/markets/wedding-venues/" className="p5-mobile-sub">Wedding Venues</a>
         <a href="/markets/plastic-surgeons/" className="p5-mobile-sub">Plastic Surgeons</a>

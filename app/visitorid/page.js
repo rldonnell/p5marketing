@@ -1,16 +1,18 @@
-import content from '../../../lib/content/visitorid';
+import content from '../../lib/content/visitorid';
 import PageEffects from './PageEffects';
 
 export const metadata = {
-  alternates: { canonical: '/the-id-suite/visitorid/' },
-  title: content.seo.title,
-  description: content.seo.description,
+  alternates: { canonical: '/visitorid/' },
+  title: "VisitorID\u2122 | Identify Anonymous Website Visitors | P5 Marketing",
+  description:
+    "VisitorID\u2122 identifies up to 60% of anonymous website visitors by name, email, and phone \u2014 no forms required. Score intent, filter junk, and deliver qualified leads to your CRM automatically.",
   openGraph: {
-    title: content.seo.title,
-    description: content.seo.description,
-    url: 'https://p5marketing.com/the-id-suite/visitorid/',
+    title: "VisitorID\u2122 | Identify Anonymous Website Visitors | P5 Marketing",
+    description:
+      "VisitorID\u2122 identifies up to 60% of anonymous website visitors by name, email, and phone \u2014 no forms required. Score intent and deliver qualified leads to your CRM automatically.",
+    url: 'https://p5marketing.com/visitorid/',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'VisitorID\u2122 by P5 Marketing' }],
   },
 };
 
@@ -193,6 +195,7 @@ function ResourcesSection() {
         No registration required. Download the research, watch the walkthrough, or review the full presentation.
       </p>
       <div className="p5-resources-grid">
+        {/* PDF Download */}
         <div className="p5-resource-card p5-fade-up" style={{ transitionDelay: '0s' }}>
           <div className="p5-resource-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="36" height="36">
@@ -207,11 +210,18 @@ function ResourcesSection() {
           <p>
             A data-backed report on why most businesses under-monetize their traffic
             and how retargeting and identity-resolved follow-up recover the value.
+            All statistics sourced and cited.
           </p>
-          <a href="/downloads/The-97-Percent-Problem-P5-Marketing.pdf" download className="p5-btn p5-btn-primary">
+          <a
+            href="/downloads/The-97-Percent-Problem-P5-Marketing.pdf"
+            download
+            className="p5-btn p5-btn-primary"
+          >
             Download Free Report (PDF)
           </a>
         </div>
+
+        {/* Video */}
         <div className="p5-resource-card p5-fade-up" style={{ transitionDelay: '0.12s' }}>
           <div className="p5-resource-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="36" height="36">
@@ -223,10 +233,16 @@ function ResourcesSection() {
             A short video showing how the VisitorID{'\u2122'} pipeline works end-to-end:
             from anonymous visitor to scored lead in your CRM.
           </p>
-          <a href="/downloads/P5-Identity-Retargeting-Overview.mp4" download className="p5-btn p5-btn-primary">
+          <a
+            href="/downloads/P5-Identity-Retargeting-Overview.mp4"
+            download
+            className="p5-btn p5-btn-primary"
+          >
             Download Video Walkthrough
           </a>
         </div>
+
+        {/* Pitch Deck */}
         <div className="p5-resource-card p5-fade-up" style={{ transitionDelay: '0.24s' }}>
           <div className="p5-resource-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="36" height="36">
@@ -238,9 +254,14 @@ function ResourcesSection() {
           <h3>Identity Retargeting Pitch Deck</h3>
           <p>
             A 10-slide presentation covering the full VisitorID{'\u2122'} pipeline,
-            real-world examples, the three-layer delivery model, and ROI data.
+            real-world follow-up examples, the three-layer delivery model,
+            and ROI comparison data.
           </p>
-          <a href="/downloads/P5-Identity-Retargeting-Pitch-Deck.pptx" download className="p5-btn p5-btn-primary">
+          <a
+            href="/downloads/P5-Identity-Retargeting-Pitch-Deck.pptx"
+            download
+            className="p5-btn p5-btn-primary"
+          >
             Download Presentation (PPTX)
           </a>
         </div>
@@ -267,10 +288,11 @@ function FinalCta({ data }) {
 
 /* ── Page ─────────────────────────────────────────────────── */
 
-export default function VisitorIDPage() {
+export default function VisitorIDLandingPage() {
   return (
     <div>
       <PageEffects />
+
       {/* BreadcrumbList structured data */}
       <script
         type="application/ld+json"
@@ -280,8 +302,7 @@ export default function VisitorIDPage() {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://p5marketing.com/' },
-              { '@type': 'ListItem', position: 2, name: 'The ID Suite', item: 'https://p5marketing.com/the-id-suite/' },
-              { '@type': 'ListItem', position: 3, name: 'VisitorID', item: 'https://p5marketing.com/the-id-suite/visitorid/' },
+              { '@type': 'ListItem', position: 2, name: 'VisitorID', item: 'https://p5marketing.com/visitorid/' },
             ],
           }),
         }}
@@ -306,19 +327,45 @@ export default function VisitorIDPage() {
         }}
       />
 
+      {/* SoftwareApplication structured data for VisitorID */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: 'VisitorID\u2122',
+            applicationCategory: 'BusinessApplication',
+            operatingSystem: 'Web',
+            description: content.seo.description,
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD',
+              description: 'Schedule a demo for pricing',
+            },
+            provider: {
+              '@type': 'Organization',
+              name: 'P5 Marketing',
+              url: 'https://p5marketing.com',
+            },
+          }),
+        }}
+      />
+
       {/* Hero */}
       <section className="p5-hero-centered">
         <p className="p5-kicker">{content.hero.eyebrow}</p>
         <h1>{content.hero.headline}</h1>
         <p className="p5-sub">{content.hero.subheadline}</p>
 
-        {/* Video Embed – GIF poster with click-to-play Synthesia iframe */}
+        {/* Video Embed */}
         <div className="p5-video-section">
           <div className="p5-video-container" id="p5-vid">
             <div className="p5-video-poster">
               <img
                 src="/images/visitorid/rendered_video.gif"
-                alt="VisitorID™ demo – click to play"
+                alt="VisitorID\u2122 demo \u2013 click to play"
                 loading="eager"
               />
             </div>
@@ -334,11 +381,11 @@ export default function VisitorIDPage() {
         </div>
 
         <div className="p5-cta-row">
-          <a href={content.hero.primaryCta.href} className="p5-btn p5-btn-primary">
-            {content.hero.primaryCta.label}
+          <a href="#final-cta" className="p5-btn p5-btn-primary">
+            Schedule a Demo
           </a>
-          <a href={content.hero.secondaryCta.href} className="p5-btn p5-btn-ghost">
-            {content.hero.secondaryCta.label}
+          <a href="#resources" className="p5-btn p5-btn-ghost">
+            Free Resources
           </a>
         </div>
       </section>
