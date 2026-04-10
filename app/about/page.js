@@ -28,17 +28,17 @@ export default function About() {
       bio: "Irene leads P5 Marketing\u2019s digital growth strategy across social media, SEO, and AI optimization. Her work increases visibility, attracts qualified leads, and converts attention into measurable growth.",
     },
     {
-      name: "Camilo Castañeda",
+      name: "Camilo Contreras",
       role: "Lead Developer",
       bio: "Camilo builds the technical infrastructure behind every campaign — landing pages, CRM integrations, tracking systems, and automation workflows. If it touches code, Camilo built it.",
     },
     {
-      name: "Arlet Castañeda",
+      name: "Arlet Gutierrez",
       role: "Campaign Operations",
       bio: "Arlet manages day-to-day campaign execution — ad builds, audience uploads, reporting dashboards, and QA. She keeps every moving piece on schedule and on spec.",
     },
     {
-      name: "Adrianne Gonzalez",
+      name: "Adrianne Panza",
       role: "Client Success & Onboarding",
       bio: "Adrianne is the first person new clients work with. She handles onboarding, CRM setup, and ongoing communication to make sure every client knows exactly what's happening and what's next.",
     },
@@ -167,7 +167,10 @@ export default function About() {
                 style={{
                   padding: "32px",
                   background: "var(--p5-bg-surface)",
-                  border: "1px solid rgba(0, 229, 199, 0.1)",
+                  backdropFilter: "var(--p5-glass-blur)",
+                  WebkitBackdropFilter: "var(--p5-glass-blur)",
+                  border: "1px solid var(--p5-surface-border)",
+                  boxShadow: "inset 0 1px 0 rgba(255,255,255,0.05), 0 4px 20px rgba(0,0,0,0.1)",
                   borderRadius: "var(--p5-radius)",
                   transition: "all 0.3s ease",
                 }}

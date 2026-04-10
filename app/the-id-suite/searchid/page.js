@@ -49,8 +49,11 @@ export default function SearchIDPage() {
   ];
 
   const cardStyle = {
-    background: 'linear-gradient(135deg, rgba(0, 229, 199, 0.05), rgba(123, 97, 255, 0.05))',
-    border: '1px solid rgba(0, 229, 199, 0.2)',
+    background: 'var(--p5-bg-surface)',
+    backdropFilter: 'var(--p5-glass-blur)',
+    WebkitBackdropFilter: 'var(--p5-glass-blur)',
+    boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.05), 0 4px 20px rgba(0,0,0,0.1)',
+    border: '1px solid var(--p5-surface-border)',
     borderRadius: 'var(--p5-radius)',
     padding: '32px',
     transition: 'all 0.3s ease',
@@ -358,8 +361,11 @@ export default function SearchIDPage() {
               <div
                 key={step.num}
                 style={{
-                  background: 'rgba(255, 255, 255, 0.03)',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  background: 'var(--p5-bg-surface)',
+                  backdropFilter: 'var(--p5-glass-blur)',
+                  WebkitBackdropFilter: 'var(--p5-glass-blur)',
+                  boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.05), 0 4px 20px rgba(0,0,0,0.1)',
+                  border: '1px solid var(--p5-surface-border)',
                   borderRadius: 'var(--p5-radius)',
                   padding: '32px',
                 }}
@@ -448,8 +454,11 @@ export default function SearchIDPage() {
               <div
                 key={i}
                 style={{
-                  background: 'rgba(255, 255, 255, 0.03)',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  background: 'var(--p5-bg-surface)',
+                  backdropFilter: 'var(--p5-glass-blur)',
+                  WebkitBackdropFilter: 'var(--p5-glass-blur)',
+                  boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.05), 0 4px 20px rgba(0,0,0,0.1)',
+                  border: '1px solid var(--p5-surface-border)',
                   borderRadius: 'var(--p5-radius)',
                   padding: '28px',
                 }}

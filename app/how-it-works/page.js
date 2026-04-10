@@ -182,8 +182,11 @@ export default function HowItWorks() {
               <div
                 key={stage.number}
                 style={{
-                  background: "rgba(255, 255, 255, 0.03)",
-                  border: "1px solid rgba(255, 255, 255, 0.08)",
+                  background: 'var(--p5-bg-surface)',
+                  backdropFilter: 'var(--p5-glass-blur)',
+                  WebkitBackdropFilter: 'var(--p5-glass-blur)',
+                  boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.05), 0 4px 20px rgba(0,0,0,0.1)',
+                  border: '1px solid var(--p5-surface-border)',
                   borderRadius: "var(--p5-radius)",
                   padding: "40px 32px",
                   display: "flex",
@@ -288,8 +291,11 @@ export default function HowItWorks() {
               <div
                 key={index}
                 style={{
-                  background: "rgba(255, 255, 255, 0.03)",
-                  border: "1px solid rgba(255, 255, 255, 0.08)",
+                  background: 'var(--p5-bg-surface)',
+                  backdropFilter: 'var(--p5-glass-blur)',
+                  WebkitBackdropFilter: 'var(--p5-glass-blur)',
+                  boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.05), 0 4px 20px rgba(0,0,0,0.1)',
+                  border: '1px solid var(--p5-surface-border)',
                   borderRadius: "var(--p5-radius)",
                   padding: "32px",
                   display: "flex",
