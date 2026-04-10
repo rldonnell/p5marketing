@@ -104,39 +104,8 @@ export default function Home() {
                 <a href="#cycle" className="p5-btn p5-btn-ghost">See the Full Cycle</a>
               </div>
             </div>
-            <div className="p5-hero-illus p5-fade-up p5-delay-1">
-              <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', maxWidth: '580px', margin: '0 auto', display: 'block' }}>
-                <circle cx="200" cy="200" r="160" stroke="#00e5c7" strokeWidth="1.5" strokeDasharray="6 6" opacity="0.3" />
-                <circle cx="200" cy="48" r="40" fill="#0d1420" stroke="#00e5c7" strokeWidth="2" />
-                <text x="200" y="44" textAnchor="middle" fill="#00e5c7" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">FIND</text>
-                <text x="200" y="59" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">IntentID</text>
-                <circle cx="352" cy="200" r="40" fill="#0d1420" stroke="#7b61ff" strokeWidth="2" />
-                <text x="352" y="191" textAnchor="middle" fill="#7b61ff" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">DRIVE</text>
-                <text x="352" y="205" textAnchor="middle" fill="#94a3b8" fontSize="9" fontFamily="DM Sans, sans-serif">SEO Accelerator</text>
-                <text x="352" y="217" textAnchor="middle" fill="#94a3b8" fontSize="9" fontFamily="DM Sans, sans-serif">+ Ads</text>
-                <circle cx="200" cy="352" r="40" fill="#0d1420" stroke="#00e5c7" strokeWidth="2" />
-                <text x="200" y="348" textAnchor="middle" fill="#00e5c7" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">IDENTIFY</text>
-                <text x="200" y="363" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">VisitorID</text>
-                <circle cx="48" cy="200" r="40" fill="#0d1420" stroke="#7b61ff" strokeWidth="2" />
-                <text x="48" y="196" textAnchor="middle" fill="#7b61ff" fontSize="13" fontFamily="Space Mono, monospace" fontWeight="700">CONVERT</text>
-                <text x="48" y="211" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="DM Sans, sans-serif">InboxID</text>
-                <path d="M230 55 L315 170" stroke="#00e5c7" strokeWidth="1.5" opacity="0.5" markerEnd="url(#arr)" />
-                <path d="M345 235 L230 340" stroke="#7b61ff" strokeWidth="1.5" opacity="0.5" markerEnd="url(#arr2)" />
-                <path d="M170 345 L85 230" stroke="#00e5c7" strokeWidth="1.5" opacity="0.5" markerEnd="url(#arr)" />
-                <path d="M55 165 L170 60" stroke="#7b61ff" strokeWidth="1.5" opacity="0.5" markerEnd="url(#arr2)" />
-                <defs>
-                  <marker id="arr" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
-                    <path d="M0 0 L8 4 L0 8" fill="none" stroke="#00e5c7" strokeWidth="1.5" />
-                  </marker>
-                  <marker id="arr2" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
-                    <path d="M0 0 L8 4 L0 8" fill="none" stroke="#7b61ff" strokeWidth="1.5" />
-                  </marker>
-                </defs>
-                <text x="200" y="181" textAnchor="middle" fill="#94a3b8" fontSize="11" fontFamily="DM Sans, sans-serif" fontWeight="400">Other agencies</text>
-                <text x="200" y="196" textAnchor="middle" fill="#94a3b8" fontSize="11" fontFamily="DM Sans, sans-serif" fontWeight="400">give you pieces.</text>
-                <text x="200" y="215" textAnchor="middle" fill="#00e5c7" fontSize="12" fontFamily="DM Sans, sans-serif" fontWeight="700">We give you</text>
-                <text x="200" y="230" textAnchor="middle" fill="#00e5c7" fontSize="12" fontFamily="DM Sans, sans-serif" fontWeight="700">the full cycle.</text>
-              </svg>
+            <div className="p5-hero-illus p5-fade-up p5-delay-1" style={{ position: 'relative' }}>
+              <img src="/images/steampunk-engine.png" alt="ID Suite Conversion Engine" width="580" height="580" style={{ width: '100%', height: 'auto', maxWidth: '580px', margin: '0 auto', display: 'block', filter: 'drop-shadow(0 0 40px rgba(0, 229, 199, 0.4))' }} priority="true" />
             </div>
           </div>
         </div>
