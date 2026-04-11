@@ -105,7 +105,7 @@ export default function Home() {
               </div>
             </div>
             <div className="p5-hero-illus p5-fade-up p5-delay-1" style={{ position: 'relative' }}>
-              <img src="/images/pipeline-four-stages.png" alt="ID Suite Data Pipeline" width="580" height="580" style={{ width: '100%', height: 'auto', maxWidth: '580px', margin: '0 auto', display: 'block', filter: 'drop-shadow(0 0 40px rgba(0, 229, 199, 0.4))' }} priority="true" />
+              <img src="/images/marketing-pipeline.png" alt="ID Suite Data Pipeline" width="580" height="580" style={{ width: '100%', height: 'auto', maxWidth: '580px', margin: '0 auto', display: 'block', filter: 'drop-shadow(0 0 40px rgba(0, 229, 199, 0.4))' }} priority="true" />
             </div>
           </div>
         </div>
