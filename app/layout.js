@@ -30,8 +30,8 @@ export const metadata = {
   alternates: {
     canonical: '/',
   },
-  title: 'Plastic Surgery Marketing Agency | P5 Marketing',
-  description: 'Plastic surgery marketing agency specializing in SEO, intent data, and visitor identification. We helped one practice grow from $1M to $3.5M in 18 months.',
+  title: 'Marketing for High-Trust, High-Value Businesses | P5 Marketing',
+  description: 'Full-cycle marketing for high-trust, high-value businesses. SEO, intent data, and visitor identification for law firms, wedding venues, luxury services, plastic surgeons, and financial advisors.',
   metadataBase: new URL('https://p5marketing.com'),
   openGraph: {
     title: 'Plastic Surgery Marketing Agency | P5 Marketing',
@@ -45,7 +45,7 @@ export const metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'P5 Marketing | Plastic Surgery Marketing Agency',
+        alt: 'P5 Marketing | Marketing for High-Trust, High-Value Businesses',
       },
     ],
   },
