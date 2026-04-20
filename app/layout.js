@@ -34,8 +34,8 @@ export const metadata = {
   description: 'Full-cycle marketing for high-trust, high-value businesses. SEO, intent data, and visitor identification for law firms, wedding venues, luxury services, plastic surgeons, and financial advisors.',
   metadataBase: new URL('https://p5marketing.com'),
   openGraph: {
-    title: 'Plastic Surgery Marketing Agency | P5 Marketing',
-    description: 'Plastic surgery marketing agency specializing in SEO, intent data, and visitor identification. We helped one practice grow from $1M to $3.5M in 18 months.',
+    title: 'Marketing for High-Trust, High-Value Businesses | P5 Marketing',
+    description: 'Full-cycle marketing for high-trust, high-value businesses. SEO, intent data, and visitor identification for law firms, wedding venues, luxury services, plastic surgeons, and financial advisors.',
     url: 'https://p5marketing.com',
     siteName: 'P5 Marketing',
     locale: 'en_US',
@@ -51,8 +51,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Plastic Surgery Marketing Agency | P5 Marketing',
-    description: 'Plastic surgery marketing agency specializing in SEO, intent data, and visitor identification. We helped one practice grow from $1M to $3.5M in 18 months.',
+    title: 'Marketing for High-Trust, High-Value Businesses | P5 Marketing',
+    description: 'Full-cycle marketing for high-trust, high-value businesses. SEO, intent data, and visitor identification for law firms, wedding venues, luxury services, plastic surgeons, and financial advisors.',
     images: ['/og-image.png'],
   },
   robots: {
