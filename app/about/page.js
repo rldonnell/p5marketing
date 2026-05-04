@@ -2,13 +2,13 @@ export const metadata = {
   alternates: {
     canonical: '/about/',
   },
-  title: 'About P5 Marketing | Plastic Surgery Marketing Team',
+  title: 'About P5 Marketing | A Senior Team for Owner-Operators',
   description:
-    'Meet the team behind P5 Marketing. We build full-cycle intent data campaigns for plastic surgeons and high-trust businesses.',
+    'Meet the senior team behind P5 Marketing. We run the marketing function for owner-operators of $1M-$5M service businesses who would rather hand it off than manage it.',
   openGraph: {
-    title: 'About P5 Marketing | Plastic Surgery Marketing Team',
+    title: 'About P5 Marketing | A Senior Team for Owner-Operators',
     description:
-      'Meet the team behind P5 Marketing. We build full-cycle intent data campaigns for plastic surgeons and high-trust businesses.',
+      'Meet the senior team behind P5 Marketing. We run the marketing function for owner-operators of $1M-$5M service businesses who would rather hand it off than manage it.',
     url: 'https://p5marketing.com/about/',
     type: 'website',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
@@ -20,7 +20,7 @@ export default function About() {
     {
       name: "Robert Donnell",
       role: "Co-Founder, Strategy & Operations",
-      bio: "Robert leads the company's go-to-market strategy, product development, and client relationships. He built the IntentID™ and VisitorID™ systems from the ground up and oversees every campaign from architecture to execution.",
+      bio: "Robert leads strategy, client relationships, and the overall direction of P5. 25 years building marketing engines for owner-operated service businesses. He architected the ID Suite (IntentID, VisitorID, InboxID, SearchID) and personally owns the senior strategic work for every client account.",
     },
     {
       name: "Irene Donnell",
@@ -97,7 +97,7 @@ export default function About() {
                 marginBottom: "24px",
               }}
             >
-              The Plastic Surgery Marketing Team Behind P5
+              A Senior Team. Twenty-Five Years. One Job: Run Your Marketing.
             </h1>
             <p
               style={{
@@ -108,9 +108,7 @@ export default function About() {
                 margin: "0 auto",
               }}
             >
-              P5 Marketing is an intent data marketing agency for high-trust, high-value
-              businesses. We built IntentID™, VisitorID™, and InboxID™ to find, identify,
-              and convert the people already searching for what you sell.
+              P5 Marketing is a senior agency for owner-operators who would rather hand the marketing function to people who&rsquo;ve been doing this for a quarter-century than manage a junior team in-house. We run the strategy, we run the execution, and we built the ID Suite to give our clients visibility no other agency in their market has.
             </p>
           </div>
         </div>
@@ -233,7 +231,7 @@ export default function About() {
                 marginBottom: "16px",
               }}
             >
-              Ready to See the System in Action?
+              Think We Might Be a Fit?
             </h2>
             <p
               style={{
@@ -243,8 +241,7 @@ export default function About() {
                 marginBottom: "32px",
               }}
             >
-              Book a 30-minute demo and see how IntentID™, VisitorID™, and InboxID™
-              work for your business.
+              30 minutes with a senior strategist. No pitch. We&rsquo;ll ask honest questions about your business and tell you whether P5 is the right call.
             </p>
             <a
               href="https://p5marketing.com/contact/"
@@ -262,7 +259,7 @@ export default function About() {
                 cursor: "pointer",
               }}
             >
-              Book a Demo
+              Start a Fit Conversation
             </a>
           </div>
         </div>

@@ -129,16 +129,15 @@ export default function Header() {
               <li><a href="/">Home</a></li>
               <li><a href="/about/">About</a></li>
               <li><a href="/how-it-works/">How It Works</a></li>
-              <li><a href="/visitorid/">VisitorID</a></li>
               <li className="p5-has-dropdown">
                 <a href="/markets/" aria-haspopup="true" aria-expanded="false">
-                  Markets
+                  Who We Work With
                   <svg className="p5-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                 </a>
                 <ul className="p5-nav-dropdown" role="menu">
                   <li role="none"><a role="menuitem" href="/markets/wedding-venues/">Wedding Venues</a></li>
-                  <li role="none"><a role="menuitem" href="/markets/plastic-surgeons/">Plastic Surgeons</a></li>
-                  <li role="none"><a role="menuitem" href="/markets/high-trust-high-value/">High-Trust Businesses</a></li>
+                  <li role="none"><a role="menuitem" href="/markets/plastic-surgeons/">Surgical Practices</a></li>
+                  <li role="none"><a role="menuitem" href="/markets/high-trust-high-value/">Full Fit Profile</a></li>
                 </ul>
               </li>
               <li className="p5-has-dropdown">
@@ -178,11 +177,10 @@ export default function Header() {
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/how-it-works/">How It Works</a>
-        <a href="/visitorid/">VisitorID</a>
-        <a href="/markets/">Markets</a>
+        <a href="/markets/">Who We Work With</a>
         <a href="/markets/wedding-venues/" className="p5-mobile-sub">Wedding Venues</a>
-        <a href="/markets/plastic-surgeons/" className="p5-mobile-sub">Plastic Surgeons</a>
-        <a href="/markets/high-trust-high-value/" className="p5-mobile-sub">High-Trust Businesses</a>
+        <a href="/markets/plastic-surgeons/" className="p5-mobile-sub">Surgical Practices</a>
+        <a href="/markets/high-trust-high-value/" className="p5-mobile-sub">Full Fit Profile</a>
         <a href="/the-id-suite/">The ID Suite</a>
         <a href="/the-id-suite/seo-accelerator/" className="p5-mobile-sub">SEO Accelerator</a>
         <a href="/the-id-suite/visitorid/" className="p5-mobile-sub">VisitorID</a>

@@ -11,7 +11,7 @@ export default function Footer() {
             <a href="/" aria-label="P5 Marketing – Home">
               <img src="/p5-logo.webp" alt="P5 Marketing" width="500" height="336" />
             </a>
-            <p className="p5-footer-tagline">Data-driven marketing for high-growth verticals. We turn intent signals into booked revenue.</p>
+            <p className="p5-footer-tagline">A senior team running marketing for owner-operators who would rather hand it off than manage it.</p>
 
             {/* Social */}
             <div className="p5-footer-social">
@@ -31,7 +31,7 @@ export default function Footer() {
               <li><a href="/">Home</a></li>
               <li><a href="/about/">About</a></li>
               <li><a href="/how-it-works/">How It Works</a></li>
-              <li><a href="/markets/">Markets</a></li>
+              <li><a href="/markets/">Who We Work With</a></li>
               <li><a href="/the-id-suite/">The ID Suite</a></li>
               <li><a href="/blog/">Blog</a></li>
               <li><a href="/contact/">Contact</a></li>
@@ -43,7 +43,7 @@ export default function Footer() {
             <h4>Solutions</h4>
             <ul>
               <li><a href="/markets/wedding-venues/">Wedding Venues</a></li>
-              <li><a href="/markets/plastic-surgeons/">Plastic Surgeons</a></li>
+              <li><a href="/markets/plastic-surgeons/">Surgical Practices</a></li>
               <li><a href="/the-id-suite/seo-accelerator/">SEO Accelerator</a></li>
               <li><a href="/the-id-suite/visitorid/">Visitor ID</a></li>
               <li><a href="/the-id-suite/intentid/">Intent ID</a></li>

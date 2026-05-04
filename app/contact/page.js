@@ -1,583 +1,383 @@
-'use client';
+export const metadata = {
+  alternates: {
+    canonical: '/how-it-works/',
+  },
+  title: 'How a P5 Marketing Engagement Works',
+  description:
+    'How working with P5 actually runs: the senior team, the engagement model, what we own, what you approve, and what lands in your inbox each month.',
+  openGraph: {
+    title: 'How a P5 Marketing Engagement Works',
+    description:
+      'How working with P5 actually runs: the senior team, the engagement model, what we own, what you approve, and what lands in your inbox each month.',
+    url: 'https://p5marketing.com/how-it-works/',
+    type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
+  },
+};
 
-import { useState } from 'react';
+export default function HowItWorks() {
+  const stages = [
+    {
+      number: 1,
+      label: "STRATEGY",
+      tool: "First 30 Days",
+      description: "We audit what's working, what's broken, and what's being wasted in your current marketing. We map your real buyers using intent data, identify the highest-leverage moves, and lay out a plan with priorities and timelines. You approve the direction in one meeting. Then we go."
+    },
+    {
+      number: 2,
+      label: "EXECUTION",
+      tool: "Senior Team Running the Play",
+      description: "SEO, paid ads, content, social, conversion optimization, email, CRM, reporting — built and run by the same senior team that did the strategy work. Not handed off to junior staff between us and you. The work ships, the numbers move, and you read the monthly summary instead of running the campaign."
+    },
+    {
+      number: 3,
+      label: "VISIBILITY",
+      tool: "The ID Suite",
+      description: "Built into your engagement: who's researching your services, who's on your website, what they engaged with, how serious they look. Most agencies guess at what's working. We can see it. That visibility shapes every decision we make for you."
+    },
+    {
+      number: 4,
+      label: "FOLLOW-UP",
+      tool: "Hand-Offs to Your Team",
+      description: "The hottest prospects flow into your CRM with context — what they viewed, how often, what they responded to. Your front desk or sales team picks up the phone with a real reason to call. Same-day retargeting and email keep your business in front of the rest until they're ready."
+    }
+  ];
 
-export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    message: '',
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Note: Form submission requires backend integration
-    // Options: Formspree, Netlify Forms, or custom backend endpoint
-    // For now, this logs the data and shows a message
-    console.log('Form data:', formData);
-
-    // Placeholder for actual submission logic
-    setTimeout(() => {
-      alert('Thank you for your message! We will get back to you shortly.');
-      setFormData({ name: '', email: '', phone: '', company: '', message: '' });
-      setIsSubmitting(false);
-    }, 500);
-  };
+  const deliverables = [
+    {
+      title: "Strategic Plan and Quarterly Roadmap",
+      description: "A document you can read, approve, and share with your team. Priorities, timelines, what we're doing, what we're killing, and what success looks like at 30, 60, 90, and 365 days."
+    },
+    {
+      title: "Intent Audiences for Your Ad Platforms",
+      description: "Custom audiences of in-market buyers loaded into Meta, Google, X, TikTok, and LinkedIn. Refreshed weekly. Your ad budget stops chasing demographics and starts reaching real prospects."
+    },
+    {
+      title: "SEO and GEO Content That Earns Its Traffic",
+      description: "Service-specific landing pages, pillar content, and AI-search optimization (ChatGPT, Claude, Perplexity). 25 years of search expertise applied to your vertical and your terms."
+    },
+    {
+      title: "Social and Podcast Calendar",
+      description: "12-month plan of social posts, promotional content, and podcast episodes — all derived from your core messaging so nothing has to be reinvented for each platform."
+    },
+    {
+      title: "Visitor Intelligence Dashboard",
+      description: "Secure dashboard showing who's engaging with your site, what they're researching, and how serious they look. Configured for your vertical's compliance requirements."
+    },
+    {
+      title: "Behavior-Triggered Follow-Up",
+      description: "Same-day retargeting and email sequences tailored to what each prospect did on your site. Keeps you top of mind while interest is hot. Senior strategist reviews and tunes the sequences monthly."
+    },
+    {
+      title: "CRM Integration",
+      description: "Engaged prospects flow into your CRM with tags, segments, and behavior history. Your team picks up the phone with context, not cold lists."
+    },
+    {
+      title: "Monthly Working Sessions",
+      description: "One hour with a senior P5 strategist. Not a status update. We review what worked, what didn't, what we're changing, and what's next. You leave with clear direction, not more tasks."
+    }
+  ];
 
   return (
-    <main style={{ backgroundColor: 'var(--p5-bg-deep)', color: 'var(--p5-text)' }}>
+    <main style={{ color: "var(--p5-text)" }}>
       {/* BreadcrumbList structured data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://p5marketing.com/contact/"}]}'
+          __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "How It Works", "item": "https://p5marketing.com/how-it-works/"}]}'
         }}
       />
-      {/* Hero Section */}
+      {/* HERO SECTION */}
       <section
         style={{
-          padding: '80px 24px',
-          textAlign: 'center',
-          borderBottom: '1px solid rgba(226, 232, 240, 0.1)',
+          background: "var(--p5-bg-deep)",
+          padding: "80px 24px",
+          textAlign: "center",
+          borderBottom: "1px solid rgba(255, 255, 255, 0.08)"
         }}
       >
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <p
-            className="p5-kicker"
             style={{
-              fontSize: '14px',
-              fontWeight: '600',
-              letterSpacing: '0.05em',
-              textTransform: 'uppercase',
-              color: 'var(--p5-accent)',
-              marginBottom: '16px',
+              fontSize: "13px",
+              fontFamily: "Space Mono",
+              letterSpacing: "0.12em",
+              textTransform: "uppercase",
+              color: "var(--p5-accent)",
+              marginBottom: "16px",
+              margin: "0 0 16px 0"
             }}
           >
-            Contact Us
+            How It Works
           </p>
           <h1
-            className="p5-h1"
             style={{
-              fontSize: '48px',
-              fontWeight: '700',
-              lineHeight: '1.2',
-              marginBottom: '24px',
-              fontFamily: 'DM Sans, sans-serif',
+              fontSize: "48px",
+              fontWeight: 700,
+              lineHeight: 1.2,
+              marginBottom: "24px",
+              margin: "0 0 24px 0",
+              fontFamily: "DM Sans"
             }}
           >
-            Let's Talk About Your Pipeline
+            How a P5 Engagement Actually Runs
           </h1>
           <p
-            className="p5-subtitle"
             style={{
-              fontSize: '18px',
-              lineHeight: '1.6',
-              color: 'var(--p5-text-dim)',
-              maxWidth: '600px',
-              margin: '0 auto',
+              fontSize: "18px",
+              lineHeight: 1.6,
+              color: "var(--p5-text-dim)",
+              margin: "0"
             }}
           >
-            Whether you're ready to book a demo or just want to learn more about how IntentID, VisitorID, and InboxID work, we'd love to hear from you.
+            We own the marketing function. You approve direction, we run the play, and you read the monthly summary. No briefs you have to write. No weekly status calls. No junior account managers between you and the work.
           </p>
         </div>
       </section>
 
-      {/* Contact Info Cards */}
+      {/* FOUR-STAGE CYCLE SECTION */}
       <section
         style={{
-          padding: '80px 24px',
-          backgroundColor: 'var(--p5-bg-surface)',
+          background: "var(--p5-bg-surface)",
+          padding: "80px 24px",
+          borderBottom: "1px solid rgba(255, 255, 255, 0.08)"
         }}
       >
-        <div
-          style={{
-            maxWidth: '1200px',
-            margin: '0 auto',
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: '32px',
-          }}
-        >
-          {/* Phone Card */}
-          <div
-            className="p5-card"
-            style={{
-              padding: '32px',
-              backgroundColor: 'var(--p5-bg-deep)',
-              border: '1px solid rgba(226, 232, 240, 0.1)',
-              borderRadius: 'var(--p5-radius)',
-              transition: 'all 0.3s ease',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = 'var(--p5-accent)';
-              e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 229, 199, 0.1)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = 'rgba(226, 232, 240, 0.1)';
-              e.currentTarget.style.boxShadow = 'none';
-            }}
-          >
-            <h3
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <div style={{ marginBottom: "60px" }}>
+            <p
               style={{
-                fontSize: '18px',
-                fontWeight: '600',
-                marginBottom: '16px',
-                color: 'var(--p5-accent)',
+                fontSize: "13px",
+                fontFamily: "Space Mono",
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+                color: "var(--p5-accent)",
+                marginBottom: "8px",
+                margin: "0 0 8px 0"
               }}
             >
-              Phone
-            </h3>
-            <p style={{ marginBottom: '12px' }}>
-              <span style={{ color: 'var(--p5-text-dim)', fontSize: '14px' }}>Cell:</span>
-              <br />
-              <a
-                href="tel:+17604973986"
-                style={{
-                  color: 'var(--p5-text)',
-                  textDecoration: 'none',
-                  fontSize: '16px',
-                  fontWeight: '500',
-                }}
-              >
-                (760) 497-3986
-              </a>
+              The Engagement
             </p>
-            <p>
-              <span style={{ color: 'var(--p5-text-dim)', fontSize: '14px' }}>Office:</span>
-              <br />
-              <a
-                href="tel:+17604443078"
-                style={{
-                  color: 'var(--p5-text)',
-                  textDecoration: 'none',
-                  fontSize: '16px',
-                  fontWeight: '500',
-                }}
-              >
-                (760) 444-3078
-              </a>
-            </p>
+            <h2
+              style={{
+                fontSize: "36px",
+                fontWeight: 700,
+                lineHeight: 1.2,
+                margin: "0",
+                fontFamily: "DM Sans"
+              }}
+            >
+              Four Phases. One Senior Team. Your Marketing Function, Owned.
+            </h2>
           </div>
 
-          {/* Email Card */}
           <div
-            className="p5-card"
             style={{
-              padding: '32px',
-              backgroundColor: 'var(--p5-bg-deep)',
-              border: '1px solid rgba(226, 232, 240, 0.1)',
-              borderRadius: 'var(--p5-radius)',
-              transition: 'all 0.3s ease',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = 'var(--p5-accent)';
-              e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 229, 199, 0.1)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = 'rgba(226, 232, 240, 0.1)';
-              e.currentTarget.style.boxShadow = 'none';
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "32px"
             }}
           >
-            <h3
-              style={{
-                fontSize: '18px',
-                fontWeight: '600',
-                marginBottom: '16px',
-                color: 'var(--p5-accent)',
-              }}
-            >
-              Email
-            </h3>
-            <p>
-              <a
-                href="mailto:robert@p5marketing.com"
+            {stages.map((stage) => (
+              <div
+                key={stage.number}
                 style={{
-                  color: 'var(--p5-text)',
-                  textDecoration: 'none',
-                  fontSize: '16px',
-                  fontWeight: '500',
-                  wordBreak: 'break-all',
+                  background: 'var(--p5-bg-surface)',
+                  backdropFilter: 'var(--p5-glass-blur)',
+                  WebkitBackdropFilter: 'var(--p5-glass-blur)',
+                  boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.05), 0 4px 20px rgba(0,0,0,0.1)',
+                  border: '1px solid var(--p5-surface-border)',
+                  borderRadius: "var(--p5-radius)",
+                  padding: "40px 32px",
+                  display: "flex",
+                  flexDirection: "column"
                 }}
               >
-                robert@p5marketing.com
-              </a>
-            </p>
-          </div>
-
-          {/* Hours Card */}
-          <div
-            className="p5-card"
-            style={{
-              padding: '32px',
-              backgroundColor: 'var(--p5-bg-deep)',
-              border: '1px solid rgba(226, 232, 240, 0.1)',
-              borderRadius: 'var(--p5-radius)',
-              transition: 'all 0.3s ease',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = 'var(--p5-accent)';
-              e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 229, 199, 0.1)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = 'rgba(226, 232, 240, 0.1)';
-              e.currentTarget.style.boxShadow = 'none';
-            }}
-          >
-            <h3
-              style={{
-                fontSize: '18px',
-                fontWeight: '600',
-                marginBottom: '16px',
-                color: 'var(--p5-accent)',
-              }}
-            >
-              Hours
-            </h3>
-            <p style={{ fontSize: '16px', fontWeight: '500' }}>
-              Monday through Friday
-            </p>
-            <p style={{ color: 'var(--p5-text-dim)' }}>9:00 AM to 5:00 PM PST</p>
+                <div style={{ marginBottom: "24px" }}>
+                  <p
+                    style={{
+                      fontSize: "13px",
+                      fontFamily: "Space Mono",
+                      letterSpacing: "0.12em",
+                      textTransform: "uppercase",
+                      color: "var(--p5-text-dim)",
+                      margin: "0 0 12px 0"
+                    }}
+                  >
+                    Stage {stage.number}
+                  </p>
+                  <h3
+                    style={{
+                      fontSize: "22px",
+                      fontWeight: 700,
+                      margin: "0 0 4px 0",
+                      fontFamily: "DM Sans"
+                    }}
+                  >
+                    {stage.label}
+                  </h3>
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      color: "var(--p5-accent)",
+                      fontWeight: 600,
+                      margin: "0",
+                      fontFamily: "DM Sans"
+                    }}
+                  >
+                    {stage.tool}
+                  </p>
+                </div>
+                <p
+                  style={{
+                    fontSize: "15px",
+                    lineHeight: 1.6,
+                    color: "var(--p5-text-dim)",
+                    margin: "0"
+                  }}
+                >
+                  {stage.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Contact Form Section */}
+      {/* DELIVERABLES SECTION */}
       <section
         style={{
-          padding: '80px 24px',
-          backgroundColor: 'var(--p5-bg-deep)',
+          background: "var(--p5-bg-deep)",
+          padding: "80px 24px",
+          borderBottom: "1px solid rgba(255, 255, 255, 0.08)"
         }}
       >
-        <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-          <h2
-            style={{
-              fontSize: '32px',
-              fontWeight: '700',
-              marginBottom: '48px',
-              textAlign: 'center',
-            }}
-          >
-            Send us a Message
-          </h2>
-
-          <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-            {/* Name Field */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <label
-                htmlFor="name"
-                style={{
-                  fontSize: '14px',
-                  fontWeight: '600',
-                  color: 'var(--p5-text)',
-                }}
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                placeholder="Your full name"
-                style={{
-                  padding: '12px 16px',
-                  fontSize: '16px',
-                  backgroundColor: 'var(--p5-bg-surface)',
-                  border: '1px solid rgba(226, 232, 240, 0.2)',
-                  borderRadius: 'calc(var(--p5-radius) / 2)',
-                  color: 'var(--p5-text)',
-                  fontFamily: 'DM Sans, sans-serif',
-                  transition: 'all 0.2s ease',
-                  outline: 'none',
-                }}
-                onFocus={(e) => {
-                  e.target.style.borderColor = 'var(--p5-accent)';
-                  e.target.style.boxShadow = '0 0 12px rgba(0, 229, 199, 0.15)';
-                }}
-                onBlur={(e) => {
-                  e.target.style.borderColor = 'rgba(226, 232, 240, 0.2)';
-                  e.target.style.boxShadow = 'none';
-                }}
-              />
-            </div>
-
-            {/* Email Field */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <label
-                htmlFor="email"
-                style={{
-                  fontSize: '14px',
-                  fontWeight: '600',
-                  color: 'var(--p5-text)',
-                }}
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                placeholder="your@email.com"
-                style={{
-                  padding: '12px 16px',
-                  fontSize: '16px',
-                  backgroundColor: 'var(--p5-bg-surface)',
-                  border: '1px solid rgba(226, 232, 240, 0.2)',
-                  borderRadius: 'calc(var(--p5-radius) / 2)',
-                  color: 'var(--p5-text)',
-                  fontFamily: 'DM Sans, sans-serif',
-                  transition: 'all 0.2s ease',
-                  outline: 'none',
-                }}
-                onFocus={(e) => {
-                  e.target.style.borderColor = 'var(--p5-accent)';
-                  e.target.style.boxShadow = '0 0 12px rgba(0, 229, 199, 0.15)';
-                }}
-                onBlur={(e) => {
-                  e.target.style.borderColor = 'rgba(226, 232, 240, 0.2)';
-                  e.target.style.boxShadow = 'none';
-                }}
-              />
-            </div>
-
-            {/* Phone Field (Optional) */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <label
-                htmlFor="phone"
-                style={{
-                  fontSize: '14px',
-                  fontWeight: '600',
-                  color: 'var(--p5-text)',
-                }}
-              >
-                Phone <span style={{ color: 'var(--p5-text-dim)', fontWeight: '400' }}>(optional)</span>
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="(123) 456-7890"
-                style={{
-                  padding: '12px 16px',
-                  fontSize: '16px',
-                  backgroundColor: 'var(--p5-bg-surface)',
-                  border: '1px solid rgba(226, 232, 240, 0.2)',
-                  borderRadius: 'calc(var(--p5-radius) / 2)',
-                  color: 'var(--p5-text)',
-                  fontFamily: 'DM Sans, sans-serif',
-                  transition: 'all 0.2s ease',
-                  outline: 'none',
-                }}
-                onFocus={(e) => {
-                  e.target.style.borderColor = 'var(--p5-accent)';
-                  e.target.style.boxShadow = '0 0 12px rgba(0, 229, 199, 0.15)';
-                }}
-                onBlur={(e) => {
-                  e.target.style.borderColor = 'rgba(226, 232, 240, 0.2)';
-                  e.target.style.boxShadow = 'none';
-                }}
-              />
-            </div>
-
-            {/* Company Field (Optional) */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <label
-                htmlFor="company"
-                style={{
-                  fontSize: '14px',
-                  fontWeight: '600',
-                  color: 'var(--p5-text)',
-                }}
-              >
-                Company <span style={{ color: 'var(--p5-text-dim)', fontWeight: '400' }}>(optional)</span>
-              </label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                value={formData.company}
-                onChange={handleChange}
-                placeholder="Your company name"
-                style={{
-                  padding: '12px 16px',
-                  fontSize: '16px',
-                  backgroundColor: 'var(--p5-bg-surface)',
-                  border: '1px solid rgba(226, 232, 240, 0.2)',
-                  borderRadius: 'calc(var(--p5-radius) / 2)',
-                  color: 'var(--p5-text)',
-                  fontFamily: 'DM Sans, sans-serif',
-                  transition: 'all 0.2s ease',
-                  outline: 'none',
-                }}
-                onFocus={(e) => {
-                  e.target.style.borderColor = 'var(--p5-accent)';
-                  e.target.style.boxShadow = '0 0 12px rgba(0, 229, 199, 0.15)';
-                }}
-                onBlur={(e) => {
-                  e.target.style.borderColor = 'rgba(226, 232, 240, 0.2)';
-                  e.target.style.boxShadow = 'none';
-                }}
-              />
-            </div>
-
-            {/* Message Field */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <label
-                htmlFor="message"
-                style={{
-                  fontSize: '14px',
-                  fontWeight: '600',
-                  color: 'var(--p5-text)',
-                }}
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                placeholder="Tell us about your pipeline and how we can help..."
-                rows="5"
-                style={{
-                  padding: '12px 16px',
-                  fontSize: '16px',
-                  backgroundColor: 'var(--p5-bg-surface)',
-                  border: '1px solid rgba(226, 232, 240, 0.2)',
-                  borderRadius: 'calc(var(--p5-radius) / 2)',
-                  color: 'var(--p5-text)',
-                  fontFamily: 'DM Sans, sans-serif',
-                  transition: 'all 0.2s ease',
-                  outline: 'none',
-                  resize: 'vertical',
-                }}
-                onFocus={(e) => {
-                  e.target.style.borderColor = 'var(--p5-accent)';
-                  e.target.style.boxShadow = '0 0 12px rgba(0, 229, 199, 0.15)';
-                }}
-                onBlur={(e) => {
-                  e.target.style.borderColor = 'rgba(226, 232, 240, 0.2)';
-                  e.target.style.boxShadow = 'none';
-                }}
-              />
-            </div>
-
-            {/* Submit Button */}
-            <button
-              type="submit"
-              disabled={isSubmitting}
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <div style={{ marginBottom: "60px" }}>
+            <p
               style={{
-                padding: '14px 32px',
-                fontSize: '16px',
-                fontWeight: '600',
-                backgroundColor: 'var(--p5-accent)',
-                color: 'var(--p5-bg-deep)',
-                border: 'none',
-                borderRadius: 'calc(var(--p5-radius) / 2)',
-                cursor: isSubmitting ? 'not-allowed' : 'pointer',
-                transition: 'all 0.3s ease',
-                marginTop: '8px',
-                opacity: isSubmitting ? 0.7 : 1,
-              }}
-              onMouseEnter={(e) => {
-                if (!isSubmitting) {
-                  e.target.style.backgroundColor = 'var(--p5-accent-alt)';
-                  e.target.style.boxShadow = '0 8px 24px rgba(123, 97, 255, 0.3)';
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (!isSubmitting) {
-                  e.target.style.backgroundColor = 'var(--p5-accent)';
-                  e.target.style.boxShadow = 'none';
-                }
+                fontSize: "13px",
+                fontFamily: "Space Mono",
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+                color: "var(--p5-accent)",
+                marginBottom: "8px",
+                margin: "0 0 8px 0"
               }}
             >
-              {isSubmitting ? 'Sending...' : 'Send Message'}
-            </button>
-          </form>
+              What You Get
+            </p>
+            <h2
+              style={{
+                fontSize: "36px",
+                fontWeight: 700,
+                lineHeight: 1.2,
+                margin: "0",
+                fontFamily: "DM Sans"
+              }}
+            >
+              What Lands in Your Inbox Every Month
+            </h2>
+          </div>
 
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+              gap: "32px"
+            }}
+          >
+            {deliverables.map((item, index) => (
+              <div
+                key={index}
+                style={{
+                  background: 'var(--p5-bg-surface)',
+                  backdropFilter: 'var(--p5-glass-blur)',
+                  WebkitBackdropFilter: 'var(--p5-glass-blur)',
+                  boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.05), 0 4px 20px rgba(0,0,0,0.1)',
+                  border: '1px solid var(--p5-surface-border)',
+                  borderRadius: "var(--p5-radius)",
+                  padding: "32px",
+                  display: "flex",
+                  flexDirection: "column"
+                }}
+              >
+                <h3
+                  style={{
+                    fontSize: "18px",
+                    fontWeight: 700,
+                    marginBottom: "12px",
+                    margin: "0 0 12px 0",
+                    fontFamily: "DM Sans"
+                  }}
+                >
+                  {item.title}
+                </h3>
+                <p
+                  style={{
+                    fontSize: "15px",
+                    lineHeight: 1.6,
+                    color: "var(--p5-text-dim)",
+                    margin: "0"
+                  }}
+                >
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section
+        style={{
+          background: "var(--p5-bg-surface)",
+          padding: "80px 24px",
+          textAlign: "center"
+        }}
+      >
+        <div style={{ maxWidth: "600px", margin: "0 auto" }}>
+          <h2
+            style={{
+              fontSize: "32px",
+              fontWeight: 700,
+              marginBottom: "16px",
+              margin: "0 0 16px 0",
+              fontFamily: "DM Sans"
+            }}
+          >
+            Want to See What This Looks Like for Your Business?
+          </h2>
           <p
             style={{
-              marginTop: '32px',
-              fontSize: '13px',
-              color: 'var(--p5-text-dim)',
-              textAlign: 'center',
-              fontStyle: 'italic',
+              fontSize: "16px",
+              lineHeight: 1.6,
+              color: "var(--p5-text-dim)",
+              marginBottom: "32px",
+              margin: "0 0 32px 0"
             }}
           >
-            Note: This form requires backend integration. Connect to Formspree, Netlify Forms, or your own API endpoint to handle submissions.
+            30 minutes with a senior strategist. No pitch. We&rsquo;ll ask honest questions about your business and tell you whether P5 is the right call.
           </p>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section
-        style={{
-          padding: '80px 24px',
-          backgroundColor: 'var(--p5-bg-surface)',
-          textAlign: 'center',
-          borderTop: '1px solid rgba(226, 232, 240, 0.1)',
-        }}
-      >
-        <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-          <h2
-            style={{
-              fontSize: '28px',
-              fontWeight: '700',
-              marginBottom: '24px',
-            }}
-          >
-            Prefer to schedule directly?
-          </h2>
           <a
-            href="#calendar"
+            href="/contact/"
             style={{
-              display: 'inline-block',
-              padding: '14px 40px',
-              fontSize: '16px',
-              fontWeight: '600',
-              backgroundColor: 'var(--p5-accent-alt)',
-              color: '#ffffff',
-              textDecoration: 'none',
-              borderRadius: 'calc(var(--p5-radius) / 2)',
-              transition: 'all 0.3s ease',
-              border: 'none',
-              cursor: 'pointer',
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.backgroundColor = 'var(--p5-accent)';
-              e.target.style.boxShadow = '0 8px 24px rgba(0, 229, 199, 0.3)';
-              e.target.style.transform = 'translateY(-2px)';
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.backgroundColor = 'var(--p5-accent-alt)';
-              e.target.style.boxShadow = 'none';
-              e.target.style.transform = 'translateY(0)';
+              display: "inline-block",
+              background: "var(--p5-accent)",
+              color: "var(--p5-bg-deep)",
+              padding: "14px 32px",
+              borderRadius: "var(--p5-radius)",
+              fontSize: "15px",
+              fontWeight: 600,
+              textDecoration: "none",
+              fontFamily: "DM Sans",
+              transition: "all 0.3s ease",
+              border: "none",
+              cursor: "pointer"
             }}
           >
-            Book a Demo Call
+            Start a Fit Conversation
           </a>
         </div>
       </section>
