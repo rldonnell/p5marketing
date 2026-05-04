@@ -2,13 +2,13 @@ export const metadata = {
   alternates: {
     canonical: '/how-it-works/',
   },
-  title: 'How Intent Data Marketing Works | P5 Marketing',
+  title: 'How a P5 Marketing Engagement Works',
   description:
-    'See how IntentID, VisitorID, InboxID, and SEO Accelerator work together in a four-stage intent data marketing pipeline for plastic surgeons.',
+    'How working with P5 actually runs: the senior team, the engagement model, what we own, what you approve, and what lands in your inbox each month.',
   openGraph: {
-    title: 'How Intent Data Marketing Works | P5 Marketing',
+    title: 'How a P5 Marketing Engagement Works',
     description:
-      'See how IntentID, VisitorID, InboxID, and SEO Accelerator work together in a four-stage intent data marketing pipeline for plastic surgeons.',
+      'How working with P5 actually runs: the senior team, the engagement model, what we own, what you approve, and what lands in your inbox each month.',
     url: 'https://p5marketing.com/how-it-works/',
     type: 'website',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
@@ -19,62 +19,62 @@ export default function HowItWorks() {
   const stages = [
     {
       number: 1,
-      label: "FIND",
-      tool: "IntentID",
-      description: "We build a custom audience of people actively searching for your services. IntentID captures real search behavior from the last 48 to 72 hours and creates a list you can deploy across Meta, Google, X, TikTok, and LinkedIn."
+      label: "STRATEGY",
+      tool: "First 30 Days",
+      description: "We audit what's working, what's broken, and what's being wasted in your current marketing. We map your real buyers using intent data, identify the highest-leverage moves, and lay out a plan with priorities and timelines. You approve the direction in one meeting. Then we go."
     },
     {
       number: 2,
-      label: "DRIVE",
-      tool: "SEO Accelerator + Ads",
-      description: "Your IntentID audience is deployed across two channels for maximum reach. The SEO Accelerator builds organic traffic through SEO-optimized content, GEO for AI search platforms, and content repurposing into social and podcast assets. Paid ads on Google, Meta, LinkedIn, and TikTok deliver immediate reach. Together, they reduce your cost-per-customer and compound over time."
+      label: "EXECUTION",
+      tool: "Senior Team Running the Play",
+      description: "SEO, paid ads, content, social, conversion optimization, email, CRM, reporting — built and run by the same senior team that did the strategy work. Not handed off to junior staff between us and you. The work ships, the numbers move, and you read the monthly summary instead of running the campaign."
     },
     {
       number: 3,
-      label: "IDENTIFY",
-      tool: "VisitorID",
-      description: "When those prospects visit your website, VisitorID identifies up to 60% of them by name, email, phone, and home address. No form required. No guessing."
+      label: "VISIBILITY",
+      tool: "The ID Suite",
+      description: "Built into your engagement: who's researching your services, who's on your website, what they engaged with, how serious they look. Most agencies guess at what's working. We can see it. That visibility shapes every decision we make for you."
     },
     {
       number: 4,
-      label: "CONVERT",
-      tool: "InboxID",
-      description: "Same-day follow-up through retargeting ads and personalized email sequences. Behavior-based sequences re-engage identified visitors while your brand is top of mind."
+      label: "FOLLOW-UP",
+      tool: "Hand-Offs to Your Team",
+      description: "The hottest prospects flow into your CRM with context — what they viewed, how often, what they responded to. Your front desk or sales team picks up the phone with a real reason to call. Same-day retargeting and email keep your business in front of the rest until they're ready."
     }
   ];
 
   const deliverables = [
     {
-      title: "IntentID Audience Segments",
-      description: "Custom audiences of people actively researching your services, refreshed weekly and deployed across your ad platforms."
+      title: "Strategic Plan and Quarterly Roadmap",
+      description: "A document you can read, approve, and share with your team. Priorities, timelines, what we're doing, what we're killing, and what success looks like at 30, 60, 90, and 365 days."
     },
     {
-      title: "SEO Accelerator Content Strategy & Roadmap",
-      description: "Keyword targets, content calendar, and monthly publishing cadence. SEO and GEO priorities mapped to your buyer\u2019s search behavior."
+      title: "Intent Audiences for Your Ad Platforms",
+      description: "Custom audiences of in-market buyers loaded into Facebook and LinkedIn — the two platforms where our clients' buyers actually convert. Refreshed weekly. Your ad budget stops chasing demographics and starts reaching real prospects."
     },
     {
-      title: "SEO Accelerator Social & Podcast Calendar",
-      description: "12-month calendar of social posts, promotional content, and podcast episodes\u2014all derived from your core SEO Accelerator content."
+      title: "SEO and GEO Content That Earns Its Traffic",
+      description: "Service-specific landing pages, pillar content, and AI-search optimization (ChatGPT, Claude, Perplexity). 25 years of search expertise applied to your vertical and your terms."
     },
     {
-      title: "VisitorID Reports",
-      description: "Daily or weekly reports showing exactly who visited your website, which pages they viewed, and their full contact information."
+      title: "Social and Podcast Calendar",
+      description: "12-month plan of social posts, promotional content, and podcast episodes — all derived from your core messaging so nothing has to be reinvented for each platform."
     },
     {
-      title: "InboxID Follow-Up System",
-      description: "Automated retargeting and email sequences triggered by website visits, all running on isolated infrastructure."
+      title: "Visitor Intelligence Dashboard",
+      description: "Secure dashboard showing who's engaging with your site, what they're researching, and how serious they look. Configured for your vertical's compliance requirements."
     },
     {
-      title: "Campaign Dashboard",
-      description: "Real-time reporting on impressions, clicks, visitors identified, emails sent, and appointments booked."
+      title: "Behavior-Triggered Follow-Up",
+      description: "Same-day retargeting and email sequences tailored to what each prospect did on your site. Keeps you top of mind while interest is hot. Senior strategist reviews and tunes the sequences monthly."
     },
     {
       title: "CRM Integration",
-      description: "All identified visitors and engaged contacts flow directly into your CRM with tags, segments, and activity history."
+      description: "Engaged prospects flow into your CRM with tags, segments, and behavior history. Your team picks up the phone with context, not cold lists."
     },
     {
-      title: "Monthly Strategy Reviews",
-      description: "Regular calls to review performance, adjust targeting, and plan next moves."
+      title: "Monthly Working Sessions",
+      description: "One hour with a senior P5 strategist. Not a status update. We review what worked, what didn't, what we're changing, and what's next. You leave with clear direction, not more tasks."
     }
   ];
 
@@ -120,7 +120,7 @@ export default function HowItWorks() {
               fontFamily: "DM Sans"
             }}
           >
-            How Our Intent Data Marketing System Works
+            How a P5 Engagement Actually Runs
           </h1>
           <p
             style={{
@@ -130,7 +130,7 @@ export default function HowItWorks() {
               margin: "0"
             }}
           >
-            Every campaign follows the same cycle: find the people searching for what you sell, drive them to your site, identify who shows up, and convert them before they disappear.
+            We own the marketing function. You approve direction, we run the play, and you read the monthly summary. No briefs you have to write. No weekly status calls. No junior account managers between you and the work.
           </p>
         </div>
       </section>
@@ -156,7 +156,7 @@ export default function HowItWorks() {
                 margin: "0 0 8px 0"
               }}
             >
-              The Cycle
+              The Engagement
             </p>
             <h2
               style={{
@@ -167,7 +167,7 @@ export default function HowItWorks() {
                 fontFamily: "DM Sans"
               }}
             >
-              From Search Intent to Booked Appointment
+              Four Phases. One Senior Team. Your Marketing Function, Owned.
             </h2>
           </div>
 
@@ -276,7 +276,7 @@ export default function HowItWorks() {
                 fontFamily: "DM Sans"
               }}
             >
-              Everything That Ships with Your Campaign
+              What Lands in Your Inbox Every Month
             </h2>
           </div>
 
@@ -347,7 +347,7 @@ export default function HowItWorks() {
               fontFamily: "DM Sans"
             }}
           >
-            See the Full Cycle in Action
+            Want to See What This Looks Like for Your Business?
           </h2>
           <p
             style={{
@@ -358,7 +358,7 @@ export default function HowItWorks() {
               margin: "0 0 32px 0"
             }}
           >
-            Book a 30-minute demo and we'll walk you through how the SEO Accelerator, IntentID, VisitorID, and InboxID work together with your own data.
+            30 minutes with a senior strategist. No pitch. We&rsquo;ll ask honest questions about your business and tell you whether P5 is the right call.
           </p>
           <a
             href="/contact/"
@@ -377,7 +377,7 @@ export default function HowItWorks() {
               cursor: "pointer"
             }}
           >
-            Book a Demo
+            Start a Fit Conversation
           </a>
         </div>
       </section>

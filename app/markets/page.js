@@ -2,11 +2,11 @@ export const metadata = {
   alternates: {
     canonical: '/markets/',
   },
-  title: 'Markets We Serve | High-Trust Business Marketing',
-  description: 'Proven intent data marketing for high-trust businesses. Plastic surgeons, wedding venues & luxury services. See your market.',
+  title: 'Who We Work With | P5 Marketing',
+  description: 'P5 works with owner-operators of $1M-$5M service businesses where one new customer is worth $10K+. Wedding venues, surgical practices, legal firms, and similar.',
   openGraph: {
-    title: 'Markets We Serve | High-Trust Business Marketing',
-    description: 'Proven intent data marketing for high-trust businesses. Plastic surgeons, wedding venues & luxury services. See your market.',
+    title: 'Who We Work With | P5 Marketing',
+    description: 'P5 works with owner-operators of $1M-$5M service businesses where one new customer is worth $10K+. Wedding venues, surgical practices, legal firms, and similar.',
     url: 'https://p5marketing.com/markets/',
     type: 'website',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
@@ -41,14 +41,14 @@ export default function MarketsPage() {
       <section style={{ padding: '80px 24px', maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
         <div style={{ marginBottom: '12px' }}>
           <span style={{ fontSize: '13px', fontWeight: '600', color: 'var(--p5-accent)', letterSpacing: '0.5px' }}>
-            Markets Served
+            Who We Work With
           </span>
         </div>
         <h1 style={{ fontSize: '56px', fontWeight: '700', lineHeight: '1.1', marginBottom: '20px', letterSpacing: '-1px' }}>
-          Proven for High-Trust, High-Ticket Businesses
+          Owner-Operators of Service Businesses Where One Customer Matters
         </h1>
         <p style={{ fontSize: '18px', color: 'var(--p5-text-dim)', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6' }}>
-          The same conversion engine powers every vertical. Pick your market to see the exact system, segments, and messaging we use.
+          $1M&ndash;$5M revenue. One new customer worth $10K or more. No senior in-house marketer. Done managing your last agency. Trust experts to do the job. If that&rsquo;s you, look at the categories below or read the <a href="/markets/high-trust-high-value/" style={{ color: 'var(--p5-accent)' }}>full fit profile</a>.
         </p>
       </section>
 
@@ -68,7 +68,7 @@ export default function MarketsPage() {
             <div style={cardStyle}>
               <h2 style={{ fontSize: '24px', fontWeight: '700', marginBottom: '16px' }}>Wedding Venues</h2>
               <p style={{ fontSize: '16px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-                Find couples actively searching for venues in your area with IntentID™. Identify the ones who visit your site with VisitorID™. Convert them with InboxID™ follow-up so your team can book the tour.
+                Owner-operated venues where one booking is worth $10K+ and the season is decided in the months when couples are searching. We&rsquo;ve filled calendars before. We can do it again.
               </p>
               <div style={{ marginTop: '20px', color: 'var(--p5-accent)', fontWeight: '600', fontSize: '14px' }}>
                 Learn More →
@@ -87,9 +87,9 @@ export default function MarketsPage() {
             }}
           >
             <div style={cardStyle}>
-              <h2 style={{ fontSize: '24px', fontWeight: '700', marginBottom: '16px' }}>Plastic Surgeons</h2>
+              <h2 style={{ fontSize: '24px', fontWeight: '700', marginBottom: '16px' }}>Surgical Practices</h2>
               <p style={{ fontSize: '16px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-                Find people researching cosmetic procedures near you with IntentID™. Identify the ones who visit your site with VisitorID™. Convert them with InboxID™ follow-up so your team can book the consult.
+                Cosmetic, spine, and specialty surgical practices where the surgeon owns the business and one consult is worth $10K&ndash;$100K. We&rsquo;ve grown a single practice from $1M to $4M. Track record on file.
               </p>
               <div style={{ marginTop: '20px', color: 'var(--p5-accent)', fontWeight: '600', fontSize: '14px' }}>
                 Learn More →
@@ -108,12 +108,12 @@ export default function MarketsPage() {
             }}
           >
             <div style={cardStyle}>
-              <h2 style={{ fontSize: '24px', fontWeight: '700', marginBottom: '16px' }}>Other High-Trust Businesses</h2>
+              <h2 style={{ fontSize: '24px', fontWeight: '700', marginBottom: '16px' }}>Other Owner-Operated Service Businesses</h2>
               <p style={{ fontSize: '16px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-                Legal, luxury home services, specialty medical, financial advisory. If a booked call is worth thousands, this system fits. Let's talk about your vertical.
+                Legal practices, luxury home services, specialty medical, financial advisory. The vertical doesn&rsquo;t matter as much as the fit profile. If you match the description, we should talk. Read the full fit profile to see if we&rsquo;re right for each other.
               </p>
               <div style={{ marginTop: '20px', color: 'var(--p5-accent)', fontWeight: '600', fontSize: '14px' }}>
-                Learn More →
+                See the Full Fit Profile →
               </div>
             </div>
           </a>
