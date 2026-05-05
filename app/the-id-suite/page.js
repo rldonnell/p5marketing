@@ -2,16 +2,16 @@ export const metadata = {
   alternates: {
     canonical: '/the-id-suite/',
   },
-  title: 'The ID Suite | Full-Cycle Marketing Stack | P5 Marketing',
+  title: 'The ID Suite | Visibility No Other Agency Has',
   description:
-    'The ID Suite combines SEO Accelerator, IntentID, VisitorID, and InboxID into one full-cycle intent data marketing stack for plastic surgeons.',
+    'The ID Suite is the visibility layer P5 built in-house: IntentID for intent audiences, VisitorID for visitor intelligence, InboxID for behavior-triggered follow-up, and SearchID for SEO and GEO. Built into every P5 engagement.',
   openGraph: {
-    title: 'The ID Suite | Full-Cycle Marketing Stack | P5 Marketing',
+    title: 'The ID Suite | Visibility No Other Agency Has | P5 Marketing',
     description:
-      'The ID Suite combines SEO Accelerator, IntentID, VisitorID, and InboxID into one full-cycle intent data marketing stack for plastic surgeons.',
+      'IntentID, VisitorID, InboxID, and SearchID — the in-house visibility layer that powers every P5 engagement for owner-operators of $1M–$5M service businesses.',
     url: 'https://p5marketing.com/the-id-suite/',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing — The ID Suite' }],
   },
 };
 

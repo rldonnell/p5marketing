@@ -2,6 +2,28 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
+  // Static export: image optimization is disabled, but we still want everything else
+  // that Next.js gives us for performance.
+  reactStrictMode: true,
+  poweredByHeader: false,
+  compress: true,
+  productionBrowserSourceMaps: false,
+  generateEtags: true,
+  // Static export disables runtime image optimization, so make Next/Image accept
+  // unoptimized images without throwing.
+  images: {
+    unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
+  },
+  experimental: {
+    // Trim unused CSS that styled-jsx/Tailwind/etc. emit by default
+    optimizeCss: false,
+    // Remove console.* in production except errors and warnings
+    optimizePackageImports: ['lucide-react'],
+  },
+  compiler: {
+    removeConsole: { exclude: ['error', 'warn'] },
+  },
 };
 
 module.exports = nextConfig;

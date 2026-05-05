@@ -5,16 +5,16 @@ export const metadata = {
   alternates: {
     canonical: '/blog/',
   },
-  title: 'Plastic Surgery Marketing Blog | P5 Marketing',
+  title: 'P5 Marketing Blog | Strategy, SEO, GEO, and the ID Suite',
   description:
-    'Insights on intent data marketing, visitor identification, lead generation strategy, and full-cycle campaign execution for high-trust businesses.',
+    'Field notes on running marketing for owner-operators of $1M–$5M service businesses: SEO, GEO, intent data, visitor identification, conversion, and what actually moves bookings.',
   openGraph: {
-    title: 'Plastic Surgery Marketing Blog | P5 Marketing',
+    title: 'P5 Marketing Blog | Strategy, SEO, GEO, and the ID Suite',
     description:
-      'Insights on intent data marketing, visitor identification, lead generation strategy, and full-cycle campaign execution for high-trust businesses.',
+      'Field notes on running marketing for owner-operators: SEO, GEO, intent data, and what actually moves bookings.',
     url: 'https://p5marketing.com/blog/',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing Blog' }],
   },
 };
 

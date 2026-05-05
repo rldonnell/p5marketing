@@ -1,12 +1,16 @@
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'Product',
+  '@type': 'Service',
+  '@id': 'https://p5marketing.com/the-id-suite/visitorid/#service',
   name: 'VisitorID\u2122',
+  serviceType: 'Website Visitor Identification',
+  provider: { '@id': 'https://p5marketing.com/#organization' },
   brand: { '@type': 'Organization', name: 'P5 Marketing' },
   description:
-    'Website visitor identification software that recovers anonymous visitors, scores buying intent, and delivers qualified leads to your CRM automatically.',
+    'VisitorID identifies up to 60% of anonymous website visitors by name, email, phone, address, and household income, scores buying intent, and routes the serious ones to your CRM automatically. Built into every P5 engagement.',
   url: 'https://p5marketing.com/the-id-suite/visitorid/',
-  category: 'Website Visitor Identification Software',
+  category: 'Marketing Technology',
+  areaServed: { '@type': 'Country', name: 'United States' },
   offers: {
     '@type': 'Offer',
     availability: 'https://schema.org/InStock',

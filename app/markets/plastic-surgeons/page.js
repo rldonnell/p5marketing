@@ -2,14 +2,14 @@ export const metadata = {
   alternates: {
     canonical: '/markets/plastic-surgeons/',
   },
-  title: 'Plastic Surgery Marketing | SEO & PPC | P5 Marketing',
-  description: 'Marketing for plastic surgeons that finds patients researching procedures. SEO, PPC, social media, and content strategies that fill your consult calendar.',
+  title: 'Plastic Surgery Marketing | Owner-Operated Practices | P5 Marketing',
+  description: 'Marketing for owner-operated cosmetic, spine, and specialty surgical practices where one consult is worth $10K–$100K. SEO, GEO, paid, content, and the ID Suite — run by the same senior team that grew a single practice from $1M to $4M.',
   openGraph: {
-    title: 'Plastic Surgery Marketing | SEO & PPC | P5 Marketing',
-    description: 'Marketing for plastic surgeons that finds patients researching procedures. SEO, PPC, social media, and content strategies that fill your consult calendar.',
+    title: 'Plastic Surgery Marketing | Owner-Operated Practices | P5 Marketing',
+    description: 'For owner-operated surgical practices where one consult is worth $10K–$100K. Senior team. SEO, paid, content, and the ID Suite under one roof.',
     url: 'https://p5marketing.com/markets/plastic-surgeons/',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing — Plastic Surgery Marketing' }],
   },
 };
 

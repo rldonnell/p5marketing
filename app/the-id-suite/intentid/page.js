@@ -2,16 +2,16 @@ export const metadata = {
   alternates: {
     canonical: '/the-id-suite/intentid/',
   },
-  title: 'IntentID\u2122 | Intent Data Audience Building | P5 Marketing',
+  title: 'IntentID\u2122 | Intent-Based Audience Building | P5 Marketing',
   description:
-    'IntentID builds custom audiences from real search behavior in the past 48-72 hours. Deploy across Meta, Google, X, TikTok, and LinkedIn.',
+    'IntentID builds custom audiences from verified search behavior across 3.7M+ vetted domains in the past 48\u201372 hours. Deploy across Meta, Google, X, TikTok, and LinkedIn \u2014 every ad dollar spent on someone with real buying intent.',
   openGraph: {
-    title: 'IntentID\u2122 | Intent Data Audience Building | P5 Marketing',
+    title: 'IntentID\u2122 | Intent-Based Audience Building | P5 Marketing',
     description:
-      'IntentID builds custom audiences from real search behavior in the past 48-72 hours. Deploy across Meta, Google, X, TikTok, and LinkedIn.',
+      'Stop chasing demographics. IntentID targets the people who are already searching for what you sell. Built into every P5 engagement.',
     url: 'https://p5marketing.com/the-id-suite/intentid/',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing \u2014 IntentID' }],
   },
 };
 

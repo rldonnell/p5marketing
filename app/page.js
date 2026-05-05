@@ -72,6 +72,9 @@ export default function Home() {
           __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",
+              "@id": "https://p5marketing.com/#faq",
+              "isPartOf": { "@id": "https://p5marketing.com/#website" },
+              "publisher": { "@id": "https://p5marketing.com/#organization" },
               "mainEntity": [
                 { "@type": "Question", "name": "Who is P5 a fit for?", "acceptedAnswer": { "@type": "Answer", "text": "Owner-operators of $1M to $5M service businesses where one new customer is worth $10K or more, who don't have a senior in-house marketer, who've worked with agencies before, and who'd rather hand the marketing function to a senior team than manage it themselves." } },
                 { "@type": "Question", "name": "Who is P5 not a fit for?", "acceptedAnswer": { "@type": "Answer", "text": "Businesses with a senior in-house marketing manager already in place, businesses with monthly marketing budgets below $10K total, owners who want to approve every asset and run the campaign themselves, and businesses where one new customer is worth less than a few thousand dollars. We're honest about fit because misfit engagements waste everyone's time." } },
@@ -104,7 +107,7 @@ export default function Home() {
               </div>
             </div>
             <div className="p5-hero-illus p5-fade-up p5-delay-1" style={{ display: 'none', position: 'relative' }}>
-              <img src="/images/marketing-pipeline.png" alt="ID Suite Data Pipeline" width="580" height="580" style={{ width: '100%', height: 'auto', maxWidth: '580px', margin: '0 auto', display: 'block', filter: 'drop-shadow(0 0 40px rgba(0, 229, 199, 0.4))' }} priority="true" />
+              <img src="/images/marketing-pipeline.webp" alt="ID Suite Data Pipeline" width="580" height="580" loading="lazy" decoding="async" style={{ width: '100%', height: 'auto', maxWidth: '580px', margin: '0 auto', display: 'block', filter: 'drop-shadow(0 0 40px rgba(0, 229, 199, 0.4))' }} />
             </div>
           </div>
         </div>

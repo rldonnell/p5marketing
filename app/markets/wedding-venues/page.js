@@ -2,14 +2,14 @@ export const metadata = {
   alternates: {
     canonical: '/markets/wedding-venues/',
   },
-  title: 'Wedding Venue Marketing | P5 Marketing',
-  description: 'Wedding venue marketing that finds couples shopping for venues. IntentID + VisitorID + InboxID book more tours for your venue.',
+  title: 'Wedding Venue Marketing | Find Couples Already Shopping | P5 Marketing',
+  description: 'Marketing for owner-operated wedding venues where one booking is worth $10K+ and the season is decided in the months when couples are searching. IntentID, VisitorID, and InboxID fill the calendar — run by a senior team that has done it before.',
   openGraph: {
-    title: 'Wedding Venue Marketing | P5 Marketing',
-    description: 'Wedding venue marketing that finds couples shopping for venues. IntentID + VisitorID + InboxID book more tours for your venue.',
+    title: 'Wedding Venue Marketing | Find Couples Already Shopping | P5 Marketing',
+    description: 'For owner-operated venues where one booking is worth $10K+. Senior team. The ID Suite included.',
     url: 'https://p5marketing.com/markets/wedding-venues/',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing — Wedding Venue Marketing' }],
   },
 };
 

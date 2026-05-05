@@ -2,16 +2,16 @@ export const metadata = {
   alternates: {
     canonical: '/the-id-suite/inboxid/',
   },
-  title: 'InboxID\u2122 | Same-Day Lead Conversion | P5 Marketing',
+  title: 'InboxID\u2122 | Behavior-Triggered Follow-Up | P5 Marketing',
   description:
-    'InboxID converts identified website visitors with same-day retargeting ads and behavior-based email sequences. Close the loop fast.',
+    'InboxID re-engages identified website visitors with same-day retargeting ads and behavior-based email sequences while your brand is still top of mind. Hand-offs into your CRM with context \u2014 not cold lists.',
   openGraph: {
-    title: 'InboxID\u2122 | Same-Day Lead Conversion | P5 Marketing',
+    title: 'InboxID\u2122 | Behavior-Triggered Follow-Up | P5 Marketing',
     description:
-      'InboxID converts identified website visitors with same-day retargeting ads and behavior-based email sequences. Close the loop fast.',
+      'Same-day retargeting and email sequences for identified website visitors. Warm hand-offs to your sales team \u2014 not cold lists.',
     url: 'https://p5marketing.com/the-id-suite/inboxid/',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing \u2014 InboxID' }],
   },
 };
 

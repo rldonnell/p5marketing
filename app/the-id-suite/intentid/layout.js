@@ -1,12 +1,16 @@
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'Product',
+  '@type': 'Service',
+  '@id': 'https://p5marketing.com/the-id-suite/intentid/#service',
   name: 'IntentID™',
+  serviceType: 'Intent-Based Audience Building',
+  provider: { '@id': 'https://p5marketing.com/#organization' },
   brand: { '@type': 'Organization', name: 'P5 Marketing' },
   description:
-    'Custom audiences of people actively searching for your services, built from real search behavior captured in the past 48–72 hours and deployed across Meta, Google, X, TikTok, and LinkedIn.',
+    'Custom audiences of people actively searching for your services, built from verified search behavior across 3.7M+ vetted domains in the past 48–72 hours and deployed across Meta, Google, X, TikTok, and LinkedIn. Built into every P5 engagement.',
   url: 'https://p5marketing.com/the-id-suite/intentid/',
   category: 'Marketing Technology',
+  areaServed: { '@type': 'Country', name: 'United States' },
   offers: {
     '@type': 'Offer',
     availability: 'https://schema.org/InStock',

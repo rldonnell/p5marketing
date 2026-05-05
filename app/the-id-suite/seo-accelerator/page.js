@@ -2,16 +2,16 @@ export const metadata = {
   alternates: {
     canonical: '/the-id-suite/seo-accelerator/',
   },
-  title: 'SEO Accelerator for Plastic Surgeons | P5 Marketing',
+  title: 'SearchID — SEO and GEO Content Engine | P5 Marketing',
   description:
-    'SEO Accelerator by P5 Marketing: 25 years of SEO expertise plus GEO optimization and content repurposing for plastic surgeons.',
+    '25 years of SEO expertise plus Generative Engine Optimization for ChatGPT, Perplexity, and Claude — and content repurposing for owner-operators of $1M–$5M service businesses. The compounding base that lowers your acquisition cost over time.',
   openGraph: {
-    title: 'SEO Accelerator for Plastic Surgeons | P5 Marketing',
+    title: 'SearchID — SEO and GEO Content Engine | P5 Marketing',
     description:
-      'SEO Accelerator by P5 Marketing: 25 years of SEO expertise plus GEO optimization and content repurposing for plastic surgeons.',
+      'SEO + GEO + content repurposing for owner-operators of $1M–$5M service businesses. 25 years of search expertise applied to your vertical and your terms.',
     url: 'https://p5marketing.com/the-id-suite/seo-accelerator/',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing — SearchID' }],
   },
 };
 
