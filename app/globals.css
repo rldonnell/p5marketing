@@ -19,7 +19,7 @@
 /* ===== VARIABLES ===== */
 :root {
   --p5-max-w: 1280px;
-  --p5-accent: #00e5c7;
+  --p5-accent: #14b8a6;
   --p5-accent-alt: #7b61ff;
   --p5-bg-deep: #080c14;
   --p5-bg-surface: rgba(13, 20, 32, 0.45);
@@ -28,13 +28,14 @@
   --p5-text: #f8fafc;
   --p5-text-dim: #94a3b8;
   --p5-radius: 16px;
-  --p5-glow: 0 0 80px rgba(0,229,199,.25);
+  --p5-glow: none;
   --p5-glass-blur: blur(16px);
   --p5-gradient-title: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
 }
 
 body::before {
   content: "";
+  display: none;
   position: fixed;
   top: -20%;
   left: -10%;
@@ -48,6 +49,7 @@ body::before {
 
 body::after {
   content: "";
+  display: none;
   position: fixed;
   bottom: -20%;
   right: -10%;
