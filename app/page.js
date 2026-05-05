@@ -93,17 +93,17 @@ export default function Home() {
       {/* ===== HERO ===== */}
       <section className="p5-hero">
         <div className="p5-wrap">
-          <div className="p5-hero-grid">
+          <div className="p5-hero-grid" style={{ gridTemplateColumns: '1fr', maxWidth: '1080px' }}>
             <div className="p5-hero-copy p5-fade-up">
               <p className="p5-kicker">Colleyville, TX &middot; 25 Years &middot; For Owner-Operators Done Managing Their Agency</p>
               <h1>You Run Your Business. We Run Your Marketing.</h1>
-              <p className="p5-sub">P5 is a senior marketing team for owner-operators of $1M to $5M service businesses where one new customer is worth $10K or more. If you&rsquo;ve worked with agencies before and you&rsquo;re quietly unhappy with what you&rsquo;re getting, you&rsquo;re probably the reason we built this. <strong>We run the strategy. We run the execution. You run the business you actually want to run.</strong> Backed by <a href="/the-id-suite/" style={{ color: 'var(--p5-accent)' }}>the ID Suite</a>, the visibility layer no other agency in your market has.</p>
+              <p className="p5-sub" style={{ maxWidth: '980px' }}>P5 is a senior marketing team for owner-operators of $1M to $5M service businesses where one new customer is worth $10K or more. If you&rsquo;ve worked with agencies before and you&rsquo;re quietly unhappy with what you&rsquo;re getting, you&rsquo;re probably the reason we built this. <strong>We run the strategy. We run the execution. You run the business you actually want to run.</strong> Backed by <a href="/the-id-suite/" style={{ color: 'var(--p5-accent)' }}>the ID Suite</a>, the visibility layer no other agency in your market has.</p>
               <div className="p5-cta-row">
                 <a href="/contact/" className="p5-btn p5-btn-primary">Start a Fit Conversation</a>
                 <a href="#cycle" className="p5-btn p5-btn-ghost">How We Work</a>
               </div>
             </div>
-            <div className="p5-hero-illus p5-fade-up p5-delay-1" style={{ position: 'relative' }}>
+            <div className="p5-hero-illus p5-fade-up p5-delay-1" style={{ display: 'none', position: 'relative' }}>
               <img src="/images/marketing-pipeline.png" alt="ID Suite Data Pipeline" width="580" height="580" style={{ width: '100%', height: 'auto', maxWidth: '580px', margin: '0 auto', display: 'block', filter: 'drop-shadow(0 0 40px rgba(0, 229, 199, 0.4))' }} priority="true" />
             </div>
           </div>
