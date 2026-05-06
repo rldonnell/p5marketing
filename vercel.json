@@ -83,7 +83,7 @@
 
     { "source": "/about-p5-marketing-data-driven-marketing-agency/", "destination": "/about/", "permanent": true },
 
-    { "source": "/the-importance-of-a-strong-content-strategy/",                   "destination": "/blog/", "permanent": true },
+    { "source": "/the-importance-of-a-strong-content-strategy/",                   "destination": "/blog/the-importance-of-a-strong-content-strategy/", "permanent": true },
     { "source": "/social-media-magic/",                                            "destination": "/blog/", "permanent": true },
     { "source": "/website-maintenance-and-hosting-are-key-to-your-website-success/", "destination": "/blog/", "permanent": true },
     { "source": "/building-engagement-using-our-focus-pages-content-engine/",      "destination": "/blog/", "permanent": true },
