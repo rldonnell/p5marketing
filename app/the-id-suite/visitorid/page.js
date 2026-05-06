@@ -2,13 +2,15 @@ import content from '../../../lib/content/visitorid';
 import PageEffects from './PageEffects';
 
 export const metadata = {
-  alternates: { canonical: '/the-id-suite/visitorid/' },
+  // Canonical points at /visitorid/ — that's the master campaign page;
+  // this ID Suite path exists for navigation but defers SEO authority to /visitorid/.
+  alternates: { canonical: '/visitorid/' },
   title: content.seo.title,
   description: content.seo.description,
   openGraph: {
     title: content.seo.title,
     description: content.seo.description,
-    url: 'https://p5marketing.com/the-id-suite/visitorid/',
+    url: 'https://p5marketing.com/visitorid/',
     type: 'website',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },

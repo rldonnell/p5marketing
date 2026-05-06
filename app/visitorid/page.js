@@ -338,32 +338,6 @@ export default function VisitorIDLandingPage() {
         }}
       />
 
-      {/* SoftwareApplication structured data for VisitorID */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'SoftwareApplication',
-            name: 'VisitorID\u2122',
-            applicationCategory: 'BusinessApplication',
-            operatingSystem: 'Web',
-            description: content.seo.description,
-            offers: {
-              '@type': 'Offer',
-              price: '0',
-              priceCurrency: 'USD',
-              description: 'Schedule a demo for pricing',
-            },
-            provider: {
-              '@type': 'Organization',
-              name: 'P5 Marketing',
-              url: 'https://p5marketing.com',
-            },
-          }),
-        }}
-      />
-
       {/* Hero */}
       <section className="p5-hero-centered">
         <p className="p5-kicker">{content.hero.eyebrow}</p>
