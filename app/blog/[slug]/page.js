@@ -4,7 +4,22 @@ import {
   getFeaturedImage,
   getAuthorName,
   formatDate,
+  stripHtml,
 } from '../../../lib/wordpress';
+
+/* ── HTML-entity decoder for schema fields (plain-text only) ─────── */
+function decodeEntities(str) {
+  if (!str) return str;
+  return str
+    .replace(/&#(\d+);/g, (_, c) => String.fromCharCode(parseInt(c, 10)))
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, c) => String.fromCharCode(parseInt(c, 16)))
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&nbsp;/g, ' ');
+}
 
 /* ── Static params (required for output: 'export') ───────────── */
 export async function generateStaticParams() {
@@ -75,8 +90,51 @@ export default async function BlogPost({ params }) {
   const author = getAuthorName(post);
   const date = formatDate(post.date);
 
+  /* ── JSON-LD schema (BlogPosting + Breadcrumb) ─────────────── */
+  const cleanTitle = decodeEntities(post.title.rendered);
+  const cleanExcerpt = decodeEntities(stripHtml(post.excerpt.rendered)).slice(0, 160);
+  const postUrl = `https://p5marketing.com/blog/${params.slug}/`;
+  const fallbackImage = 'https://p5marketing.com/og-image.png';
+
+  const blogPostingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    '@id': `${postUrl}#article`,
+    headline: cleanTitle,
+    description: cleanExcerpt,
+    image: image || fallbackImage,
+    url: postUrl,
+    datePublished: post.date,
+    dateModified: post.modified || post.date,
+    author: {
+      '@type': 'Person',
+      name: author,
+      url: 'https://p5marketing.com/about/',
+    },
+    publisher: { '@id': 'https://p5marketing.com/#organization' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://p5marketing.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://p5marketing.com/blog/' },
+      { '@type': 'ListItem', position: 3, name: cleanTitle, item: postUrl },
+    ],
+  };
+
   return (
     <main className="p5-main">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="p5-blog-article-light">
         {/* ── Post header ── */}
         <section style={{ paddingBottom: '1rem', textAlign: 'center' }}>
