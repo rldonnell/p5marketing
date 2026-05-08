@@ -50,6 +50,7 @@ export async function generateMetadata({ params }) {
       openGraph: {
         title: post.title.rendered,
         description: excerpt.slice(0, 160),
+        url: `https://p5marketing.com/blog/${params.slug}/`,
         type: 'article',
         publishedTime: post.date,
         images: getFeaturedImage(post) ? [getFeaturedImage(post)] : [],
