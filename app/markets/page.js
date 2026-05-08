@@ -2,7 +2,7 @@ export const metadata = {
   alternates: {
     canonical: '/markets/',
   },
-  title: 'Who We Work With | P5 Marketing',
+  title: 'Who We Work With',
   description: 'P5 works with owner-operators of $1M-$5M service businesses where one new customer is worth $10K+. Wedding venues, surgical practices, legal firms, and similar.',
   openGraph: {
     title: 'Who We Work With | P5 Marketing',

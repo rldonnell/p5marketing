@@ -2,7 +2,7 @@ export const metadata = {
   alternates: {
     canonical: '/terms-and-conditions/',
   },
-  title: 'Terms and Conditions | P5 Marketing',
+  title: 'Terms and Conditions',
   description:
     'Terms and conditions governing the use of P5 Marketing services, website, and intent data marketing products including IntentID, VisitorID, and InboxID.',
   openGraph: {

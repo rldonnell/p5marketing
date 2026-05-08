@@ -2,7 +2,7 @@ export const metadata = {
   alternates: {
     canonical: '/the-id-suite/intentid/',
   },
-  title: 'IntentID\u2122 | Intent-Based Audience Building | P5 Marketing',
+  title: 'IntentID\u2122 | Intent-Based Audience Building',
   description:
     'IntentID builds custom audiences from verified search behavior across 3.7M+ vetted domains in the past 48\u201372 hours. Deploy across Meta, Google, X, TikTok, and LinkedIn \u2014 every ad dollar spent on someone with real buying intent.',
   openGraph: {

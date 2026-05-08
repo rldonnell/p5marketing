@@ -2,7 +2,7 @@ export const metadata = {
   alternates: {
     canonical: '/the-id-suite/searchid/',
   },
-  title: 'SearchID\u2122 | SEO & GEO Content Engine | P5 Marketing',
+  title: 'SearchID\u2122 | SEO & GEO Content Engine',
   description:
     'SearchID attracts qualified customers through SEO, GEO, and content repurposing. Powered by 25 years of P5 SEO expertise.',
   openGraph: {

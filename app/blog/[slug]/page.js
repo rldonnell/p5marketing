@@ -38,14 +38,14 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   try {
     const post = await getPostBySlug(params.slug);
-    if (!post) return { title: 'Post Not Found – P5 Marketing' };
+    if (!post) return { title: 'Post Not Found' };
 
     const excerpt = post.excerpt.rendered.replace(/<[^>]*>/g, '').trim();
     return {
       alternates: {
         canonical: `/blog/${params.slug}/`,
       },
-      title: `${post.title.rendered} – P5 Marketing`,
+      title: post.title.rendered,
       description: excerpt.slice(0, 160),
       openGraph: {
         title: post.title.rendered,
@@ -56,7 +56,7 @@ export async function generateMetadata({ params }) {
       },
     };
   } catch {
-    return { title: 'Blog – P5 Marketing' };
+    return { title: 'Blog' };
   }
 }
 
