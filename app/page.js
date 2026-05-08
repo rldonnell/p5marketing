@@ -299,6 +299,9 @@ export default function Home() {
             <img src="/icons/content-icon.svg" alt="Content and video production icon" width="48" height="48" style={{ marginBottom: '.5rem', opacity: 0.85 }} loading="lazy" />
             <h3 style={{ color: 'var(--p5-accent)', marginBottom: '.75rem' }}>Content That Builds Trust</h3>
             <p>For high-ticket decisions, buyers want to feel confident before they call. Educational content, FAQ pages, case stories, downloadable guides, and <a href="/blog/" style={{ color: 'var(--p5-accent)' }}>video walkthroughs</a> let them do the homework that gets them to yes. We write, produce, and repurpose this across every channel so your team isn&rsquo;t starting from scratch on each platform.</p>
+            <p style={{ fontSize: '14px', color: 'var(--p5-text-dim)', marginTop: '.75rem', marginBottom: 0 }}>
+              Recent reading: <a href="/blog/the-importance-of-a-strong-content-strategy/" style={{ color: 'var(--p5-accent)' }}>Why content strategy still matters in 2026</a> &middot; <a href="/blog/ai-website-development-a-tool-that-knows-you/" style={{ color: 'var(--p5-accent)' }}>Building a website that already knows your business</a>
+            </p>
           </div>
 
           <div className="p5-fade-up p5-delay-1" style={{ background: 'var(--p5-surface)', borderRadius: '12px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.06)' }}>
