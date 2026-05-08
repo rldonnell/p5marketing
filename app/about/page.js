@@ -63,6 +63,96 @@ export default function About() {
           __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://p5marketing.com/about/"}]}'
         }}
       />
+      {/* Person schema — one node per named team member on this page.
+          Each Person ties back to the Organization via worksFor, so Google
+          treats the team page as a verified roster (E-E-A-T signal). */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Person",
+                "@id": "https://p5marketing.com/about/#robert-donnell",
+                "name": "Robert Donnell",
+                "jobTitle": "Co-Founder, Strategy & Operations",
+                "description": "Leads strategy, client relationships, and the overall direction of P5. 25 years building marketing engines for owner-operated service businesses. Architect of the ID Suite (IntentID, VisitorID, InboxID, SearchID).",
+                "url": "https://p5marketing.com/about/",
+                "image": "https://p5marketing.com/og-image.png",
+                "sameAs": [
+                  "https://www.linkedin.com/in/robertdonnell/",
+                  "https://x.com/p5mark"
+                ],
+                "worksFor": { "@id": "https://p5marketing.com/#organization" },
+                "knowsAbout": [
+                  "Marketing strategy",
+                  "Intent data",
+                  "Visitor identification",
+                  "Search engine optimization",
+                  "Generative engine optimization"
+                ]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://p5marketing.com/about/#irene-donnell",
+                "name": "Irene Donnell",
+                "jobTitle": "Marketing — Social Media, SEO & AI Optimization",
+                "description": "Leads P5 Marketing’s digital growth strategy across social media, SEO, and AI optimization. Her work increases visibility, attracts qualified leads, and converts attention into measurable growth.",
+                "worksFor": { "@id": "https://p5marketing.com/#organization" },
+                "knowsAbout": ["Social media marketing", "Search engine optimization", "Generative engine optimization"]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://p5marketing.com/about/#camilo-contreras",
+                "name": "Camilo Contreras",
+                "jobTitle": "Lead Developer",
+                "description": "Builds the technical infrastructure behind every campaign — landing pages, CRM integrations, tracking systems, and automation workflows.",
+                "worksFor": { "@id": "https://p5marketing.com/#organization" },
+                "knowsAbout": ["Web development", "CRM integration", "Marketing automation"]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://p5marketing.com/about/#arlet-gutierrez",
+                "name": "Arlet Gutierrez",
+                "jobTitle": "Campaign Operations",
+                "description": "Manages day-to-day campaign execution — ad builds, audience uploads, reporting dashboards, and QA.",
+                "worksFor": { "@id": "https://p5marketing.com/#organization" },
+                "knowsAbout": ["Campaign operations", "Paid media", "Reporting"]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://p5marketing.com/about/#adrianne-panza",
+                "name": "Adrianne Panza",
+                "jobTitle": "Client Success & Onboarding",
+                "description": "Handles onboarding, CRM setup, and ongoing communication for new and existing clients.",
+                "worksFor": { "@id": "https://p5marketing.com/#organization" },
+                "knowsAbout": ["Client success", "CRM onboarding"]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://p5marketing.com/about/#stephie-althouse",
+                "name": "Stephie Althouse",
+                "honorificSuffix": "PhD",
+                "jobTitle": "Strategic Advisor — Organizational Clarity & Growth",
+                "description": "Advises P5 and its clients on organizational clarity, strategic positioning, and scalable growth frameworks.",
+                "worksFor": { "@id": "https://p5marketing.com/#organization" },
+                "knowsAbout": ["Organizational strategy", "Strategic positioning", "Growth frameworks"]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://p5marketing.com/about/#joely-gardner",
+                "name": "Joely Gardner",
+                "honorificSuffix": "PhD",
+                "jobTitle": "Strategic Advisor — Healthcare Marketing",
+                "description": "Brings deep expertise in web usability and regulatory strategy, backed by prior experience at Microsoft, Meta, and Oracle. Advises on messaging frameworks for medical device, pharmaceutical, and aesthetic practices.",
+                "worksFor": { "@id": "https://p5marketing.com/#organization" },
+                "knowsAbout": ["Healthcare marketing", "Web usability", "Regulatory strategy"]
+              }
+            ]
+          })
+        }}
+      />
       {/* HERO SECTION */}
       <section
         className="p5-hero"
