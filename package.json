@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/inline-critical-css.js",
     "cache-blog": "node scripts/cache-blog.mjs",
     "download-images": "node scripts/download-wp-images.mjs",
     "start": "next start"
@@ -13,5 +13,8 @@
     "next": "^14.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "critters": "^0.0.23"
   }
 }
