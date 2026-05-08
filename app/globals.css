@@ -1783,3 +1783,118 @@ li.p5-has-dropdown.p5-dropdown-open .p5-nav-chevron {
     margin-right: auto;
   }
 }
+/* ============================================================
+   Contact form — /contact/
+   Three-field fit-conversation form. Dark surface, accent focus
+   ring, large tap targets for mobile. Matches the rest of the
+   p5- token system in :root above.
+   ============================================================ */
+
+.p5-contact-page {
+  padding: 96px 0 120px;
+}
+
+.p5-contact-hero {
+  position: relative;
+}
+
+.p5-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 480px;
+  position: relative;
+}
+
+.p5-contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.p5-contact-field label {
+  font-family: 'Space Mono', ui-monospace, monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--p5-text-dim);
+}
+
+.p5-contact-field input {
+  width: 100%;
+  padding: 14px 16px;
+  font-family: 'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 16px;
+  color: var(--p5-text);
+  background: var(--p5-bg-surface);
+  border: 1px solid var(--p5-surface-border);
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.p5-contact-field input::placeholder {
+  color: var(--p5-text-dim);
+  opacity: 0.6;
+}
+
+.p5-contact-field input:hover:not(:disabled) {
+  background: var(--p5-bg-surface-hover);
+}
+
+.p5-contact-field input:focus {
+  border-color: var(--p5-accent);
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.18);
+  background: var(--p5-bg-surface-hover);
+}
+
+.p5-contact-field input:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Native invalid styling — only after the user has tried to submit once */
+.p5-contact-form:invalid .p5-contact-field input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: rgba(239, 68, 68, 0.45);
+}
+
+.p5-contact-error {
+  margin: 4px 0 0;
+  padding: 10px 14px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fecaca;
+  background: rgba(127, 29, 29, 0.35);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  border-radius: 10px;
+}
+
+.p5-contact-submit {
+  margin-top: 8px;
+  align-self: flex-start;
+  min-width: 220px;
+}
+
+.p5-contact-submit:disabled {
+  opacity: 0.6;
+  cursor: progress;
+  transform: none !important;
+  box-shadow: 0 4px 15px rgba(0, 229, 199, 0.2) !important;
+}
+
+.p5-contact-success {
+  max-width: 480px;
+  padding: 24px 28px;
+  background: var(--p5-bg-surface);
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  border-radius: 12px;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.08);
+}
+
+@media (max-width: 640px) {
+  .p5-contact-page { padding: 64px 0 96px; }
+  .p5-contact-hero h1 { font-size: 36px !important; }
+  .p5-contact-submit { width: 100%; min-width: 0; }
+}
