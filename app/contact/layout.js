@@ -2,7 +2,7 @@ export const metadata = {
   alternates: {
     canonical: '/contact/',
   },
-  title: 'Start a Fit Conversation | Contact P5 Marketing',
+  title: 'Start a Fit Conversation | Contact',
   description:
     '30 minutes. No pitch. We ask honest questions about your business, your last agency, and what you are trying to fix. If P5 is a fit, we tell you what we would do. If we are not, we point you somewhere better.',
   openGraph: {

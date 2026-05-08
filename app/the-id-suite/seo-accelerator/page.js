@@ -2,9 +2,9 @@ export const metadata = {
   alternates: {
     canonical: '/the-id-suite/seo-accelerator/',
   },
-  title: 'SearchID — SEO and GEO Content Engine | P5 Marketing',
+  title: 'SearchID — SEO and GEO Content Engine',
   description:
-    '25 years of SEO expertise plus Generative Engine Optimization for ChatGPT, Perplexity, and Claude — and content repurposing for owner-operators of $1M–$5M service businesses. The compounding base that lowers your acquisition cost over time.',
+    '25 years of SEO expertise plus GEO for ChatGPT, Perplexity, and Claude. The compounding base that lowers acquisition cost for $1M–$5M service businesses.',
   openGraph: {
     title: 'SearchID — SEO and GEO Content Engine | P5 Marketing',
     description:

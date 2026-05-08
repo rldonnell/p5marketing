@@ -2,9 +2,9 @@ export const metadata = {
   alternates: {
     canonical: '/the-id-suite/intentid/',
   },
-  title: 'IntentID\u2122 | Intent-Based Audience Building | P5 Marketing',
+  title: 'IntentID\u2122 | Intent-Based Audience Building',
   description:
-    'IntentID builds custom audiences from verified search behavior across 3.7M+ vetted domains in the past 48\u201372 hours. Deploy across Meta, Google, X, TikTok, and LinkedIn \u2014 every ad dollar spent on someone with real buying intent.',
+    'IntentID builds custom audiences from verified search behavior across 3.7M+ vetted domains in the last 48\u201372 hours. Every ad dollar reaches real buying intent.',
   openGraph: {
     title: 'IntentID\u2122 | Intent-Based Audience Building | P5 Marketing',
     description:
@@ -283,7 +283,7 @@ export default function IntentIDPage() {
       />
       <section style={heroStyles}>
         <div style={kickerStyles}>IntentID™ . Powered by P5 Marketing</div>
-        <h1 style={h1Styles}>IntentID\u2122: Find Ready-to-Buy Customers Through Intent Data</h1>
+        <h1 style={h1Styles}>IntentID™: Find Ready-to-Buy Customers Through Intent Data</h1>
         <p style={subStyles}>
           IntentID™ captures real search behavior from the last 48 to 72 hours and builds a list of people actively
           looking for what you sell, by name, address, and contact info.

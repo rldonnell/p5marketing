@@ -2,9 +2,9 @@ export const metadata = {
   alternates: {
     canonical: '/the-id-suite/inboxid/',
   },
-  title: 'InboxID\u2122 | Behavior-Triggered Follow-Up | P5 Marketing',
+  title: 'InboxID\u2122 | Behavior-Triggered Follow-Up',
   description:
-    'InboxID re-engages identified website visitors with same-day retargeting ads and behavior-based email sequences while your brand is still top of mind. Hand-offs into your CRM with context \u2014 not cold lists.',
+    'InboxID re-engages identified website visitors with same-day retargeting and behavior-based email while interest is still hot. Warm hand-offs to your CRM.',
   openGraph: {
     title: 'InboxID\u2122 | Behavior-Triggered Follow-Up | P5 Marketing',
     description:

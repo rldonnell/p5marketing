@@ -2,8 +2,8 @@ export const metadata = {
   alternates: {
     canonical: '/markets/wedding-venues/',
   },
-  title: 'Wedding Venue Marketing | Find Couples Already Shopping | P5 Marketing',
-  description: 'Marketing for owner-operated wedding venues where one booking is worth $10K+ and the season is decided in the months when couples are searching. IntentID, VisitorID, and InboxID fill the calendar — run by a senior team that has done it before.',
+  title: 'Wedding Venue Marketing | Find Couples Already Shopping',
+  description: 'Marketing for owner-operated wedding venues where one booking is worth $10K+. The ID Suite fills your calendar with couples actively searching. Senior team.',
   openGraph: {
     title: 'Wedding Venue Marketing | Find Couples Already Shopping | P5 Marketing',
     description: 'For owner-operated venues where one booking is worth $10K+. Senior team. The ID Suite included.',
@@ -201,15 +201,15 @@ export default function WeddingVenuesPage() {
             <p style={{ fontSize: '14px', color: 'var(--p5-text-dim)', margin: '8px 0 0', lineHeight: '1.5' }}>Rank for venue keywords couples search</p>
           </a>
           <a href="/the-id-suite/intentid/" style={{ ...cardStyle, textDecoration: 'none', color: 'inherit' }}>
-            <strong style={{ color: 'var(--p5-accent)' }}>IntentID\u2122</strong>
+            <strong style={{ color: 'var(--p5-accent)' }}>IntentID™</strong>
             <p style={{ fontSize: '14px', color: 'var(--p5-text-dim)', margin: '8px 0 0', lineHeight: '1.5' }}>Find couples actively shopping for venues</p>
           </a>
           <a href="/the-id-suite/visitorid/" style={{ ...cardStyle, textDecoration: 'none', color: 'inherit' }}>
-            <strong style={{ color: 'var(--p5-accent)' }}>VisitorID\u2122</strong>
+            <strong style={{ color: 'var(--p5-accent)' }}>VisitorID™</strong>
             <p style={{ fontSize: '14px', color: 'var(--p5-text-dim)', margin: '8px 0 0', lineHeight: '1.5' }}>Identify anonymous website visitors by name</p>
           </a>
           <a href="/the-id-suite/inboxid/" style={{ ...cardStyle, textDecoration: 'none', color: 'inherit' }}>
-            <strong style={{ color: 'var(--p5-accent)' }}>InboxID\u2122</strong>
+            <strong style={{ color: 'var(--p5-accent)' }}>InboxID™</strong>
             <p style={{ fontSize: '14px', color: 'var(--p5-text-dim)', margin: '8px 0 0', lineHeight: '1.5' }}>Same-day follow-up to book tours</p>
           </a>
         </div>
