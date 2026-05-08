@@ -34,7 +34,7 @@ export const metadata = {
     default: 'P5 Marketing | A Senior Marketing Team for Owner-Operators',
     template: '%s | P5 Marketing',
   },
-  description: 'P5 runs the marketing function for owner-operators of $1M–$5M service businesses where one new customer is worth $10K+. Senior team. SEO, paid, content, and the ID Suite — one plan, one team, one number that matters.',
+  description: 'Senior marketing team for owner-operators of $1M–$5M service businesses. SEO, paid, content, and the ID Suite — one plan, one team, one number that matters.',
   metadataBase: new URL('https://p5marketing.com'),
   applicationName: 'P5 Marketing',
   authors: [{ name: 'P5 Marketing', url: 'https://p5marketing.com' }],
@@ -102,9 +102,6 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="" />
         <link rel="preconnect" href="https://cdn.idpixel.app" crossOrigin="" />
         <link rel="preconnect" href="https://analytics.ahrefs.com" crossOrigin="" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://cdn.idpixel.app" />
-        <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
         {/* Preload the header logo — it ships with fetchpriority="high" but a preload makes it discoverable before the body parser reaches it */}
         <link rel="preload" as="image" href="/p5-logo-sm.webp" type="image/webp" fetchPriority="high" />
         {/* Theme color so the browser chrome on Android tints to the brand */}
@@ -161,6 +158,11 @@ export default function RootLayout({ children }) {
                 "Marketing for wedding venues",
                 "Marketing for surgical practices",
                 "Marketing for legal practices"
+              ],
+              "sameAs": [
+                "https://x.com/p5mark",
+                "https://www.youtube.com/@p5mark",
+                "https://www.linkedin.com/in/robertdonnell/"
               ]
             })
           }}
@@ -178,7 +180,15 @@ export default function RootLayout({ children }) {
               "name": "P5 Marketing",
               "description": "A senior marketing team for owner-operators of $1M–$5M service businesses.",
               "publisher": { "@id": "https://p5marketing.com/#organization" },
-              "inLanguage": "en-US"
+              "inLanguage": "en-US",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://p5marketing.com/?s={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
             })
           }}
         />
@@ -255,7 +265,11 @@ export default function RootLayout({ children }) {
                   }
                 ]
               },
-              "sameAs": []
+              "sameAs": [
+                "https://x.com/p5mark",
+                "https://www.youtube.com/@p5mark",
+                "https://www.linkedin.com/in/robertdonnell/"
+              ]
             })
           }}
         />
