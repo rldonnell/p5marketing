@@ -108,10 +108,16 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#0a0e14" />
         <meta name="color-scheme" content="dark" />
 
-        {/* Google Analytics — deferred until idle to avoid blocking LCP */}
+        {/* Google Analytics — interaction-first lazy load.
+            Loads gtag.js on the first user interaction (scroll, click, mousemove,
+            touch, key) or after 10s idle as a fallback. Bouncers who leave without
+            interacting (~30% of typical traffic) never download the ~172 KB GA4
+            payload, removing it from the unused-JS Lighthouse opportunity entirely
+            for those sessions. Engaged users still get tracked — pageview fires
+            within milliseconds of their first interaction. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){function load(){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-6122QJKV15';s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-6122QJKV15',{'send_page_view':true,'transport_type':'beacon'});}if('requestIdleCallback' in window){requestIdleCallback(load,{timeout:4000});}else{setTimeout(load,3500);}})();`,
+            __html: `(function(){var loaded=false;function load(){if(loaded)return;loaded=true;var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-6122QJKV15';s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-6122QJKV15',{'send_page_view':true,'transport_type':'beacon'});}var events=['scroll','click','mousemove','touchstart','keydown'];function onFirst(){events.forEach(function(e){window.removeEventListener(e,onFirst,true);});load();}events.forEach(function(e){window.addEventListener(e,onFirst,{once:true,passive:true,capture:true});});setTimeout(load,10000);})();`,
           }}
         />
 
