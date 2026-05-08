@@ -283,7 +283,7 @@ export default function IntentIDPage() {
       />
       <section style={heroStyles}>
         <div style={kickerStyles}>IntentID™ . Powered by P5 Marketing</div>
-        <h1 style={h1Styles}>IntentID™: Find Ready-to-Buy Customers Through Intent Data</h1>
+        <h1 style={h1Styles}>Find Ready-to-Buy Customers Through Intent Data</h1>
         <p style={subStyles}>
           IntentID™ captures real search behavior from the last 48 to 72 hours and builds a list of people actively
           looking for what you sell, by name, address, and contact info.
