@@ -3,7 +3,7 @@ export const metadata = {
     canonical: '/markets/plastic-surgeons/',
   },
   title: 'Plastic Surgery Marketing | Owner-Operated Practices',
-  description: 'Marketing for owner-operated cosmetic, spine, and specialty surgical practices where one consult is worth $10K–$100K. SEO, GEO, paid, content, and the ID Suite — run by the same senior team that grew a single practice from $1M to $4M.',
+  description: 'Marketing for owner-operated cosmetic, spine, and specialty surgical practices where one consult is worth $10K–$100K. Senior team that grew a practice $1M→$4M.',
   openGraph: {
     title: 'Plastic Surgery Marketing | Owner-Operated Practices | P5 Marketing',
     description: 'For owner-operated surgical practices where one consult is worth $10K–$100K. Senior team. SEO, paid, content, and the ID Suite under one roof.',

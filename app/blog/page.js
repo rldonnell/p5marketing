@@ -7,7 +7,7 @@ export const metadata = {
   },
   title: 'P5 Marketing Blog | Strategy, SEO, GEO, and the ID Suite',
   description:
-    'Field notes on running marketing for owner-operators of $1M–$5M service businesses: SEO, GEO, intent data, visitor identification, conversion, and what actually moves bookings.',
+    'Field notes on running marketing for owner-operators of $1M–$5M service businesses. SEO, GEO, intent data, visitor ID — what actually moves bookings.',
   openGraph: {
     title: 'P5 Marketing Blog | Strategy, SEO, GEO, and the ID Suite',
     description:

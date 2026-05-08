@@ -3,7 +3,7 @@ export const metadata = {
     canonical: '/markets/wedding-venues/',
   },
   title: 'Wedding Venue Marketing | Find Couples Already Shopping',
-  description: 'Marketing for owner-operated wedding venues where one booking is worth $10K+ and the season is decided in the months when couples are searching. IntentID, VisitorID, and InboxID fill the calendar — run by a senior team that has done it before.',
+  description: 'Marketing for owner-operated wedding venues where one booking is worth $10K+. The ID Suite fills your calendar with couples actively searching. Senior team.',
   openGraph: {
     title: 'Wedding Venue Marketing | Find Couples Already Shopping | P5 Marketing',
     description: 'For owner-operated venues where one booking is worth $10K+. Senior team. The ID Suite included.',

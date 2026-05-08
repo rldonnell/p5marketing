@@ -4,7 +4,7 @@ export const metadata = {
   },
   title: 'The ID Suite | Visibility No Other Agency Has',
   description:
-    'The ID Suite is the visibility layer P5 built in-house: IntentID for intent audiences, VisitorID for visitor intelligence, InboxID for behavior-triggered follow-up, and SearchID for SEO and GEO. Built into every P5 engagement.',
+    'P5’s in-house visibility layer: IntentID, VisitorID, InboxID, and SearchID — intent audiences, visitor intelligence, follow-up, and SEO/GEO content.',
   openGraph: {
     title: 'The ID Suite | Visibility No Other Agency Has | P5 Marketing',
     description:
