@@ -2,15 +2,16 @@ import content from '../../../lib/content/visitorid';
 import PageEffects from './PageEffects';
 
 export const metadata = {
-  // Canonical points at /visitorid/ — that's the master campaign page;
-  // this ID Suite path exists for navigation but defers SEO authority to /visitorid/.
-  alternates: { canonical: '/visitorid/' },
+  // /the-id-suite/visitorid/ is the canonical home for VisitorID. The apex
+  // /visitorid/ alias (briefly used as a focused landing page) is now a 301
+  // redirect back into the ID Suite — see vercel.json. Self-canonical here.
+  alternates: { canonical: '/the-id-suite/visitorid/' },
   title: content.seo.title,
   description: content.seo.description,
   openGraph: {
     title: content.seo.title,
     description: content.seo.description,
-    url: 'https://p5marketing.com/visitorid/',
+    url: 'https://p5marketing.com/the-id-suite/visitorid/',
     type: 'website',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing' }],
   },

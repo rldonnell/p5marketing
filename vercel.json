@@ -78,6 +78,8 @@
     { "source": "/the-id-suite/inbox-id/",   "destination": "/the-id-suite/inboxid/",   "permanent": true },
     { "source": "/the-id-suite/intent-id/",  "destination": "/the-id-suite/intentid/",  "permanent": true },
     { "source": "/the-id-suite/visitor-id/", "destination": "/the-id-suite/visitorid/", "permanent": true },
+    { "source": "/visitorid/",               "destination": "/the-id-suite/visitorid/", "permanent": true },
+    { "source": "/visitorid",                "destination": "/the-id-suite/visitorid/", "permanent": true },
 
     { "source": "/anonymous-website-visitors-kasper-leads-explained/", "destination": "/the-id-suite/visitorid/", "permanent": true },
 
