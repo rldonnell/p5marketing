@@ -5,7 +5,7 @@ export const metadata = {
   alternates: {
     canonical: '/blog/',
   },
-  title: 'P5 Marketing Blog | Strategy, SEO, GEO, and the ID Suite',
+  title: 'Blog | Strategy, SEO, GEO, and the ID Suite',
   description:
     'Field notes on running marketing for owner-operators of $1M–$5M service businesses. SEO, GEO, intent data, visitor ID — what actually moves bookings.',
   openGraph: {
