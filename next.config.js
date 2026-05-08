@@ -16,10 +16,9 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
   experimental: {
-    // Inline above-the-fold CSS in <head> via critters; defer the rest async.
-    // Eliminates the 7.4 KB render-blocking CSS file from the critical path
-    // and is the biggest single mobile-LCP lever for this site.
-    optimizeCss: true,
+    // Trim unused CSS that styled-jsx/Tailwind/etc. emit by default
+    optimizeCss: false,
+    // Remove console.* in production except errors and warnings
     optimizePackageImports: ['lucide-react'],
   },
   compiler: {
