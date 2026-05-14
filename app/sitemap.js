@@ -28,7 +28,7 @@ const routes = [
   { path: '/markets/',                               changeFrequency: 'monthly', priority: 0.8 },
   { path: '/markets/plastic-surgeons/',              changeFrequency: 'monthly', priority: 0.7 },
   { path: '/markets/wedding-venues/',                changeFrequency: 'monthly', priority: 0.7 },
-  { path: '/markets/high-trust-high-value/',         changeFrequency: 'monthly', priority: 0.7 },
+  { path: '/markets/high-value-service-businesses/', changeFrequency: 'monthly', priority: 0.7 },
 
   // Blog
   { path: '/blog/',                                                          changeFrequency: 'weekly',  priority: 0.8 },

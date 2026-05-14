@@ -48,35 +48,14 @@ export default function MarketsPage() {
           Owner-Operators of Service Businesses Where One Customer Matters
         </h1>
         <p style={{ fontSize: '18px', color: 'var(--p5-text-dim)', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6' }}>
-          $1M&ndash;$5M revenue. One new customer worth $10K or more. No senior in-house marketer. Done managing your last agency. Trust experts to do the job. If that&rsquo;s you, look at the categories below or read the <a href="/markets/high-trust-high-value/" style={{ color: 'var(--p5-accent)' }}>full fit profile</a>.
+          $1M&ndash;$5M revenue. One new customer worth $10K or more. No senior in-house marketer. Done managing your last agency. Trust experts to do the job. If that&rsquo;s you, look at the categories below or read about <a href="/markets/high-value-service-businesses/" style={{ color: 'var(--p5-accent)' }}>high-value service business marketing</a>.
         </p>
       </section>
 
       {/* Market Cards */}
       <section style={{ padding: '60px 24px', maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '32px' }}>
-          {/* Wedding Venues Card */}
-          <a
-            href="/markets/wedding-venues/"
-            style={{
-              textDecoration: 'none',
-              color: 'inherit',
-              display: 'block',
-              transition: 'all 0.3s ease',
-            }}
-          >
-            <div style={cardStyle}>
-              <h2 style={{ fontSize: '24px', fontWeight: '700', marginBottom: '16px' }}>Wedding Venues</h2>
-              <p style={{ fontSize: '16px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-                Owner-operated venues where one booking is worth $10K+ and the season is decided in the months when couples are searching. We&rsquo;ve filled calendars before. We can do it again.
-              </p>
-              <div style={{ marginTop: '20px', color: 'var(--p5-accent)', fontWeight: '600', fontSize: '14px' }}>
-                Learn More →
-              </div>
-            </div>
-          </a>
-
-          {/* Plastic Surgeons Card */}
+          {/* Cosmetic & Plastic Surgery Practices Card */}
           <a
             href="/markets/plastic-surgeons/"
             style={{
@@ -87,7 +66,7 @@ export default function MarketsPage() {
             }}
           >
             <div style={cardStyle}>
-              <h2 style={{ fontSize: '24px', fontWeight: '700', marginBottom: '16px' }}>Surgical Practices</h2>
+              <h2 style={{ fontSize: '24px', fontWeight: '700', marginBottom: '16px' }}>Cosmetic &amp; Plastic Surgery Practices</h2>
               <p style={{ fontSize: '16px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
                 Cosmetic, spine, and specialty surgical practices where the surgeon owns the business and one consult is worth $10K&ndash;$100K. We&rsquo;ve grown a single practice from $1M to $4M. Track record on file.
               </p>
@@ -97,9 +76,9 @@ export default function MarketsPage() {
             </div>
           </a>
 
-          {/* High-Trust High-Value Card */}
+          {/* Wedding Venue Owners Card */}
           <a
-            href="/markets/high-trust-high-value/"
+            href="/markets/wedding-venues/"
             style={{
               textDecoration: 'none',
               color: 'inherit',
@@ -108,12 +87,33 @@ export default function MarketsPage() {
             }}
           >
             <div style={cardStyle}>
-              <h2 style={{ fontSize: '24px', fontWeight: '700', marginBottom: '16px' }}>Other Owner-Operated Service Businesses</h2>
+              <h2 style={{ fontSize: '24px', fontWeight: '700', marginBottom: '16px' }}>Wedding Venue Owners</h2>
               <p style={{ fontSize: '16px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-                Legal practices, luxury home services, specialty medical, financial advisory. The vertical doesn&rsquo;t matter as much as the fit profile. If you match the description, we should talk. Read the full fit profile to see if we&rsquo;re right for each other.
+                Owner-operated venues where one booking is worth $10K+ and the season is decided in the months when couples are searching. We&rsquo;ve filled calendars before. We can do it again.
               </p>
               <div style={{ marginTop: '20px', color: 'var(--p5-accent)', fontWeight: '600', fontSize: '14px' }}>
-                See the Full Fit Profile →
+                Learn More →
+              </div>
+            </div>
+          </a>
+
+          {/* High-Value Service Businesses Card */}
+          <a
+            href="/markets/high-value-service-businesses/"
+            style={{
+              textDecoration: 'none',
+              color: 'inherit',
+              display: 'block',
+              transition: 'all 0.3s ease',
+            }}
+          >
+            <div style={cardStyle}>
+              <h2 style={{ fontSize: '24px', fontWeight: '700', marginBottom: '16px' }}>High-Value Service Businesses</h2>
+              <p style={{ fontSize: '16px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
+                Roofing &amp; exterior contractors, HVAC, luxury home renovation, legal practices, specialty medical and dental. The vertical matters less than the economics &mdash; one new customer worth $10K+ and the same buyer journey across them all.
+              </p>
+              <div style={{ marginTop: '20px', color: 'var(--p5-accent)', fontWeight: '600', fontSize: '14px' }}>
+                See if You&rsquo;re a Fit →
               </div>
             </div>
           </a>

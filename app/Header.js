@@ -135,9 +135,9 @@ export default function Header() {
                   <svg className="p5-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                 </a>
                 <ul className="p5-nav-dropdown" role="menu">
-                  <li role="none"><a role="menuitem" href="/markets/wedding-venues/">Wedding Venues</a></li>
-                  <li role="none"><a role="menuitem" href="/markets/plastic-surgeons/">Surgical Practices</a></li>
-                  <li role="none"><a role="menuitem" href="/markets/high-trust-high-value/">Full Fit Profile</a></li>
+                  <li role="none"><a role="menuitem" href="/markets/plastic-surgeons/">Cosmetic &amp; Plastic Surgery Practices</a></li>
+                  <li role="none"><a role="menuitem" href="/markets/wedding-venues/">Wedding Venue Owners</a></li>
+                  <li role="none"><a role="menuitem" href="/markets/high-value-service-businesses/">High-Value Service Businesses</a></li>
                 </ul>
               </li>
               <li className="p5-has-dropdown">
@@ -179,9 +179,9 @@ export default function Header() {
         <a href="/about/">About</a>
         <a href="/how-it-works/">How It Works</a>
         <a href="/markets/">Who We Work With</a>
-        <a href="/markets/wedding-venues/" className="p5-mobile-sub">Wedding Venues</a>
-        <a href="/markets/plastic-surgeons/" className="p5-mobile-sub">Surgical Practices</a>
-        <a href="/markets/high-trust-high-value/" className="p5-mobile-sub">Full Fit Profile</a>
+        <a href="/markets/plastic-surgeons/" className="p5-mobile-sub">Cosmetic &amp; Plastic Surgery Practices</a>
+        <a href="/markets/wedding-venues/" className="p5-mobile-sub">Wedding Venue Owners</a>
+        <a href="/markets/high-value-service-businesses/" className="p5-mobile-sub">High-Value Service Businesses</a>
         <a href="/the-id-suite/">The ID Suite</a>
         <a href="/the-id-suite/intelid/" className="p5-mobile-sub">IntelID</a>
         <a href="/the-id-suite/seo-accelerator/" className="p5-mobile-sub">SEO Accelerator</a>
