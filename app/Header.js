@@ -146,11 +146,11 @@ export default function Header() {
                   <svg className="p5-nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                 </a>
                 <ul className="p5-nav-dropdown" role="menu">
+                  <li role="none"><a role="menuitem" href="/the-id-suite/intelid/">IntelID</a></li>
                   <li role="none"><a role="menuitem" href="/the-id-suite/seo-accelerator/">SEO Accelerator</a></li>
                   <li role="none"><a role="menuitem" href="/the-id-suite/visitorid/">VisitorID</a></li>
                   <li role="none"><a role="menuitem" href="/the-id-suite/intentid/">IntentID</a></li>
                   <li role="none"><a role="menuitem" href="/the-id-suite/inboxid/">InboxID</a></li>
-                  <li role="none"><a role="menuitem" href="/the-id-suite/intelid/">IntelID</a></li>
                 </ul>
               </li>
               <li><a href="/blog/">Blog</a></li>
@@ -183,11 +183,11 @@ export default function Header() {
         <a href="/markets/plastic-surgeons/" className="p5-mobile-sub">Surgical Practices</a>
         <a href="/markets/high-trust-high-value/" className="p5-mobile-sub">Full Fit Profile</a>
         <a href="/the-id-suite/">The ID Suite</a>
+        <a href="/the-id-suite/intelid/" className="p5-mobile-sub">IntelID</a>
         <a href="/the-id-suite/seo-accelerator/" className="p5-mobile-sub">SEO Accelerator</a>
         <a href="/the-id-suite/visitorid/" className="p5-mobile-sub">VisitorID</a>
         <a href="/the-id-suite/intentid/" className="p5-mobile-sub">IntentID</a>
         <a href="/the-id-suite/inboxid/" className="p5-mobile-sub">InboxID</a>
-        <a href="/the-id-suite/intelid/" className="p5-mobile-sub">IntelID</a>
         <a href="/blog/">Blog</a>
         <a href="/contact/">Contact</a>
         <a href="/contact/" className="p5-btn">Book a Conversation</a>

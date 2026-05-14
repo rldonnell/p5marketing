@@ -2,13 +2,13 @@ export const metadata = {
   alternates: {
     canonical: '/the-id-suite/intelid/',
   },
-  title: 'IntelID™ | Weekly Intelligence Briefing for Marketing Leaders',
+  title: 'IntelID™ | Weekly Market Intelligence for Owners & Founders',
   description:
-    'A single Monday-morning briefing on your competitors, your category, and your public reputation — AI-synthesized and in your inbox by 9 AM. $300/month, zero setup, month to month.',
+    'Eyes on your competitors, your category, and your public reputation — without hiring an analyst. AI-synthesized brief in your inbox by 9 AM every Monday. $300/month, zero setup.',
   openGraph: {
-    title: 'IntelID™ | Weekly Intelligence Briefing | P5 Marketing',
+    title: 'IntelID™ | Weekly Market Intelligence | P5 Marketing',
     description:
-      'Walk into the Monday meeting with answers. IntelID delivers an AI-synthesized brief on competitors, social, reputation, and category conversation — every Monday by 9 AM.',
+      'For owners, founders, and the PR or senior marketing teams advising them. Know what moved in your market before your week starts. $300/month, zero setup, month to month.',
     url: 'https://p5marketing.com/the-id-suite/intelid/',
     type: 'website',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing — IntelID' }],
@@ -191,21 +191,21 @@ export default function IntelIDPage() {
               fontFamily: 'DM Sans',
             }}
           >
-            Walk into the Monday meeting{' '}
-            <span style={{ color: 'var(--p5-accent)' }}>with answers.</span>
+            Know what moved in your market{' '}
+            <span style={{ color: 'var(--p5-accent)' }}>before your week starts.</span>
           </h1>
           <p
             style={{
               fontSize: '19px',
               lineHeight: 1.6,
               color: 'var(--p5-text-dim)',
-              maxWidth: '680px',
+              maxWidth: '700px',
               margin: '0 auto 36px',
             }}
           >
             IntelID is a single, AI-synthesized briefing on your competitors, your category, and your public
-            reputation &mdash; delivered to your inbox by 9 AM every Monday. Built for marketing leaders who
-            don&rsquo;t have three hours every week to scan ten platforms.
+            reputation &mdash; in your inbox by 9 AM every Monday. Built for owners, founders, and the PR or
+            senior marketing teams advising them. Eyes on your market without staffing for it.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="/contact/?topic=intelid-sample" style={primaryBtnStyle}>
@@ -251,7 +251,7 @@ export default function IntelIDPage() {
             { value: '5 + 5', label: 'Competitors & social channels tracked' },
             { value: '9 AM Monday', label: 'Brief delivered every week' },
             { value: '$300', label: 'Flat monthly, zero setup' },
-            { value: '3 hrs', label: 'Reclaimed every week' },
+            { value: 'Zero', label: 'Tools, dashboards, or logins for you' },
           ].map((stat, i) => (
             <div key={i}>
               <div
@@ -286,21 +286,26 @@ export default function IntelIDPage() {
         <div style={{ maxWidth: '820px', margin: '0 auto' }}>
           <p style={kickerStyle}>Why This Matters</p>
           <h2 style={h2Style}>
-            Your executives ask about competitors, press, and brand sentiment every Monday.
-            You don&rsquo;t have time to read the firehose.
+            By the time most competitor moves reach you, the window to react is closing.
           </h2>
           <p style={proseStyle}>
-            You don&rsquo;t have time to scan ten platforms, monitor seven LinkedIn accounts, track press
-            cycles, and watch your category keywords every week. So you walk into the Monday meeting
-            improvising &mdash; or worse, blindsided by something your CEO already saw.
+            You don&rsquo;t want to hear about a competitor&rsquo;s new positioning from a sales rep on
+            Wednesday. You don&rsquo;t want to find out your category&rsquo;s sentiment shifted by reading a
+            G2 review on Friday. You want to see it Monday morning, so you can decide what to do about it
+            before lunch.
           </p>
           <p style={proseStyle}>
-            IntelID does that work for you. AI synthesizes the signal from across the public web. A human
-            curates the report. You get one short brief by 9 AM Monday with the five things that actually
-            matter this week.
+            But you don&rsquo;t have an analyst &mdash; and you don&rsquo;t want to hire one for this.
+            Enterprise listening tools dump the firehose on you. Google Alerts is noise. Your senior team is
+            running the business, not reading LinkedIn.
+          </p>
+          <p style={proseStyle}>
+            IntelID is the missing layer. AI does the reading. A human curates the signal. One opinionated
+            brief lands at 9 AM Monday with what actually moved and what to do about it. No dashboard to log
+            into. No dashboard to ignore.
           </p>
           <p style={{ fontSize: '18px', fontWeight: 700, color: 'var(--p5-accent)', margin: '0' }}>
-            You walk in prepared.
+            You stop being the last to know.
           </p>
         </div>
       </section>
@@ -699,7 +704,7 @@ export default function IntelIDPage() {
       >
         <div style={{ maxWidth: '680px', margin: '0 auto' }}>
           <h2 style={{ ...h2Style, margin: '0 0 20px 0' }}>
-            Try one Monday. See how it feels to walk in prepared.
+            Try one Monday. See what&rsquo;s actually moving in your market.
           </h2>
           <p
             style={{
@@ -709,8 +714,8 @@ export default function IntelIDPage() {
               marginBottom: '32px',
             }}
           >
-            We&rsquo;ll build a free sample brief on your real business &mdash; your competitors, your
-            category, your reputation. If you want it every Monday, we keep going. If not, we both move on.
+            We&rsquo;ll build a free sample brief on your real competitors, your real category, and your real
+            reputation. If it sharpens your week, we keep going. If not, we both move on.
           </p>
           <a href="/contact/?topic=intelid-sample" style={primaryBtnStyle}>
             Get My Free Sample Brief &rarr;
