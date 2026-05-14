@@ -22,6 +22,7 @@ const routes = [
   { path: '/the-id-suite/intentid/',                 changeFrequency: 'monthly', priority: 0.9 },
   { path: '/the-id-suite/visitorid/',                changeFrequency: 'monthly', priority: 0.9 },
   { path: '/the-id-suite/inboxid/',                  changeFrequency: 'monthly', priority: 0.9 },
+  { path: '/the-id-suite/intelid/',                  changeFrequency: 'monthly', priority: 0.9 },
 
   // Markets
   { path: '/markets/',                               changeFrequency: 'monthly', priority: 0.8 },

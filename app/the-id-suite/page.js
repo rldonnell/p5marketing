@@ -53,6 +53,15 @@ export default function IDSuiteLanding() {
       statLabel: 'Follow-up to site visitors',
       link: '/the-id-suite/inboxid/',
     },
+    {
+      title: 'IntelID™',
+      category: 'Weekly Intelligence Briefing',
+      description:
+        'A single Monday-morning briefing on your competitors, your category, and your public reputation. AI-synthesized and in your inbox by 9 AM, every week.',
+      statValue: '9 AM Mon',
+      statLabel: 'Brief in your inbox every week',
+      link: '/the-id-suite/intelid/',
+    },
   ];
 
   const flowSteps = [

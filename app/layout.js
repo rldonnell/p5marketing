@@ -268,6 +268,15 @@ export default function RootLayout({ children }) {
                       "description": "Same-day retargeting and behavior-triggered email sequences for identified website visitors.",
                       "url": "https://p5marketing.com/the-id-suite/inboxid/"
                     }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "IntelID — Weekly Competitive & Brand Intelligence Briefing",
+                      "description": "A single Monday-morning briefing on competitors, category, and public reputation. AI-synthesized, human-curated, in your inbox by 9 AM every Monday.",
+                      "url": "https://p5marketing.com/the-id-suite/intelid/"
+                    }
                   }
                 ]
               },
