@@ -181,7 +181,9 @@ export default function HighValueServiceBusinessesPage() {
             </span>
           </div>
           <h1 style={{ fontSize: '56px', fontWeight: '700', lineHeight: '1.1', marginBottom: '20px', letterSpacing: '-1px' }}>
-            Your Industry Doesn&rsquo;t Matter. Your Economics Do.
+            Your Industry Doesn&rsquo;t Matter.
+            <br />
+            Your Economics Do.
           </h1>
           <p style={{ fontSize: '18px', color: 'var(--p5-text-dim)', lineHeight: '1.7', marginBottom: '20px' }}>
             Whether you&rsquo;re a cosmetic surgeon where a single consultation is worth $15,000+, a wedding venue owner booking $20,000+ events, or a contractor where one project means $40,000 in revenue &mdash; you share the same problem.
