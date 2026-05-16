@@ -174,7 +174,7 @@ export default function HighValueServiceBusinessesPage() {
         />
 
         {/* Hero */}
-        <section style={{ padding: '80px 24px', maxWidth, margin: '0 auto' }}>
+        <section style={{ padding: '80px 24px 40px 24px', maxWidth, margin: '0 auto' }}>
           <div style={{ marginBottom: '12px' }}>
             <span style={{ fontSize: '13px', fontWeight: '600', color: 'var(--p5-accent)', letterSpacing: '0.5px' }}>
               High-Value Service Business Marketing
@@ -183,13 +183,13 @@ export default function HighValueServiceBusinessesPage() {
           <h1 style={{ fontSize: '56px', fontWeight: '700', lineHeight: '1.1', marginBottom: '20px', letterSpacing: '-1px' }}>
             Your Industry Doesn&rsquo;t Matter. Your Economics Do.
           </h1>
-          <p style={{ fontSize: '18px', color: 'var(--p5-text-dim)', maxWidth: '780px', lineHeight: '1.7', marginBottom: '20px' }}>
-            Whether you&rsquo;re a cosmetic surgeon where a single consultation is worth $15,000+, a wedding venue owner booking $22,000+ venues, or a roofing contractor where one project means $40,000 in revenue &mdash; you share the same problem.
+          <p style={{ fontSize: '18px', color: 'var(--p5-text-dim)', lineHeight: '1.7', marginBottom: '20px' }}>
+            Whether you&rsquo;re a cosmetic surgeon where a single consultation is worth $15,000+, a wedding venue owner booking $20,000+ events, or a contractor where one project means $40,000 in revenue &mdash; you share the same problem.
           </p>
-          <p style={{ fontSize: '18px', color: 'var(--p5-text-dim)', maxWidth: '780px', lineHeight: '1.7', marginBottom: '20px' }}>
-            Your next customer is online right now, comparing you to your competition, and most of them will leave your site without ever making contact. P5 is built for owner-operators of high-value service businesses where one new customer justifies the entire marketing investment &mdash; and where losing that customer to a competitor who showed up better online is unacceptable.
+          <p style={{ fontSize: '18px', color: 'var(--p5-text-dim)', lineHeight: '1.7', marginBottom: '20px' }}>
+            Your next customer is online right now, comparing you to your competition, and most of them will leave your site without ever making contact. P5 is built for owner-operators of high-value service businesses where one new customer justifies the entire marketing investment &mdash; and where losing that customer to a competitor is too expensive to ignore.
           </p>
-          <p style={{ fontSize: '18px', color: 'var(--p5-text-dim)', maxWidth: '780px', lineHeight: '1.7', margin: '0' }}>
+          <p style={{ fontSize: '18px', color: 'var(--p5-text-dim)', lineHeight: '1.7', margin: '0' }}>
             We&rsquo;re honest about fit because misfit engagements waste everyone&rsquo;s time. Here&rsquo;s exactly who P5 is built for, and exactly who we&rsquo;re not.
           </p>
         </section>
@@ -219,7 +219,7 @@ export default function HighValueServiceBusinessesPage() {
                 Done Managing Their Last Agency
               </h3>
               <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.7', margin: '0' }}>
-                Most fit clients have worked with agencies before and were quietly unhappy with the result. Junior account managers, status calls that went nowhere, reports on impressions instead of bookings. They want a senior team that runs the work, not a vendor they have to manage.
+                Most of our clients have worked with agencies before and were quietly unhappy with the result. Junior account managers, status calls that went nowhere, reports on impressions instead of real leads. Our clients want a senior team that runs the work, not another vendor they have to manage.
               </p>
             </div>
             <div style={cardStyle}>
