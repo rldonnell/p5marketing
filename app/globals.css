@@ -1893,8 +1893,74 @@ li.p5-has-dropdown.p5-dropdown-open .p5-nav-chevron {
   box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.08);
 }
 
+/* Optional A2P / opt-in consent checkboxes */
+.p5-contact-consent {
+  margin: 4px 0 0;
+  padding: 16px 18px;
+  border: 1px solid var(--p5-surface-border);
+  border-radius: 10px;
+  background: var(--p5-bg-surface);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.p5-contact-consent legend {
+  padding: 0 6px;
+  font-family: 'Space Mono', ui-monospace, monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--p5-text-dim);
+}
+
+.p5-contact-consent-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--p5-text-dim);
+  cursor: pointer;
+}
+
+.p5-contact-consent-item input[type='checkbox'] {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--p5-accent);
+  cursor: pointer;
+}
+
+.p5-contact-consent-item input[type='checkbox']:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.p5-contact-consent-item strong {
+  color: var(--p5-text);
+  font-weight: 600;
+}
+
+.p5-contact-consent-item a {
+  color: var(--p5-accent);
+  text-decoration: underline;
+}
+
+.p5-contact-consent-note {
+  margin: 0;
+  padding-top: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--p5-text-dim);
+  opacity: 0.8;
+  border-top: 1px dashed var(--p5-surface-border);
+}
+
 @media (max-width: 640px) {
   .p5-contact-page { padding: 64px 0 96px; }
   .p5-contact-hero h1 { font-size: 36px !important; }
   .p5-contact-submit { width: 100%; min-width: 0; }
+  .p5-contact-consent { padding: 14px 14px; }
 }

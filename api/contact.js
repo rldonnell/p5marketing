@@ -44,6 +44,8 @@ export default async function handler(req, res) {
   const email = trim(body.email);
   const phone = trim(body.phone);
   const honeypot = trim(body._hp);
+  const consentMarketing = body.consentMarketing === true;
+  const consentTransactional = body.consentTransactional === true;
 
   // Honeypot — bot filled the hidden field. Pretend success and drop.
   if (honeypot) {
@@ -71,12 +73,16 @@ export default async function handler(req, res) {
   const ip = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'unknown';
   const ua = req.headers['user-agent'] || 'unknown';
 
+  const yn = (v) => (v ? 'YES' : 'no');
+
   const subject = `New fit conversation request — ${name}`;
   const textBody =
     `New contact form submission from p5marketing.com/contact/\n\n` +
     `Name:  ${name}\n` +
     `Email: ${email}\n` +
     `Phone: ${phone}\n\n` +
+    `Consent — Transactional (non-marketing): ${yn(consentTransactional)}\n` +
+    `Consent — Marketing:                     ${yn(consentMarketing)}\n\n` +
     `Submitted: ${submittedAt}\n` +
     `IP: ${ip}\n` +
     `User-Agent: ${ua}\n`;
@@ -87,6 +93,9 @@ export default async function handler(req, res) {
   <tr><td style="padding:6px 12px 6px 0;color:#64748b;width:90px;">Name</td><td style="padding:6px 0;">${esc(name)}</td></tr>
   <tr><td style="padding:6px 12px 6px 0;color:#64748b;">Email</td><td style="padding:6px 0;"><a href="mailto:${esc(email)}">${esc(email)}</a></td></tr>
   <tr><td style="padding:6px 12px 6px 0;color:#64748b;">Phone</td><td style="padding:6px 0;"><a href="tel:${esc(phone)}">${esc(phone)}</a></td></tr>
+  <tr><td colspan="2" style="padding:14px 0 6px;color:#64748b;font-size:12px;text-transform:uppercase;letter-spacing:0.06em;">A2P / consent</td></tr>
+  <tr><td style="padding:4px 12px 4px 0;color:#64748b;">Transactional</td><td style="padding:4px 0;">${consentTransactional ? '<strong style="color:#0f766e;">YES</strong>' : '<span style="color:#94a3b8;">not selected</span>'}</td></tr>
+  <tr><td style="padding:4px 12px 4px 0;color:#64748b;">Marketing</td><td style="padding:4px 0;">${consentMarketing ? '<strong style="color:#0f766e;">YES</strong>' : '<span style="color:#94a3b8;">not selected</span>'}</td></tr>
   <tr><td colspan="2" style="padding:18px 0 0;color:#94a3b8;font-size:12px;border-top:1px solid #e2e8f0;">
     Submitted from p5marketing.com/contact/ at ${submittedAt}<br>
     IP ${esc(ip)} · UA ${esc(ua)}

@@ -11,7 +11,14 @@
 
 import { useState } from 'react';
 
-const initialData = { name: '', email: '', phone: '', _hp: '' };
+const initialData = {
+  name: '',
+  email: '',
+  phone: '',
+  consentMarketing: false,
+  consentTransactional: false,
+  _hp: '',
+};
 
 export default function ContactForm() {
   const [data, setData] = useState(initialData);
@@ -20,6 +27,10 @@ export default function ContactForm() {
 
   function update(field) {
     return (e) => setData((d) => ({ ...d, [field]: e.target.value }));
+  }
+
+  function toggle(field) {
+    return (e) => setData((d) => ({ ...d, [field]: e.target.checked }));
   }
 
   async function handleSubmit(e) {
@@ -142,6 +153,67 @@ export default function ContactForm() {
           disabled={submitting}
         />
       </div>
+
+      <fieldset className="p5-contact-consent">
+        <legend>Optional — how can we follow up?</legend>
+
+        <label className="p5-contact-consent-item" htmlFor="contact-consent-transactional">
+          <input
+            id="contact-consent-transactional"
+            name="consentTransactional"
+            type="checkbox"
+            checked={data.consentTransactional}
+            onChange={toggle('consentTransactional')}
+            disabled={submitting}
+          />
+          <span>
+            I agree to receive <strong>non-marketing</strong> emails, calls, and text
+            messages from P5 Marketing related to my inquiry — scheduling, account
+            servicing, and other transactional communications. Message frequency
+            varies. Message and data rates may apply. Reply STOP to opt out, HELP for
+            help. See our{' '}
+            <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>{' '}
+            and{' '}
+            <a href="/terms-and-conditions/" target="_blank" rel="noopener noreferrer">
+              Terms
+            </a>
+            .
+          </span>
+        </label>
+
+        <label className="p5-contact-consent-item" htmlFor="contact-consent-marketing">
+          <input
+            id="contact-consent-marketing"
+            name="consentMarketing"
+            type="checkbox"
+            checked={data.consentMarketing}
+            onChange={toggle('consentMarketing')}
+            disabled={submitting}
+          />
+          <span>
+            I agree to receive <strong>marketing</strong> emails, calls, and text
+            messages from P5 Marketing, including promotions, newsletters, offers, and
+            updates. Consent is not a condition of purchase. Message frequency varies.
+            Message and data rates may apply. Reply STOP to opt out, HELP for help.
+            See our{' '}
+            <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>{' '}
+            and{' '}
+            <a href="/terms-and-conditions/" target="_blank" rel="noopener noreferrer">
+              Terms
+            </a>
+            .
+          </span>
+        </label>
+
+        <p className="p5-contact-consent-note">
+          Both boxes are optional. We will not share your phone number or opt-in
+          information with third parties for their marketing purposes.
+        </p>
+      </fieldset>
 
       {status === 'error' && (
         <p className="p5-contact-error" role="alert">
