@@ -206,9 +206,29 @@ export default function TermsAndConditions() {
         </div>
       </div>
 
-      <div style={styles.section}>
+      <div id="terms-of-service" style={styles.section}>
         <div style={styles.sectionTitle}>
           <span style={styles.sectionNumber}>12.</span>
+          <span>Terms of Service</span>
+        </div>
+        <div style={styles.sectionContent}>
+          P5 Marketing: This is simply a brief description of the kinds of messages users can expect to receive when they opt in. You can cancel the SMS service at any time by just texting STOP to 760-497-3986. After you send the SMS message STOP to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us. If you wish to join again, just sign up as you did the first time, and we will start sending SMS messages to you again.
+        </div>
+        <div style={styles.sectionContent}>
+          If you are experiencing issues with the messaging program, you can reply with the keyword HELP for more assistance, or you can get help directly at rdonnell@p5marketing.com. Carriers are not liable for delayed or undelivered messages. As always, message and data rates may apply for any messages sent to you from us and from us to you. You will receive messages infrequently, once or twice a week. If you have any questions about your text plan or data plan, it&rsquo;s best to contact your wireless provider. If you have any questions regarding privacy, please read our full privacy policy{' '}
+          <a
+            href="/privacy-policy/"
+            style={{ color: 'var(--p5-accent)', textDecoration: 'underline' }}
+          >
+            here
+          </a>
+          .
+        </div>
+      </div>
+
+      <div style={styles.section}>
+        <div style={styles.sectionTitle}>
+          <span style={styles.sectionNumber}>13.</span>
           <span>Contact Us</span>
         </div>
       </div>

@@ -221,6 +221,44 @@ export default function ContactForm() {
         </p>
       )}
 
+      <p
+        className="p5-contact-legal-links"
+        style={{
+          margin: '0 0 16px 0',
+          fontSize: '13px',
+          color: 'var(--p5-text-dim)',
+          lineHeight: 1.8,
+        }}
+      >
+        <a
+          href="/privacy-policy/"
+          style={{ color: 'var(--p5-accent)', textDecoration: 'underline' }}
+        >
+          Privacy Policy
+        </a>
+        <span style={{ margin: '0 10px', color: 'var(--p5-text-dim)' }}>|</span>
+        <a
+          href="/privacy-policy/#non-sharing-clause"
+          style={{ color: 'var(--p5-accent)', textDecoration: 'underline' }}
+        >
+          Non-Sharing Clause
+        </a>
+        <span style={{ margin: '0 10px', color: 'var(--p5-text-dim)' }}>|</span>
+        <a
+          href="/terms-and-conditions/"
+          style={{ color: 'var(--p5-accent)', textDecoration: 'underline' }}
+        >
+          Terms and Conditions
+        </a>
+        <span style={{ margin: '0 10px', color: 'var(--p5-text-dim)' }}>|</span>
+        <a
+          href="/terms-of-service/"
+          style={{ color: 'var(--p5-accent)', textDecoration: 'underline' }}
+        >
+          Terms of Service
+        </a>
+      </p>
+
       <button
         type="submit"
         className="p5-btn p5-btn-primary p5-contact-submit"

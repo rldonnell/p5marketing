@@ -149,9 +149,19 @@ export default function PrivacyPolicy() {
         </div>
       </div>
 
-      <div style={styles.section}>
+      <div id="non-sharing-clause" style={styles.section}>
         <div style={styles.sectionTitle}>
           <span style={styles.sectionNumber}>5.</span>
+          <span>Non-Sharing Clause</span>
+        </div>
+        <div style={styles.sectionContent}>
+          No mobile information will be shared with third parties or affiliates for marketing and promotional purposes. Information sharing to subcontractors and support services such as customer services is permitted. All other use case categories exclude text messaging originator, opt-in data and consent. This information will not be shared with any third parties.
+        </div>
+      </div>
+
+      <div style={styles.section}>
+        <div style={styles.sectionTitle}>
+          <span style={styles.sectionNumber}>6.</span>
           <span>Cookies and Tracking</span>
         </div>
         <div style={styles.sectionContent}>
@@ -161,7 +171,7 @@ export default function PrivacyPolicy() {
 
       <div style={styles.section}>
         <div style={styles.sectionTitle}>
-          <span style={styles.sectionNumber}>6.</span>
+          <span style={styles.sectionNumber}>7.</span>
           <span>Your Privacy Choices</span>
         </div>
         <div style={styles.sectionContent}>
@@ -180,7 +190,7 @@ export default function PrivacyPolicy() {
 
       <div style={styles.section}>
         <div style={styles.sectionTitle}>
-          <span style={styles.sectionNumber}>7.</span>
+          <span style={styles.sectionNumber}>8.</span>
           <span>Data Security & Retention</span>
         </div>
         <div style={styles.sectionContent}>
@@ -190,7 +200,7 @@ export default function PrivacyPolicy() {
 
       <div style={styles.section}>
         <div style={styles.sectionTitle}>
-          <span style={styles.sectionNumber}>8.</span>
+          <span style={styles.sectionNumber}>9.</span>
           <span>Children's Privacy</span>
         </div>
         <div style={styles.sectionContent}>
@@ -200,7 +210,7 @@ export default function PrivacyPolicy() {
 
       <div style={styles.section}>
         <div style={styles.sectionTitle}>
-          <span style={styles.sectionNumber}>9.</span>
+          <span style={styles.sectionNumber}>10.</span>
           <span>Updates to This Policy</span>
         </div>
         <div style={styles.sectionContent}>
@@ -210,7 +220,7 @@ export default function PrivacyPolicy() {
 
       <div style={styles.section}>
         <div style={styles.sectionTitle}>
-          <span style={styles.sectionNumber}>10.</span>
+          <span style={styles.sectionNumber}>11.</span>
           <span>Contact Us</span>
         </div>
       </div>

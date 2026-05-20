@@ -38,6 +38,7 @@ const routes = [
   // Legal
   { path: '/privacy-policy/',                        changeFrequency: 'yearly', priority: 0.3 },
   { path: '/terms-and-conditions/',                  changeFrequency: 'yearly', priority: 0.3 },
+  { path: '/terms-of-service/',                      changeFrequency: 'yearly', priority: 0.3 },
   { path: '/do-not-sell/',                           changeFrequency: 'yearly', priority: 0.3 },
 ];
 

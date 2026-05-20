@@ -52,24 +52,6 @@ export default function ContactPage() {
         </p>
 
         <ContactForm />
-
-        <p
-          style={{
-            marginTop: '32px',
-            fontSize: '13px',
-            color: 'var(--p5-text-dim)',
-            maxWidth: '560px',
-          }}
-        >
-          We don&rsquo;t sell or share your information.{' '}
-          <a
-            href="/privacy-policy/"
-            style={{ color: 'var(--p5-accent)', textDecoration: 'underline' }}
-          >
-            Privacy Policy
-          </a>
-          .
-        </p>
       </section>
     </main>
   );
