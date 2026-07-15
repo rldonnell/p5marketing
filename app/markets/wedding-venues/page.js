@@ -2,16 +2,56 @@ export const metadata = {
   alternates: {
     canonical: '/markets/wedding-venues/',
   },
-  title: 'Wedding Venue Marketing | Find Couples Already Shopping',
-  description: 'Marketing for owner-operated wedding venues where one booking is worth $10K+. The ID Suite fills your calendar with couples actively searching. Senior team.',
+  title: 'The Booked Venue Program | Wedding Venue Marketing | P5',
+  description:
+    'A done-for-you system that builds your traffic, identifies your website visitors by name, and converts them into booked weddings. Seven coordinated channels, one venue per metro.',
   openGraph: {
-    title: 'Wedding Venue Marketing | Find Couples Already Shopping | P5 Marketing',
-    description: 'For owner-operated venues where one booking is worth $10K+. Senior team. The ID Suite included.',
+    title: 'The Booked Venue Program | Wedding Venue Marketing | P5 Marketing',
+    description:
+      'A done-for-you system that keeps your wedding calendar full of high-intent engaged couples. One venue per metro. Houston is taken.',
     url: 'https://p5marketing.com/markets/wedding-venues/',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing — Wedding Venue Marketing' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing — The Booked Venue Program' }],
   },
 };
+
+const CHANNELS = [
+  {
+    number: '01',
+    title: 'SEO & GEO content',
+    body: 'Search-optimized content published on your site, targeting the exact keyword gaps our weekly competitive data finds, built to rank in Google and surface in AI answers. Every ranking won sends couples to a site where our pixel is waiting.',
+  },
+  {
+    number: '02',
+    title: 'High-intent audience lists',
+    body: 'Verified data on newly engaged, actively planning couples in your market, refreshed monthly. Not demographics and guesswork. Couples who are shopping for a venue right now.',
+  },
+  {
+    number: '03',
+    title: 'Signature email campaigns',
+    body: 'Proven creative like our Wedding Test and "What’s the weather going to be on your wedding day?" sequences. Written by us, sent by us, tuned to get opened, read, and clicked.',
+  },
+  {
+    number: '04',
+    title: 'Facebook and Instagram ads',
+    body: 'Run by us and targeted to the very same couples on the intent lists, so email and social reinforce each other instead of running blind to separate audiences.',
+  },
+  {
+    number: '05',
+    title: 'Website visitor identification',
+    body: 'Our pixel tells you who visited your gallery, packages, and tour pages, including the couples who never filled out a form. No interested couple slips away anonymous. U.S. only.',
+  },
+  {
+    number: '06',
+    title: 'Social media coaching',
+    body: 'Ongoing coaching for your in-house social person, so your organic presence pulls in the same direction as the campaigns instead of posting into the void.',
+  },
+  {
+    number: '07',
+    title: 'Weekly Audience Intelligence report',
+    body: 'Every Monday: what your competitors posted and how it performed, where they outrank you on Google and how to take those spots, and specific action items assigned to your team by name.',
+  },
+];
 
 export default function WeddingVenuesPage() {
   const sectionPadding = '60px 24px';
@@ -19,7 +59,7 @@ export default function WeddingVenuesPage() {
 
   const buttonStyle = {
     display: 'inline-block',
-    padding: '12px 32px',
+    padding: '16px 32px',
     backgroundColor: 'var(--p5-accent)',
     color: 'var(--p5-bg-deep)',
     border: 'none',
@@ -38,6 +78,13 @@ export default function WeddingVenuesPage() {
     borderRadius: 'var(--p5-radius)',
   };
 
+  const eyebrowStyle = {
+    fontSize: '13px',
+    fontWeight: '600',
+    color: 'var(--p5-accent)',
+    letterSpacing: '0.5px',
+  };
+
   return (
     <>
     <div style={{ minHeight: '100vh', backgroundColor: 'var(--p5-bg-deep)', color: 'var(--p5-text)' }}>
@@ -47,148 +94,73 @@ export default function WeddingVenuesPage() {
           __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "Markets", "item": "https://p5marketing.com/markets/"}, {"@type": "ListItem", "position": 3, "name": "Wedding Venues", "item": "https://p5marketing.com/markets/wedding-venues/"}]}'
         }}
       />
-      {/* Hero Section */}
+
+      {/* Hero */}
       <section style={{ padding: '80px 24px', maxWidth, margin: '0 auto' }}>
         <div style={{ marginBottom: '12px' }}>
-          <span style={{ fontSize: '13px', fontWeight: '600', color: 'var(--p5-accent)', letterSpacing: '0.5px' }}>
-            Wedding Venues
-          </span>
+          <span style={eyebrowStyle}>Wedding Venues</span>
         </div>
-        <h1 style={{ fontSize: '56px', fontWeight: '700', lineHeight: '1.1', marginBottom: '20px', letterSpacing: '-1px' }}>
-          Wedding Venue Marketing: Find Couples Already Shopping for Venues
+        <h1 style={{ fontSize: '56px', fontWeight: '700', lineHeight: '1.1', marginBottom: '20px', letterSpacing: '-1px', maxWidth: '18ch' }}>
+          The Booked Venue Program
         </h1>
-        <p style={{ fontSize: '18px', color: 'var(--p5-text-dim)', maxWidth: '700px', lineHeight: '1.6', margin: '0' }}>
-          IntentID™ builds a custom audience of couples actively searching for wedding venues in your area. VisitorID™ identifies up to 60% of visitors on your gallery, packages, and tour pages. InboxID™ follows up the same day. Their information goes straight to your CRM so your team can book the tour. U.S. only.
+        <p style={{ fontSize: '20px', color: 'var(--p5-text-dim)', maxWidth: '700px', lineHeight: '1.6', margin: '0 0 32px' }}>
+          A done-for-you system that keeps your wedding calendar full of high-intent engaged couples. We build your traffic, identify it by name, and convert it. Seven coordinated channels, run by a senior team, exclusively yours in your metro.
+        </p>
+        <a href="mailto:rdonnell@p5marketing.com?subject=Booked%20Venue%20Program%20%E2%80%94%20claim%20my%20metro" style={buttonStyle}>
+          Claim your metro
+        </a>
+      </section>
+
+      {/* The problem */}
+      <section style={{ padding: sectionPadding, maxWidth, margin: '0 auto' }}>
+        <h2 style={{ fontSize: '36px', fontWeight: '700', marginBottom: '24px' }}>Every open Saturday is revenue you never get back.</h2>
+        <p style={{ fontSize: '17px', color: 'var(--p5-text-dim)', lineHeight: '1.7', maxWidth: '68ch', margin: '0' }}>
+          Most venues wait for The Knot, WeddingWire, and word of mouth to deliver couples, competing with every other venue in town on the same platforms, at the same time, for the same couples. The venues that stay booked do something different: they reach couples earlier, before the shortlist is set, and stay in front of them until the tour is booked.
         </p>
       </section>
 
-      {/* Why This Works */}
+      {/* Six channels */}
       <section style={{ padding: sectionPadding, maxWidth, margin: '0 auto' }}>
-        <h2 style={{ fontSize: '36px', fontWeight: '700', marginBottom: '40px' }}>Why This Works</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px' }}>
-          <div>
-            <p style={{ fontSize: '18px', color: 'var(--p5-accent)', fontWeight: '600', marginBottom: '8px' }}>The Problem</p>
-            <p style={{ fontSize: '16px', color: 'var(--p5-text-dim)', lineHeight: '1.7', margin: '0' }}>
-              Couples rarely book on the first visit.
-            </p>
-          </div>
-          <div>
-            <p style={{ fontSize: '18px', color: 'var(--p5-accent)', fontWeight: '600', marginBottom: '8px' }}>The Journey</p>
-            <p style={{ fontSize: '16px', color: 'var(--p5-text-dim)', lineHeight: '1.7', margin: '0' }}>
-              Inspiration <span style={{ color: 'var(--p5-text-dim)' }}>→</span> Shortlist <span style={{ color: 'var(--p5-text-dim)' }}>→</span> Tour <span style={{ color: 'var(--p5-text-dim)' }}>→</span> Book
-            </p>
-          </div>
-          <div>
-            <p style={{ fontSize: '18px', color: 'var(--p5-accent)', fontWeight: '600', marginBottom: '8px' }}>Our Solution</p>
-            <p style={{ fontSize: '16px', color: 'var(--p5-text-dim)', lineHeight: '1.7', margin: '0' }}>
-              They browse, compare, and come back. Our system captures that interest the moment it hits your site.
-            </p>
-          </div>
+        <h2 style={{ fontSize: '36px', fontWeight: '700', marginBottom: '16px' }}>Build. Identify. Convert.</h2>
+        <p style={{ fontSize: '17px', color: 'var(--p5-text-dim)', lineHeight: '1.7', maxWidth: '68ch', marginBottom: '40px' }}>
+          One system that does three things: it builds your traffic (content, audiences, ads), it identifies it (our pixel puts names to anonymous visitors), and it converts it (retargeting, sequences, and a sales-ready hot list). Nothing sits.
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
+          {CHANNELS.map(({ number, title, body }) => (
+            <div key={number} style={cardStyle}>
+              <p style={{ fontSize: '14px', fontWeight: '700', color: 'var(--p5-accent)', margin: '0 0 12px 0' }}>{number}</p>
+              <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '12px' }}>{title}</h3>
+              <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>{body}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* How It Works */}
+      {/* Proof */}
       <section style={{ padding: sectionPadding, maxWidth, margin: '0 auto' }}>
-        <h2 style={{ fontSize: '36px', fontWeight: '700', marginBottom: '40px' }}>How It Works</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px' }}>
-          <div style={cardStyle}>
-            <p style={{ fontSize: '14px', fontWeight: '700', color: 'var(--p5-accent)', margin: '0 0 12px 0' }}>01</p>
-            <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '12px' }}>Drive qualified traffic</h3>
-            <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-              Meta ads, content marketing, and intent audiences attract couples actively researching venues in your area.
-            </p>
-          </div>
-          <div style={cardStyle}>
-            <p style={{ fontSize: '14px', fontWeight: '700', color: 'var(--p5-accent)', margin: '0 0 12px 0' }}>02</p>
-            <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '12px' }}>VisitorID™: Know who visited</h3>
-            <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-              Our pixel identifies up to 60% of your website visitors and delivers their name, email, phone, and home address. U.S. only.
-            </p>
-          </div>
-          <div style={cardStyle}>
-            <p style={{ fontSize: '14px', fontWeight: '700', color: 'var(--p5-accent)', margin: '0 0 12px 0' }}>03</p>
-            <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '12px' }}>InboxID™: Segment + follow up</h3>
-            <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-              Retarget visitors based on what they viewed (gallery, pricing, availability, tour page) with tour-first messaging and social proof.
-            </p>
-          </div>
+        <h2 style={{ fontSize: '36px', fontWeight: '700', marginBottom: '24px' }}>Proof, not promises.</h2>
+        <p style={{ fontSize: '17px', color: 'var(--p5-text-dim)', lineHeight: '1.7', maxWidth: '68ch', margin: '0' }}>
+          A Houston-area wedding venue collection started this exact program from a standing start in May 2025. In the first 14 months, verified in their CRM: monthly inquiries grew 15x, from under 10 to over 170. <strong style={{ color: 'var(--p5-text)' }}>690 venue inquiries, 72 scheduled tours, and 20 booked weddings, roughly $240,000 in booked revenue.</strong> 82% of those inquiries came from our campaigns. They expanded the number of venues they operate along the way, and they are still a client today.
+        </p>
+      </section>
+
+      {/* Exclusivity */}
+      <section style={{ padding: sectionPadding, maxWidth, margin: '0 auto' }}>
+        <div style={{ ...cardStyle, padding: '40px', borderColor: 'rgba(0, 229, 199, 0.25)' }}>
+          <h2 style={{ fontSize: '32px', fontWeight: '700', marginBottom: '20px' }}>One venue per metro.</h2>
+          <p style={{ fontSize: '17px', color: 'var(--p5-text-dim)', lineHeight: '1.7', maxWidth: '68ch', margin: '0' }}>
+            Everything we build, the audiences, the campaigns, the intelligence, works for you and against your competitors. So we only work with one venue per market. <strong style={{ color: 'var(--p5-text)' }}>Houston is taken.</strong> Dallas, Austin, and San Antonio are open as of this writing.
+          </p>
         </div>
       </section>
 
-      {/* Smart Segments */}
+      {/* The math */}
       <section style={{ padding: sectionPadding, maxWidth, margin: '0 auto' }}>
-        <h2 style={{ fontSize: '36px', fontWeight: '700', marginBottom: '40px' }}>Smart Segments</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px' }}>
-          <div style={cardStyle}>
-            <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '8px' }}>Gallery Viewers</h3>
-            <p style={{ fontSize: '14px', color: 'var(--p5-accent)', fontWeight: '600', marginBottom: '12px' }}>
-              See real weddings + download packages
-            </p>
-            <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-              These visitors are in inspiration mode. Show them real events at your venue and invite them to explore packages.
-            </p>
-          </div>
-          <div style={cardStyle}>
-            <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '8px' }}>Pricing / Packages Viewers</h3>
-            <p style={{ fontSize: '14px', color: 'var(--p5-accent)', fontWeight: '600', marginBottom: '12px' }}>
-              Check availability + schedule your tour
-            </p>
-            <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-              They are comparing options. Lead with availability and make the tour the obvious next step.
-            </p>
-          </div>
-          <div style={cardStyle}>
-            <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '8px' }}>Tour Page Viewers</h3>
-            <p style={{ fontSize: '14px', color: 'var(--p5-accent)', fontWeight: '600', marginBottom: '12px' }}>
-              Book your tour + limited dates
-            </p>
-            <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-              High intent. Use urgency and social proof to close the tour booking.
-            </p>
-          </div>
-          <div style={cardStyle}>
-            <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '8px' }}>FAQ / Policy Viewers</h3>
-            <p style={{ fontSize: '14px', color: 'var(--p5-accent)', fontWeight: '600', marginBottom: '12px' }}>
-              Answers to your top questions
-            </p>
-            <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-              Handle objections proactively. Follow up with the information they were looking for plus a clear path to the tour.
-            </p>
-          </div>
-        </div>
+        <h2 style={{ fontSize: '36px', fontWeight: '700', marginBottom: '24px' }}>The math that matters.</h2>
+        <p style={{ fontSize: '17px', color: 'var(--p5-text-dim)', lineHeight: '1.7', maxWidth: '68ch', margin: '0' }}>
+          The program is <strong style={{ color: 'var(--p5-text)' }}>$2,500 per month</strong>, month to month, no long-term contract. At a $12,000 average wedding, one additional booking pays for nearly five months of the entire program. Our Houston client booked 20 weddings in 14 months, roughly $240,000 in revenue against about $28,000 in fees. Everything after the first few bookings is profit.
+        </p>
       </section>
-
-      {/* Outcomes */}
-      <section style={{ padding: sectionPadding, maxWidth, margin: '0 auto' }}>
-        <h2 style={{ fontSize: '36px', fontWeight: '700', marginBottom: '40px' }}>Outcomes</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px' }}>
-          <div>
-            <h3 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '12px', color: 'var(--p5-accent)' }}>
-              More Booked Tours
-            </h3>
-            <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-              Converting visitors who came back multiple times into real tour bookings.
-            </p>
-          </div>
-          <div>
-            <h3 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '12px', color: 'var(--p5-accent)' }}>
-              Lower Cost per Inquiry
-            </h3>
-            <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-              By reaching visitors who are already on your site instead of paying upfront for every lead.
-            </p>
-          </div>
-          <div>
-            <h3 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '12px', color: 'var(--p5-accent)' }}>
-              Predictable Pipeline
-            </h3>
-            <p style={{ fontSize: '15px', color: 'var(--p5-text-dim)', lineHeight: '1.6', margin: '0' }}>
-              Replace hope marketing with a measurable system you can plan around.
-            </p>
-          </div>
-        </div>
-      </section>
-
 
       {/* Cross-links to product pages */}
       <section style={{ padding: sectionPadding, maxWidth, margin: '0 auto' }}>
@@ -215,10 +187,14 @@ export default function WeddingVenuesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section style={{ padding: sectionPadding, maxWidth, margin: '0 auto', textAlign: 'center' }}>
-        <a href="/contact/" style={buttonStyle}>
-          See how IntentID™, VisitorID™, and InboxID™ work for wedding venues
+      {/* CTA */}
+      <section style={{ padding: '80px 24px 96px', maxWidth, margin: '0 auto', textAlign: 'center' }}>
+        <h2 style={{ fontSize: '32px', fontWeight: '700', marginBottom: '16px' }}>Claim your metro before a competitor does.</h2>
+        <p style={{ fontSize: '16px', color: 'var(--p5-text-dim)', marginBottom: '32px' }}>
+          60 minutes. No commitment beyond the conversation.
+        </p>
+        <a href="mailto:rdonnell@p5marketing.com?subject=Booked%20Venue%20Program%20%E2%80%94%20claim%20my%20metro" style={buttonStyle}>
+          Claim your metro
         </a>
       </section>
     </div>
