@@ -1,339 +1,98 @@
 export const metadata = {
-  alternates: {
-    canonical: '/the-id-suite/inboxid/',
-  },
-  title: 'InboxID\u2122 | Behavior-Triggered Follow-Up',
+  alternates: { canonical: '/the-id-suite/inboxid/' },
+  title: 'InboxID | Behavior-Triggered Follow-Up | P5',
   description:
-    'InboxID re-engages identified website visitors with same-day retargeting and behavior-based email while interest is still hot. Warm hand-offs to your CRM.',
+    'InboxID fires automated retargeting and behavior-triggered email the day a prospect engages. The execution layer for the sales-bridge half of a P5 engagement.',
   openGraph: {
-    title: 'InboxID\u2122 | Behavior-Triggered Follow-Up | P5 Marketing',
-    description:
-      'Same-day retargeting and email sequences for identified website visitors. Warm hand-offs to your sales team \u2014 not cold lists.',
+    title: 'InboxID | Behavior-Triggered Follow-Up | P5 Marketing',
+    description: 'Same-day follow-up to the visitors VisitorID identifies. Warm hand-offs to your team, not cold lists.',
     url: 'https://p5marketing.com/the-id-suite/inboxid/',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing \u2014 InboxID' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'P5 Marketing — InboxID' }],
   },
 };
 
-const styles = {
-  container: {
-    minHeight: '100vh',
-    background: 'var(--p5-bg-deep)',
-    color: 'var(--p5-text)',
-    fontFamily: 'DM Sans, sans-serif',
-    overflow: 'hidden',
-  },
-  hero: {
-    position: 'relative',
-    padding: '80px 24px',
-    maxWidth: '1200px',
-    margin: '0 auto',
-    textAlign: 'center',
-  },
-  heroGrid: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundImage: 'linear-gradient(rgba(123, 97, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(123, 97, 255, 0.05) 1px, transparent 1px)',
-    backgroundSize: '40px 40px',
-    pointerEvents: 'none',
-  },
-  heroContent: {
-    position: 'relative',
-    zIndex: 1,
-  },
-  kicker: {
-    fontSize: '14px',
-    fontWeight: '500',
-    color: 'var(--p5-accent)',
-    textTransform: 'uppercase',
-    letterSpacing: '0.1em',
-    marginBottom: '20px',
-  },
-  headline: {
-    fontSize: '56px',
-    fontWeight: '700',
-    lineHeight: '1.2',
-    marginBottom: '20px',
-    background: 'linear-gradient(135deg, var(--p5-text) 0%, var(--p5-accent) 100%)',
-    backgroundClip: 'text',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
-  },
-  subtext: {
-    fontSize: '18px',
-    color: 'var(--p5-text-dim)',
-    marginBottom: '40px',
-    maxWidth: '700px',
-    margin: '0 auto 40px',
-    lineHeight: '1.6',
-  },
-  section: {
-    padding: '80px 24px',
-    maxWidth: '1200px',
-    margin: '0 auto',
-  },
-  sectionTitle: {
-    fontSize: '40px',
-    fontWeight: '700',
-    marginBottom: '60px',
-    textAlign: 'center',
-  },
-  stepsGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-    gap: '40px',
-    marginBottom: '60px',
-  },
-  stepCard: {
-    padding: '40px',
-    background: 'var(--p5-bg-surface)',
-    border: '1px solid rgba(229, 197, 255, 0.1)',
-    borderRadius: 'var(--p5-radius)',
-    position: 'relative',
-  },
-  stepNumber: {
-    fontSize: '48px',
-    fontWeight: '700',
-    color: 'var(--p5-accent)',
-    marginBottom: '16px',
-    fontFamily: 'Space Mono, monospace',
-  },
-  stepTitle: {
-    fontSize: '20px',
-    fontWeight: '600',
-    marginBottom: '12px',
-  },
-  stepDescription: {
-    fontSize: '14px',
-    color: 'var(--p5-text-dim)',
-    lineHeight: '1.6',
-  },
-  differentiatorGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-    gap: '32px',
-  },
-  differentiatorCard: {
-    padding: '32px',
-    background: 'var(--p5-bg-surface)',
-    border: '1px solid rgba(229, 197, 255, 0.1)',
-    borderRadius: 'var(--p5-radius)',
-  },
-  differentiatorIcon: {
-    fontSize: '32px',
-    marginBottom: '16px',
-  },
-  differentiatorTitle: {
-    fontSize: '18px',
-    fontWeight: '600',
-    marginBottom: '12px',
-  },
-  differentiatorText: {
-    fontSize: '14px',
-    color: 'var(--p5-text-dim)',
-    lineHeight: '1.6',
-  },
-  statsGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-    gap: '24px',
-    marginBottom: '60px',
-  },
-  statBox: {
-    padding: '40px',
-    background: 'rgba(0, 229, 199, 0.05)',
-    border: '1px solid rgba(0, 229, 199, 0.2)',
-    borderRadius: 'var(--p5-radius)',
-    textAlign: 'center',
-  },
-  statValue: {
-    fontSize: '48px',
-    fontWeight: '700',
-    color: 'var(--p5-accent)',
-    marginBottom: '12px',
-    fontFamily: 'Space Mono, monospace',
-  },
-  statLabel: {
-    fontSize: '14px',
-    color: 'var(--p5-text-dim)',
-    textTransform: 'uppercase',
-    letterSpacing: '0.05em',
-  },
-  ctaSection: {
-    padding: '80px 24px',
-    background: 'var(--p5-bg-surface)',
-    textAlign: 'center',
-    borderTop: '1px solid rgba(229, 197, 255, 0.1)',
-  },
-  ctaHeadline: {
-    fontSize: '40px',
-    fontWeight: '700',
-    marginBottom: '20px',
-  },
-  ctaText: {
-    fontSize: '18px',
-    color: 'var(--p5-text-dim)',
-    marginBottom: '40px',
-    maxWidth: '600px',
-    margin: '0 auto 40px',
-  },
-  ctaButton: {
-    display: 'inline-block',
-    padding: '16px 40px',
-    background: 'linear-gradient(135deg, var(--p5-accent) 0%, var(--p5-accent-alt) 100%)',
-    color: '#000',
-    textDecoration: 'none',
-    borderRadius: 'var(--p5-radius)',
-    fontWeight: '600',
-    fontSize: '16px',
-    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-    border: 'none',
-    cursor: 'pointer',
-  },
-};
+export default function InboxIdPage() {
+  const containerStyle = { maxWidth: '1200px', margin: '0 auto', padding: '0 24px' };
+  const eyebrow = { fontSize: '12px', fontWeight: '600', letterSpacing: '1.5px', textTransform: 'uppercase', color: 'var(--p5-text-dim)', marginBottom: '20px' };
+  const sectionHead = { fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: '700', lineHeight: '1.1', letterSpacing: '-0.5px', color: 'var(--p5-text)' };
+  const body = { fontSize: '17px', lineHeight: '1.6', color: 'var(--p5-text)' };
+  const divider = { borderTop: '1px solid var(--p5-surface-border)' };
 
-export default function InboxIDPage() {
+  const outputs = [
+    'Same-day automated email sequences triggered by what the prospect engaged with on the site.',
+    'Retargeting audiences refreshed daily across the platforms your buyers actually use.',
+    'CRM rows enriched with engagement history so your team picks up the phone with context.',
+    'Monthly performance summary tied to bookings, not impressions.',
+  ];
+
   return (
-    <div style={styles.container}>
-      {/* BreadcrumbList structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://p5marketing.com/"}, {"@type": "ListItem", "position": 2, "name": "The ID Suite", "item": "https://p5marketing.com/the-id-suite/"}, {"@type": "ListItem", "position": 3, "name": "InboxID", "item": "https://p5marketing.com/the-id-suite/inboxid/"}]}'
-        }}
-      />
-      {/* Hero Section */}
-      <section style={styles.hero}>
-        <div style={styles.heroGrid}></div>
-        <div style={styles.heroContent}>
-          <div style={styles.kicker}>InboxID™ · Powered by P5 Marketing</div>
-          <h1 style={styles.headline}>
-            InboxID™: Convert Identified Visitors With Same-Day Follow-Up
-          </h1>
-          <p style={styles.subtext}>
-            Behavior-based follow-up that keeps your brand visible through retargeting ads and targeted email. Same-day outreach to visitors who already showed interest in your business.
+    <div style={{ minHeight: '100vh', backgroundColor: 'var(--p5-bg-deep)', color: 'var(--p5-text)' }}>
+      <section style={{ ...containerStyle, padding: '64px 24px 48px' }}>
+        <div style={eyebrow}>05 &middot; InboxID</div>
+        <h1 style={{ fontSize: 'clamp(36px, 6vw, 64px)', fontWeight: '700', lineHeight: '1.05', letterSpacing: '-1px', marginBottom: '24px', maxWidth: '22ch' }}>
+          Same-day follow-up to the visitors VisitorID identifies.
+        </h1>
+        <p style={{ ...body, fontSize: '20px', maxWidth: '720px' }}>
+          Automated retargeting plus behavior-triggered email, fired the day a prospect engages. Warm hand-offs to your team, not cold lists.
+        </p>
+      </section>
+
+      <section style={{ ...containerStyle, ...divider, padding: '64px 24px' }}>
+        <div style={{ maxWidth: '68ch' }}>
+          <div style={eyebrow}>What it does</div>
+          <h2 style={{ ...sectionHead, marginBottom: '32px' }}>Identification turned into action, within hours.</h2>
+          <p style={{ ...body, fontSize: '18px', marginBottom: '20px' }}>
+            InboxID turns visitor identification into action. The day a prospect visits a high-intent page on your site, they enter a behavior-triggered sequence. Retargeting ads keep your brand visible across the platforms they use. The email sequence delivers content tailored to what they engaged with. The hottest prospects flow into your CRM with the context your team needs to pick up the phone.
+          </p>
+          <p style={{ ...body, fontSize: '18px' }}>
+            Same-day matters. Identified prospects who get follow-up within twenty-four hours convert at materially higher rates than those who get follow-up a week later. InboxID exists because the window between &ldquo;they showed interest&rdquo; and &ldquo;they called your competitor&rdquo; is shorter than most owners think.
           </p>
         </div>
       </section>
 
-      {/* How It Works Section */}
-      <section style={styles.section}>
-        <h2 style={styles.sectionTitle}>How It Works</h2>
-        <div style={styles.stepsGrid}>
-          <div style={styles.stepCard}>
-            <div style={styles.stepNumber}>1</div>
-            <h3 style={styles.stepTitle}>Visitor Identified</h3>
-            <p style={styles.stepDescription}>
-              A prospect lands on your website and we capture their identity along with the pages they viewed.
-            </p>
-          </div>
-          <div style={styles.stepCard}>
-            <div style={styles.stepNumber}>2</div>
-            <h3 style={styles.stepTitle}>Behavior Analysis</h3>
-            <p style={styles.stepDescription}>
-              Our system analyzes their browsing behavior to understand what they're interested in.
-            </p>
-          </div>
-          <div style={styles.stepCard}>
-            <div style={styles.stepNumber}>3</div>
-            <h3 style={styles.stepTitle}>Multi-Channel Follow-Up</h3>
-            <p style={styles.stepDescription}>
-              Triggered sequence launches immediately: retargeting ads and targeted email, all relevant to the pages they viewed.
-            </p>
-          </div>
-          <div style={styles.stepCard}>
-            <div style={styles.stepNumber}>4</div>
-            <h3 style={styles.stepTitle}>Nurture & Convert</h3>
-            <p style={styles.stepDescription}>
-              Engaged prospects automatically graduate to ongoing nurture programs that move them toward a closed deal.
-            </p>
+      <section style={{ ...containerStyle, ...divider, padding: '64px 24px' }}>
+        <div style={{ maxWidth: '68ch' }}>
+          <div style={eyebrow}>How the primary agency uses it</div>
+          <h2 style={{ ...sectionHead, marginBottom: '32px' }}>The execution layer for the sales-bridge half of the plan.</h2>
+          <p style={{ ...body, fontSize: '18px' }}>
+            Sequences are tuned to the practice&rsquo;s intake process and the conversion patterns VisitorID is reporting. The plan tracks open rates, click-through, and identified-to-booked conversion as continuous reads. InboxID is the tool that turns &ldquo;we know who visited&rdquo; into &ldquo;we booked the consult.&rdquo;
+          </p>
+        </div>
+      </section>
+
+      <section style={{ ...divider, backgroundColor: 'var(--p5-bg-surface)' }}>
+        <div style={{ ...containerStyle, padding: '64px 24px' }}>
+          <div style={{ maxWidth: '68ch' }}>
+            <div style={eyebrow}>What you get</div>
+            <h2 style={{ ...sectionHead, marginBottom: '32px' }}>Sequences firing same-day. Engagement history in your CRM. Reporting tied to bookings.</h2>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+              {outputs.map((line) => (
+                <li key={line} style={{ display: 'flex', alignItems: 'flex-start', gap: '16px', marginBottom: '16px' }}>
+                  <span style={{ display: 'block', width: '20px', height: '2px', backgroundColor: 'var(--p5-accent)', marginTop: '12px', flexShrink: 0 }} aria-hidden="true" />
+                  <span style={{ ...body, fontSize: '17px' }}>{line}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
-      {/* Why It Works Section */}
-      <section style={styles.section}>
-        <h2 style={styles.sectionTitle}>Why It Works</h2>
-        <div style={styles.differentiatorGrid}>
-          <div style={styles.differentiatorCard}>
-            <div style={styles.differentiatorIcon}>⚡</div>
-            <h3 style={styles.differentiatorTitle}>Same-Day Response</h3>
-            <p style={styles.differentiatorText}>
-              Outreach triggered within hours of site visit, while interest is hottest and top-of-mind.
-            </p>
-          </div>
-          <div style={styles.differentiatorCard}>
-            <div style={styles.differentiatorIcon}>🎯</div>
-            <h3 style={styles.differentiatorTitle}>Behavior-Based Targeting</h3>
-            <p style={styles.differentiatorText}>
-              Every message is relevant to what they viewed. No generic templates, no mass blasting.
-            </p>
-          </div>
-          <div style={styles.differentiatorCard}>
-            <div style={styles.differentiatorIcon}>📊</div>
-            <h3 style={styles.differentiatorTitle}>Short, Focused Sequences</h3>
-            <p style={styles.differentiatorText}>
-              2-3 touches per sequence keeps inboxes clean while maintaining presence. Easy opt-out for everyone.
-            </p>
-          </div>
-          <div style={styles.differentiatorCard}>
-            <div style={styles.differentiatorIcon}>🔀</div>
-            <h3 style={styles.differentiatorTitle}>Multi-Channel Presence</h3>
-            <p style={styles.differentiatorText}>
-              Retargeting ads + email creates full-cycle visibility from first search to closed deal.
-            </p>
-          </div>
-          <div style={styles.differentiatorCard}>
-            <div style={styles.differentiatorIcon}>🛡️</div>
-            <h3 style={styles.differentiatorTitle}>Brand-Safe Approach</h3>
-            <p style={styles.differentiatorText}>
-              Built on identified site visitors who have already engaged with your website. No random outreach to strangers.
-            </p>
-          </div>
-          <div style={styles.differentiatorCard}>
-            <div style={styles.differentiatorIcon}>🔄</div>
-            <h3 style={styles.differentiatorTitle}>Conversion Engine</h3>
-            <p style={styles.differentiatorText}>
-              Graduates engaged contacts to nurture programs designed to close deals, not just gather leads.
-            </p>
-          </div>
+      <section style={{ ...containerStyle, ...divider, padding: '96px 24px' }}>
+        <div style={{ maxWidth: '720px' }}>
+          <div style={{ width: '56px', height: '2px', backgroundColor: 'var(--p5-accent)', marginBottom: '32px' }} aria-hidden="true" />
+          <div style={eyebrow}>The first step</div>
+          <h2 style={{ ...sectionHead, fontSize: 'clamp(32px, 5vw, 52px)', marginBottom: '28px' }}>InboxID ships with the engagement.</h2>
+          <p style={{ ...body, fontSize: '19px', maxWidth: '60ch', marginBottom: '36px' }}>
+            InboxID is the follow-up layer inside a P5 engagement. Begin a Plan of Record and the first sequences are running by week three.
+          </p>
+          <a
+            href="mailto:rdonnell@p5marketing.com?subject=Plan%20of%20Record%20diagnostic"
+            style={{ display: 'inline-block', backgroundColor: 'var(--p5-accent)', color: 'var(--p5-bg-deep)', padding: '16px 32px', fontSize: '14px', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase', textDecoration: 'none', borderRadius: '4px' }}
+          >
+            Begin a Plan of Record
+          </a>
         </div>
-      </section>
-
-      {/* Stats Section */}
-      <section style={styles.section}>
-        <div style={styles.statsGrid}>
-          <div style={styles.statBox}>
-            <div style={styles.statValue}>Same-Day</div>
-            <div style={styles.statLabel}>Follow-Up Speed</div>
-          </div>
-          <div style={styles.statBox}>
-            <div style={styles.statValue}>2–3</div>
-            <div style={styles.statLabel}>Touches Per Sequence</div>
-          </div>
-          <div style={styles.statBox}>
-            <div style={styles.statValue}>2</div>
-            <div style={styles.statLabel}>Channels (Ads + Email)</div>
-          </div>
-          <div style={styles.statBox}>
-            <div style={styles.statValue}>100%</div>
-            <div style={styles.statLabel}>Behavior-Based Targeting</div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section style={styles.ctaSection}>
-        <h2 style={styles.ctaHeadline}>Ready to Convert Your Visitors?</h2>
-        <p style={styles.ctaText}>
-          Start converting identified site visitors into customers with behavior-based follow-up.
-        </p>
-        <a href="/contact/" style={styles.ctaButton}>
-          Get Started
-        </a>
       </section>
     </div>
   );

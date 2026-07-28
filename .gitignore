@@ -6,3 +6,28 @@ out/
 .env
 .env.local
 .next.locked/
+.vercel
+
+# SMB mount garbage (this repo lives on a network share)
+.smbdelete*
+
+# ── Client data and lists — NEVER commit these ────────────────────────────
+# 2026-07-28: found Dallas_Blitz_Mailing_List.csv and
+# Venue_Prospect_List_DFW_Austin_SA.xlsx sitting loose in this repo,
+# untracked. A committed CSV of identified individuals in a sibling repo
+# had to be purged the day before. Do not let it happen here.
+*.csv
+*.xlsx
+*.xls
+~$*
+
+# ── Marketing collateral — belongs in Drive, not a Next.js repo ───────────
+# Root-level only. Does not affect legitimate site assets in public/,
+# favicons, or blog images.
+*.docx
+/Postcard*.png
+/P5-Homepage-Preview-v1.html
+/P5-Homepage-Spec-v1.md
+
+# ── Reporting toolchain — separate project, not part of the website ───────
+/Reporting/
